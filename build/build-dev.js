@@ -1,15 +1,11 @@
 const gulp = require('gulp');
 const styl = require('gulp-stylus');
 const rename = require('gulp-rename');
-const filter = require('gulp-filter');
 
 gulp.task('compile-styl', function() {
 
-    const f = filter(['../src/styles/*']);
-
-    return gulp.src('../src/**/*.styl')
+    return gulp.src(['../src/**/*.styl', '!../src/styles/default.styl'])
         .pipe(styl())
-        .pipe(f)
         .pipe(rename({extname: '.wxss'}))
         .pipe(gulp.dest('../demo/components/'))
 })
