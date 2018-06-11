@@ -17,6 +17,7 @@ git clone git@git.timipc.com:Mitoo/Mitoo-weapp.git
 ## 预览
 
 1. 在 Mitoo-weapp 根目录下运行
+
 ``` bash
 # 安装项目依赖
 npm install
