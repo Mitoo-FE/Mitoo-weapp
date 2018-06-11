@@ -1,4 +1,4 @@
-<p align="center">
+<p align=center>
     <img alt="项目logo" src="https://mp.weixin.qq.com/wxopen/basicprofile?action=get_headimg&token=175954104&t=20180611160032">
 </p>
 <p align="center">小程序 UI 组件库</p>
