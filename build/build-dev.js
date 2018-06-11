@@ -1,12 +1,12 @@
 var gulp = require('gulp');
-var less = require('gulp-less');
+var styl = require('gulp-stylus');
 var rename = require('gulp-rename');
 var watch = require('gulp-watch');
 
-gulp.task('compile-less', function() {
-    return watch('*.less', function() {
-    	gulp.src('../src/**/*.less')
-		.pipe(less())
+gulp.task('compile-styl', function() {
+    return watch('*.styl', function() {
+    	gulp.src('../src/**/*.styl')
+		.pipe(styl())
 		.pipe(rename({extname: '.wxss'}))
         	.pipe(gulp.dest('../demo/components/'))
 	});
@@ -28,10 +28,10 @@ gulp.task('compile-wxml', () => {
 });
 
 gulp.task('auto', () => {
-    gulp.watch('../src/**/*.less', ['compile-css']);
+    gulp.watch('../src/**/*.styl', ['compile-css']);
     gulp.watch('../src/**/*.js', ['compile-js']);
     gulp.watch('../src/**/*.json', ['compile-json']);
     gulp.watch('../src/**/*.wxml', ['compile-wxml']);
 });
 
-gulp.task('default', ['compile-less', 'compile-js', 'compile-json', 'compile-wxml', 'auto']);
+gulp.task('default', ['compile-styl', 'compile-js', 'compile-json', 'compile-wxml', 'auto']);

@@ -1,0 +1,52 @@
+Arguments: 
+  /Users/wanglong/.nvm/versions/node/v8.10.0/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/wanglong/.nvm/versions/node/v8.10.0/bin:/usr/local/php5-7.1.0-20161202-092124/bin:/opt/local/bin:/opt/local/sbin:/Users/wanglong/.node/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home//bin:/usr/local/apache-maven-3.5.2//bin:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/VMware Fusion.app/Contents/Public:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home//bin:/Users/wanglong/apache-maven-3.5.2/bin:/Applications/MAMP/Library/bin:/Users/wanglong/Library/Android/sdk:/Users/wanglong/Library/Android/sdk/tools/:/Users/wanglong/Library/Android/sdk/platform-tools/:/bin:/Applications/calibre.app/Contents/MacOS:/Library/apache-tomcat-7.0.73/bin:/Library/Frameworks/Mono.framework/Versions/5.8.0/bin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.10.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "mitoo-weapp",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+      "gulp": "^3.9.1",
+      "gulp-rename": "^1.2.3",
+      "gulp-watch": "^5.0.0",
+      "rename": "^1.0.4",
+      "watch": "^1.0.2",
+      "gulp-stylus": "^2.7.0"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "gulp --gulpfile build/build-dev.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git@git.timipc.com:Mitoo/Mitoo-weapp.git"
+    },
+    "author": "",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: http://registry.npmjs.org/gulp: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:123749:19)
+      at ontimeout (timers.js:482:11)
+      at tryOnTimeout (timers.js:317:5)
+      at Timer.listOnTimeout (timers.js:277:5)
