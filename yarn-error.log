@@ -1,7 +1,7 @@
 Arguments: 
   /Users/wanglong/.nvm/versions/node/v8.10.0/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js install
 
-PATH: 
+1PATH: 
   /Users/wanglong/.nvm/versions/node/v8.10.0/bin:/usr/local/php5-7.1.0-20161202-092124/bin:/opt/local/bin:/opt/local/sbin:/Users/wanglong/.node/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home//bin:/usr/local/apache-maven-3.5.2//bin:.:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/VMware Fusion.app/Contents/Public:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home//bin:/Users/wanglong/apache-maven-3.5.2/bin:/Applications/MAMP/Library/bin:/Users/wanglong/Library/Android/sdk:/Users/wanglong/Library/Android/sdk/tools/:/Users/wanglong/Library/Android/sdk/platform-tools/:/bin:/Applications/calibre.app/Contents/MacOS:/Library/apache-tomcat-7.0.73/bin:/Library/Frameworks/Mono.framework/Versions/5.8.0/bin
 
 Yarn version: 
