@@ -5,26 +5,26 @@ var watch = require('gulp-watch');
 
 gulp.task('compile-less', function() {
     return watch('*.less', function() {
-    	gulp.src('./*.less')
+    	gulp.src('../src/**/*.less')
 		.pipe(less())
 		.pipe(rename({extname: '.wxss'}))
-        	.pipe(gulp.dest('./'))
+        	.pipe(gulp.dest('../demo/components/'))
 	});
 })
 
 gulp.task('compile-js', () => {
     return gulp.src(['../src/**/*.js'])
-        .pipe(gulp.dest('../examples/dist/'));
+        .pipe(gulp.dest('../demo/components/'));
 });
 
 gulp.task('compile-json', () => {
     return gulp.src(['../src/**/*.json'])
-        .pipe(gulp.dest('../examples/dist/'));
+        .pipe(gulp.dest('../demo/components/'));
 });
 
 gulp.task('compile-wxml', () => {
     return gulp.src(['../src/**/*.wxml'])
-        .pipe(gulp.dest('../examples/dist/'));
+        .pipe(gulp.dest('../demo/components/'));
 });
 
 gulp.task('auto', () => {
