@@ -1,0 +1,14 @@
+.mit-card {
+  background-color: #f7f7f7;
+}
+.mit-card .mit-card-title {
+  padding: 20rpx;
+  font-size: 14px;
+  background-color: #fff;
+  border-bottom: 1px solid #dddee1;
+}
+.mit-card .mit-card-body {
+  padding: 20rpx;
+  font-size: 14px;
+  background-color: #f7f7f7;
+}

@@ -1,0 +1,6 @@
+<view>
+    <card data="{{data}}">
+        <view slot="title">title</view>
+        <view slot="body">body</view>
+    </card>
+</view>

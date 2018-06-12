@@ -10,4 +10,5 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+    <navigator url="/pages/card/card">sadf</navigator>
 </view>

@@ -5,11 +5,11 @@ const filter = require('gulp-filter');
 
 gulp.task('compile-styl', function() {
 
-    const f = filter(['../src/styles/*']);
+    // const f = filter(['../src/styles/*']);
 
     return gulp.src('../src/**/*.styl')
         .pipe(styl())
-        .pipe(f)
+        // .pipe(f)
         .pipe(rename({extname: '.wxss'}))
         .pipe(gulp.dest('../demo/components/'))
 })

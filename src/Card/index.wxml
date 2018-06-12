@@ -1,0 +1,9 @@
+<view class="mit-card">
+    <view class="mit-card-title">
+        <slot name="title"></slot>
+    </view>
+    <view class="mit-card-body">
+        <slot name="body"></slot>
+    </view>
+</view>
+
