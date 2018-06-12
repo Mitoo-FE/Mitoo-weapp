@@ -4,11 +4,6 @@ const rename = require('gulp-rename');
 
 gulp.task('compile-styl', function() {
 
-    // const f = filter(['../src/styles/*']);
-
-    return gulp.src('../src/**/*.styl')
-        .pipe(styl())
-        // .pipe(f)
     return gulp.src(['../src/**/*.styl', '!../src/styles/default.styl'])
         .pipe(styl())
         .pipe(rename({extname: '.wxss'}))
