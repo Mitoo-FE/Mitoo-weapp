@@ -2,3 +2,7 @@ node_modules/
 yarn.lock
 yarn-error.log
 .idea
+demo/components/
+.DS_Store
+npm-debug.log
+demo/project.config.json
