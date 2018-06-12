@@ -1,7 +1,14 @@
 Component({
+	externalClasses: ['mit-class'],
 	relations: {
 		'../Col/index': {
 			type: 'child',
+		}
+	},
+	properties: {
+		gutter: {
+			value: 0,
+			type: Number
 		}
 	},
 	methods: {
