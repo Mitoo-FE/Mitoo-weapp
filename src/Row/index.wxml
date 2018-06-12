@@ -1,0 +1,3 @@
+<view class="cl">
+	<slot></slot>
+</view>

@@ -1,0 +1,5 @@
+<view>
+	<mit-row>
+		<mit-col>123</mit-col>
+	</mit-row>
+</view>

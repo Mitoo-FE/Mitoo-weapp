@@ -12,5 +12,6 @@
   <!--</view>-->
     <navigator url="/pages/card/card">Card</navigator>
     <navigator url="/pages/list/list">List</navigator>
+    <navigator url="/pages/layout/layout">Layout</navigator>
     <!--<view class="">123</view>-->
 </view>

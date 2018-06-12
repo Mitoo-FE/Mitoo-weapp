@@ -1,0 +1,16 @@
+@import "../styles/default";
+
+.mit-col {
+	float: left;
+	box-sizing: border-box;
+	width: 0;
+}
+
+genColStyle(num) {
+	.mit-col-{num} { width: calc( "{num * 100%}" ); }
+	// .mit-col-offset-{num} { margin-left: calc( num * 100% / $mit-column)}
+}
+
+for $i in 1..$mit-column{
+	genColStyle($i)
+}
