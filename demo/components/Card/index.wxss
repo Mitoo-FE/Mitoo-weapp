@@ -2,6 +2,7 @@ page {
   background-color: #f7f7f7;
 }
 .mit-card {
+  font-size: 32rpx;
   margin: 20rpx;
   border-radius: 10rpx;
   border: 1rpx solid #dddee1;
@@ -9,15 +10,13 @@ page {
 }
 .mit-card-header {
   padding: 20rpx;
-  font-size: 14px;
   border-bottom: 1rpx solid #dddee1;
 }
 .mit-card-body {
   padding: 20rpx;
-  font-size: 14px;
 }
 .mit-card-footer {
-  font-size: 12px;
+  font-size: 28rpx;
   color: #80848f;
 }
 .mit-card.mit-card-full {

@@ -1,0 +1,5 @@
+<view>
+    <mit-panel title="列表标题">
+        <view>单行列表</view>
+    </mit-panel>
+</view>

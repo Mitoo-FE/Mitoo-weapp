@@ -1,0 +1,7 @@
+<view class="mit-panel">
+    <view wx:if="{{ title }}" class="mit-panel-title">{{title}}</view>
+    <view class="mit-panel-info {{ withoutBorder ? 'mit-panel-without-border' : '' }}">
+        <slot></slot>
+    </view>
+</view>
+

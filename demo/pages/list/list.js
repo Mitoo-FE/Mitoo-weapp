@@ -1,0 +1,4 @@
+const app = getApp()
+
+Page({
+})

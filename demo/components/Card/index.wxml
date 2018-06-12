@@ -4,9 +4,7 @@
     </view>
     <view class="mit-card-body">
         <slot name="body"></slot>
-        <view class="mit-card-footer">
-            <slot name="footer"></slot>
-        </view>
+        <slot class="mit-card-footer" name="footer"></slot>
     </view>
 </view>
 

@@ -11,5 +11,6 @@
     <!--<text class="user-motto">{{motto}}</text>-->
   <!--</view>-->
     <navigator url="/pages/card/card">Card</navigator>
+    <navigator url="/pages/list/list">List</navigator>
     <!--<view class="">123</view>-->
 </view>
