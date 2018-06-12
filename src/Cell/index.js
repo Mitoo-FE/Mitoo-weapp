@@ -1,4 +1,5 @@
 Component({
+    externalClasses : ['mit-class'],
     options: {
         multipleSlots: true
     },
@@ -24,11 +25,26 @@ Component({
             value: ''
         }
     },
+    data: {
+        lastItem: true
+    },
+    relations: {
+        '../Cell-Group/index': {
+            type: 'parent',
+            linked: function(target) {
+                this.setData(this.data.lastItem)
+            }
+        }
+
+
+    },
     methods: {
         redirectTo: function() {
-            wx.redirectTo({
-                url: this.properties.url
-            })
+            if (this.properties.url) {
+                wx.redirectTo({
+                    url: this.properties.url
+                })
+            }
         }
     }
 })

@@ -1,17 +1,24 @@
 <view>
-    <mit-panel title="列表标题">
-        <view>单行列表</view>
+    <mit-panel title="基本列表">
+        <view>
+            <mit-cell title="一些文字">
+            </mit-cell>
+        </view>
     </mit-panel>
-    <mit-panel withoutBorder title="无边框列表">
-        <view>一些文字</view>
-    </mit-panel>
-    <mit-panel title="列表标题">
+    <mit-panel title="带描述和详情的列表">
         <mit-cell title="列表项" label="描述 balabalabala" isLink>
         </mit-cell>
     </mit-panel>
-    <mit-panel title="列表标题">
+    <mit-panel title="带跳转的列表">
         <mit-cell title="点我调回首页" label="描述 balabalabala" isLink url="/pages/index/index">
         </mit-cell>
     </mit-panel>
-
+    <mit-panel title="分组">
+        <mit-cell-group>
+            <mit-cell title="走起"></mit-cell>
+            <mit-cell title="走起"></mit-cell>
+            <mit-cell title="走起"></mit-cell>
+            <mit-cell title="走起"></mit-cell>
+        </mit-cell-group>
+    </mit-panel>
 </view>

@@ -37,8 +37,8 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "layout",
-					"pathName": "pages/layout/layout",
+					"name": "index",
+					"pathName": "pages/index/index",
 					"query": ""
 				}
 			]

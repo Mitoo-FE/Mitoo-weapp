@@ -1,4 +1,4 @@
-<view class="mit-cell" bindtap="redirectTo">
+<view class="mit-cell mit-class {{lastItem?'mit-cell-last':''}}" bindtap="redirectTo">
     <view class="mit-cell-left-container">
         <view class="mit-cell-title" wx:if="{{title}}">{{title}}</view>
         <view class="mit-cell-label" wx:if="{{label}}">{{label}}</view>

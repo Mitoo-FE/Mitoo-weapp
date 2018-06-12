@@ -1,0 +1,5 @@
+{
+	"usingComponents": {
+		"mit-panel": "/components/Panel/index"
+	}
+}
