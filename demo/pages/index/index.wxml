@@ -11,4 +11,5 @@
     <text class="user-motto">{{motto}}</text>
   </view>
     <navigator url="/pages/card/card">sadf</navigator>
+    <view class="">123</view>
 </view>
