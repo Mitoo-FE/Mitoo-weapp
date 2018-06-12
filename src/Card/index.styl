@@ -1,17 +1,30 @@
 @import "../styles/default";
-
-.{$prefix}-card {
+page {
   background-color: $background-color-base;
-  .{$prefix}-card-title {
+}
+.{$prefix}-card {
+  margin: $margin-base;
+  border-radius: $card-border-radius;
+  border: $card-border-width solid $border-color-base;
+  background-color: $card-bg;
+  &-header {
     padding: $padding-base;
     font-size: $size-font-base;
-    background-color: $card-bg;
-    border-bottom: 1px solid $border-color-base;
+    border-bottom: $card-border-width solid $border-color-base;
   }
-  .{$prefix}-card-body {
+  &-body {
     padding: $padding-base;
     font-size: $size-font-base;
-    background-color: $background-color-base;
+  }
+  &-footer {
+    font-size: $size-font-small;
+    color: $subsidiary-color;
+  }
+  &&-full {
+    margin: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
   }
 }
 

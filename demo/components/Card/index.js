@@ -2,7 +2,10 @@ Component({
     options: {
         multipleSlots: true
     },
-    attached() {
-        console.log(this)
-    }
+    properties: {
+        full: {
+            type: Boolean,
+            value: false
+        }
+    },
 })

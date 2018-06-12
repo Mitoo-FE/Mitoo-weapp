@@ -1,6 +1,16 @@
 <view>
-    <card data="{{data}}">
-        <view slot="title">title</view>
-        <view slot="body">body</view>
-    </card>
+    <view style="padding:20rpx;">Default</view>
+    <mit-card>
+        <view slot="header">
+            <view>Every thing</view>
+        </view>
+        <view slot="body">正文</view>
+        <view slot="footer">底部内容</view>
+    </mit-card>
+    <view style="padding:20rpx;">Full</view>
+    <mit-card full>
+        <view slot="header">顶部内容</view>
+        <view slot="body">正文</view>
+        <view slot="footer">底部内容</view>
+    </mit-card>
 </view>

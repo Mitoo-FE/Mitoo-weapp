@@ -1,14 +1,28 @@
+page {
+  background-color: #f7f7f7;
+}
 .mit-card {
-  background-color: #f7f7f7;
-}
-.mit-card .mit-card-title {
-  padding: 20rpx;
-  font-size: 14px;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #dddee1;
   background-color: #fff;
-  border-bottom: 1px solid #dddee1;
 }
-.mit-card .mit-card-body {
+.mit-card-header {
   padding: 20rpx;
   font-size: 14px;
-  background-color: #f7f7f7;
+  border-bottom: 1rpx solid #dddee1;
+}
+.mit-card-body {
+  padding: 20rpx;
+  font-size: 14px;
+}
+.mit-card-footer {
+  font-size: 12px;
+  color: #80848f;
+}
+.mit-card.mit-card-full {
+  margin: 0;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
 }

@@ -1,5 +1,5 @@
 {
 	"usingComponents": {
-		"card": "/components/Card/index"
+		"mit-card": "/components/Card/index"
 	}
 }
