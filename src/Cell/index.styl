@@ -7,8 +7,9 @@ page {
   display: flex;
   box-pack: justify
   justify-content: space-between;
-  &-title {
-  }
+  border-bottom: $border-width-base solid $border-color-base;
+  padding: $padding-base $padding-base $padding-base 0;
+  margin: 0 0 0 $margin-base;
   &-label {
     font-size: $size-font-small;
     color: $subsidiary-color;
@@ -19,6 +20,9 @@ page {
     .{$prefix}-cell-link {
       color: $subsidiary-color;
     }
+  }
+  &-last {
+    border: none;
   }
 }
 
