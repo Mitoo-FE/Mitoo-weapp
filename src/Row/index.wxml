@@ -1,3 +1,3 @@
-<view class="cl">
+<view class="mit-class mit-row" style="margin-left: {{gutter ? gutter/2 : ''}}px; margin-right:  {{gutter ? gutter/2 : ''}}px">
 	<slot></slot>
 </view>

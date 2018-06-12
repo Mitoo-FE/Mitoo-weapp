@@ -1,5 +1,56 @@
 <view>
-	<mit-row>
-		<mit-col>123</mit-col>
+	<mit-row mit-class="row">
+		<mit-col mit-class="col" span="24">
+			<view class="grid-content bg-purple-dark"></view>
+		</mit-col>
+	</mit-row>
+
+	<mit-row mit-class="row">
+		<mit-col mit-class="col" span="12">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
+		<mit-col mit-class="col" span="12">
+			<view class="grid-content bg-purple-light"></view>
+		</mit-col>
+	</mit-row>
+
+	<mit-row mit-class="row">
+		<mit-col mit-class="col" span="8">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
+		<mit-col mit-class="col" span="8">
+			<view class="grid-content bg-purple-light"></view>
+		</mit-col>
+		<mit-col mit-class="col" span="8">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
+	</mit-row>
+
+	<mit-row mit-class="row">
+		<mit-col mit-class="col" span="6">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
+		<mit-col mit-class="col" span="6" offset="6">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
+	</mit-row>
+	<mit-row mit-class="row">
+		<mit-col mit-class="col" span="6" offset="6">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
+		<mit-col mit-class="col" span="6" offset="6">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
+	</mit-row>
+	<mit-row mit-class="row" gutter="20">
+		<mit-col mit-class="col" span="8">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
+		<mit-col mit-class="col" span="8">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
+		<mit-col mit-class="col" span="8">
+			<view class="grid-content bg-purple"></view>
+		</mit-col>
 	</mit-row>
 </view>
