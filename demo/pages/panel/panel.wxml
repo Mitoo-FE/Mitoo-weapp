@@ -1,0 +1,12 @@
+<view>
+    <mit-panel title="带标题的Panel">
+        <view style="padding: 20rpx;">
+            啦啦啦
+        </view>
+    </mit-panel>
+    <mit-panel withoutBorder title="无边框的Panel">
+        <view style="padding: 20rpx;">
+            啦啦啦
+        </view>
+    </mit-panel>
+</view>

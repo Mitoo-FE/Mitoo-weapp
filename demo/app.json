@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/card/card",
     "pages/list/list",
-    "pages/layout/layout"
+    "pages/layout/layout",
+    "pages/panel/panel"
   ],
   "window":{
     "backgroundTextStyle":"light",
