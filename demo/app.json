@@ -4,7 +4,8 @@
     "pages/card/card",
     "pages/list/list",
     "pages/layout/layout",
-    "pages/panel/panel"
+    "pages/panel/panel",
+    "pages/button/button"
   ],
   "window":{
     "backgroundTextStyle":"light",
