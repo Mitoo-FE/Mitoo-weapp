@@ -2,4 +2,16 @@
     <mit-panel title="列表标题">
         <view>单行列表</view>
     </mit-panel>
+    <mit-panel withoutBorder title="无边框列表">
+        <view>一些文字</view>
+    </mit-panel>
+    <mit-panel title="列表标题">
+        <mit-cell title="列表项" label="描述 balabalabala" isLink>
+        </mit-cell>
+    </mit-panel>
+    <mit-panel title="列表标题">
+        <mit-cell title="点我调回首页" label="描述 balabalabala" isLink url="/pages/index/index">
+        </mit-cell>
+    </mit-panel>
+
 </view>

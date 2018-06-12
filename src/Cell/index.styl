@@ -2,29 +2,23 @@
 page {
   background-color: $background-color-base;
 }
-.{$prefix}-list {
-  margin: $margin-base;
-  border-radius: $card-border-radius;
-  border: $card-border-width solid $border-color-base;
-  background-color: $card-bg;
-  &-header {
-    padding: $padding-base;
-    font-size: $size-font-base;
-    border-bottom: $card-border-width solid $border-color-base;
+.{$prefix}-cell {
+  font-size: $size-font-base;
+  display: flex;
+  box-pack: justify
+  justify-content: space-between;
+  &-title {
   }
-  &-body {
-    padding: $padding-base;
-    font-size: $size-font-base;
-  }
-  &-footer {
+  &-label {
     font-size: $size-font-small;
     color: $subsidiary-color;
   }
-  .&-full {
-    margin: 0;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
+  &-right-container {
+    display: flex;
+    align-items: center;
+    .{$prefix}-cell-link {
+      color: $subsidiary-color;
+    }
   }
 }
 

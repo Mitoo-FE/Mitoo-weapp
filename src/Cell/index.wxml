@@ -1,4 +1,10 @@
-<view class="mit-list">
-
+<view class="mit-cell" bindtap="redirectTo">
+    <view class="mit-cell-left-container">
+        <view class="mit-cell-title" wx:if="{{title}}">{{title}}</view>
+        <view class="mit-cell-label" wx:if="{{label}}">{{label}}</view>
+    </view>
+    <view class="mit-cell-right-container">
+        <view class="mit-cell-link" wx:if="{{isLink}}">></view>
+    </view>
 </view>
 

@@ -6,6 +6,10 @@ Component({
         title: {
             type: String,
             value: ''
+        },
+        withoutBorder: {
+            type: Boolean,
+            value: false
         }
     }
 })
