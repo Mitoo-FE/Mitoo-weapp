@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view>
   <!--<view class="userinfo">-->
     <!--<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>-->
     <!--<block wx:else>-->
@@ -10,9 +10,12 @@
   <!--<view class="usermotto">-->
     <!--<text class="user-motto">{{motto}}</text>-->
   <!--</view>-->
-    <navigator url="/pages/card/card">Card</navigator>
-    <navigator url="/pages/list/list">List</navigator>
-    <navigator url="/pages/layout/layout">Layout</navigator>
-    <navigator url="/pages/panel/panel">Panel</navigator>
-    <!--<view class="">123</view>-->
+    <mit-panel title="布局">
+        <mit-cell-group>
+            <mit-cell title="Card" isLink url="/pages/card/card"></mit-cell>
+            <mit-cell title="List" isLink url="/pages/list/list"></mit-cell>
+            <mit-cell title="Layout" isLink url="/pages/layout/layout"></mit-cell>
+            <mit-cell title="Panel" isLink url="/pages/panel/panel"></mit-cell>
+        </mit-cell-group>
+    </mit-panel>
 </view>

@@ -41,7 +41,7 @@ Component({
     methods: {
         redirectTo: function() {
             if (this.properties.url) {
-                wx.redirectTo({
+                wx.navigateTo({
                     url: this.properties.url
                 })
             }
