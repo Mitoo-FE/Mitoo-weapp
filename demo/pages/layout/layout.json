@@ -1,0 +1,6 @@
+{
+	"usingComponents": {
+		"mit-row": "/components/Row/index",
+		"mit-col": "/components/Col/index"
+	}
+}
