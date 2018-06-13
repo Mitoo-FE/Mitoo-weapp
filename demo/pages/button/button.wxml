@@ -1,3 +1,8 @@
 <view>
-    <mit-button title="button"></mit-button>
+    <mit-button text="button" size="small"></mit-button>
+    <mit-button text="button" size="default"></mit-button>
+    <mit-button text="button" size="large"></mit-button>
+    <mit-button circle text="button" size="small"></mit-button>
+    <mit-button circle text="button" size="default"></mit-button>
+    <mit-button circle text="button" size="large"></mit-button>
 </view>

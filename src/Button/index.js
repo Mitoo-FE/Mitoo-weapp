@@ -1,6 +1,14 @@
 Component({
     properties: {
-        title: {
+        text: {
+            type: String,
+            value: ''
+        },
+        size: {
+            type: String,
+            value: ''
+        },
+        circle: {
             type: String,
             value: ''
         }
