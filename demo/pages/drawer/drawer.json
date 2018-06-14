@@ -2,6 +2,7 @@
 	"usingComponents": {
 		"mit-drawer": "/components/Drawer/index",
 		"mit-button": "/components/Button/index",
-		"mit-col": "/components/Col/index"
+		"mit-col": "/components/Col/index",
+		"mit-row": "/components/Row/index"
 	}
 }

@@ -1,11 +1,11 @@
 Page({
-    methods: {
-        open_drawer_left: function() {
-            console.log('I do')
-        },
-        open_drawer_right: function() {
+    data: {
 
-            console.log('I do r')
+    },
+    methods: {
+        open: function(evt) {
+            console.log('iso')
         }
     }
+
 })

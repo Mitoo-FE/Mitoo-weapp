@@ -16,3 +16,6 @@
 .mit-button-wrap .mit-button-circle {
   border-radius: 100rpx;
 }
+.mit-button-wrap .mit-button-hover {
+  background-color: #2470c0;
+}

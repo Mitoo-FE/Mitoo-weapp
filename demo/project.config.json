@@ -33,8 +33,14 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 2,
 			"list": [
+				{
+					"id": -1,
+					"name": "actionSheet",
+					"pathName": "pages/actionSheet/actionSheet",
+					"query": ""
+				},
 				{
 					"id": -1,
 					"name": "index",
@@ -43,9 +49,8 @@
 				},
 				{
 					"id": -1,
-					"name": "actionSheet",
-					"pathName": "pages/actionSheet/actionSheet",
-					"query": ""
+					"name": "drawer",
+					"pathName": "pages/drawer/drawer"
 				}
 			]
 		}
