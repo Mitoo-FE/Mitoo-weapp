@@ -21,6 +21,7 @@
     <mit-panel title="基础组件">
         <mit-cell-group>
             <mit-cell title="Button" isLink url="/pages/button/button"></mit-cell>
+            <mit-cell title="Drawer" isLink url="/pages/drawer/drawer"></mit-cell>
         </mit-cell-group>
     </mit-panel>
 </view>

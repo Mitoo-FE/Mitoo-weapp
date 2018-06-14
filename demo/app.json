@@ -5,7 +5,8 @@
     "pages/list/list",
     "pages/layout/layout",
     "pages/panel/panel",
-    "pages/button/button"
+    "pages/button/button",
+    "pages/drawer/drawer"
   ],
   "window":{
     "backgroundTextStyle":"light",

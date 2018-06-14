@@ -1,0 +1,26 @@
+@import "../styles/default";
+page {
+  background-color: $background-color-base;
+}
+.{$prefix}-drawer-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: $size-font-base;
+  background-color: $background-opacity;
+  .{$prefix}-drawer-content {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: $default-bg-color;
+    &-left {
+      left: 0;
+    }
+    &-right {
+      right: 0;
+    }
+  }
+}
