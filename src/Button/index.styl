@@ -1,4 +1,20 @@
 @import "../styles/default";
-.cl{
-	color: $primary-color;
+
+.{$prefix}-button-wrap {
+  padding: $padding-base;
+  .{$prefix}-button {
+    background-color: $primary-color;
+    color: white;
+    font-size: $size-font-base;
+    padding: $button-padding-base;
+    &-small {
+      padding: $button-padding-small;
+    }
+    &-large {
+      padding: $button-padding-large;
+    }
+    &-circle {
+      border-radius: 100rpx;
+    }
+  }
 }

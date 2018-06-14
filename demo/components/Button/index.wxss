@@ -1,3 +1,18 @@
-.cl {
-  color: $primary-color;
+.mit-button-wrap {
+  padding: 20rpx;
+}
+.mit-button-wrap .mit-button {
+  background-color: #2d8cf0;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 6rpx;
+}
+.mit-button-wrap .mit-button-small {
+  padding: 0rpx;
+}
+.mit-button-wrap .mit-button-large {
+  padding: 12rpx;
+}
+.mit-button-wrap .mit-button-circle {
+  border-radius: 100rpx;
 }

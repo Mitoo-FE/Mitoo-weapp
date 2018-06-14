@@ -6,7 +6,8 @@
     "pages/layout/layout",
     "pages/panel/panel",
     "pages/button/button",
-    "pages/actionSheet/actionSheet"
+    "pages/actionSheet/actionSheet",
+    "pages/drawer/drawer"
   ],
   "window":{
     "backgroundTextStyle":"light",
