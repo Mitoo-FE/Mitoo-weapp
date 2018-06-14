@@ -1,13 +1,14 @@
 <view>
     <view>
-        <mit-col span="12">
-            <mit-button text="left"></mit-button>
-        </mit-col>
-        <mit-col span="12">
-            <mit-button text="right"></mit-button>
-        </mit-col>
-    </view>
-    <view>
+        <mit-button text="left" bind:buttonTap="open"></mit-button>
+        <mit-row>
+            <mit-col span="12">
+
+            </mit-col>
+            <mit-col span="12">
+                <mit-button text="right"></mit-button>
+            </mit-col>
+        </mit-row>
         <mit-drawer></mit-drawer>
     </view>
 </view>

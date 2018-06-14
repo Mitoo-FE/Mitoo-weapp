@@ -3,18 +3,21 @@
 .{$prefix}-button-wrap {
   padding: $padding-base;
   .{$prefix}-button {
-    background-color: $primary-color;
+    background-color: $btn-primary-bg;
     color: white;
     font-size: $size-font-base;
-    padding: $button-padding-base;
+    padding: $btn-padding-base;
     &-small {
-      padding: $button-padding-small;
+      padding: $btn-padding-small;
     }
     &-large {
-      padding: $button-padding-large;
+      padding: $btn-padding-large;
     }
     &-circle {
       border-radius: 100rpx;
+    }
+    &-hover {
+      background-color: $btn-primary-bg*0.8;
     }
   }
 }

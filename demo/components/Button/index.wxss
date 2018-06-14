@@ -15,17 +15,20 @@
   padding: 20rpx;
 }
 .mit-button-wrap .mit-button {
-  background-color: $primary-color;
+  background-color: #2d8cf0;
   color: #fff;
   font-size: 32rpx;
-  padding: $button-padding-base;
+  padding: 6rpx 15rpx;
 }
 .mit-button-wrap .mit-button-small {
-  padding: $button-padding-small;
+  padding: 2rpx 7rpx;
 }
 .mit-button-wrap .mit-button-large {
-  padding: $button-padding-large;
+  padding: 6rpx 15rpx 7rpx 15rpx;
 }
 .mit-button-wrap .mit-button-circle {
   border-radius: 100rpx;
+}
+.mit-button-wrap .mit-button-hover {
+  background-color: #2470c0;
 }
