@@ -5,13 +5,13 @@
   background-color: #2d8cf0;
   color: #fff;
   font-size: 32rpx;
-  padding: 6rpx;
+  padding: 6rpx 15rpx;
 }
 .mit-button-wrap .mit-button-small {
-  padding: 0rpx;
+  padding: 2rpx 7rpx;
 }
 .mit-button-wrap .mit-button-large {
-  padding: 12rpx;
+  padding: 6rpx 15rpx 7rpx 15rpx;
 }
 .mit-button-wrap .mit-button-circle {
   border-radius: 100rpx;

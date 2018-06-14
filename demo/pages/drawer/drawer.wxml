@@ -1,13 +1,11 @@
 <view>
     <view>
         <mit-col span="12">
-            <mit-button text="left"></mit-button>
+            <mit-button text="left" bindtap="open_drawer_left"></mit-button>
         </mit-col>
         <mit-col span="12">
-            <mit-button text="right"></mit-button>
+            <mit-button text="right" bindtap="open_drawer_right"></mit-button>
         </mit-col>
-    </view>
-    <view>
         <mit-drawer></mit-drawer>
     </view>
 </view>
