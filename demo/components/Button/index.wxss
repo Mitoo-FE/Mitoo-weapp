@@ -2,16 +2,16 @@
   padding: 20rpx;
 }
 .mit-button-wrap .mit-button {
-  background-color: #2d8cf0;
+  background-color: $primary-color;
   color: #fff;
   font-size: 32rpx;
-  padding: 6rpx;
+  padding: $button-padding-base;
 }
 .mit-button-wrap .mit-button-small {
-  padding: 0rpx;
+  padding: $button-padding-small;
 }
 .mit-button-wrap .mit-button-large {
-  padding: 12rpx;
+  padding: $button-padding-large;
 }
 .mit-button-wrap .mit-button-circle {
   border-radius: 100rpx;

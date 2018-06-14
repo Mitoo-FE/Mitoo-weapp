@@ -1,11 +1,13 @@
-@import "../styles/default";
+@import "../styles/index";
 
-.{$prefix}-action-sheet{
+$actionSheetPrefixCls = $prefix + '-action-sheet'
+
+.{$actionSheetPrefixCls}{
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: $fill-base;
+	background-color: $background-color-base ;
 
 	&&-share {
 	    background-color: #f2f2f2;
@@ -26,17 +28,45 @@
 	}
 
 	&-button-list{
-		font-size: $actionsheet-item-font-size;
-		padding: 0;
-		margin: 0;
-		position: relative;
-		height: $actionsheet-item-height;
-	}
+	    text-align: center;
+    	color: @color-text-base;
 
+		&-item{
+			font-size: $actionsheet-item-font-size;
+			padding: 0;
+			margin: 0;
+			position: relative;
+			height: $actionsheet-item-height;
+			line-height: $actionsheet-item-height;
+			box-sizing: border-box;
+		    // .hairline('top');
+		    &&-active {
+				background-color: $background-color-tap;
+		    }
+		}
+
+		.{$actionSheetPrefixCls}-cacel-button{
+			margin-top: @v-spacing-sm;
+			position: relative;
+
+			&-mask{
+				position: absolute;
+		        top: -$v-spacing-sm;
+		        left: 0;
+		        width: 100%;
+		        height: $v-spacing-sm;
+		        background-color: #e7e7ed;
+			}
+		}
+
+		.{$actionSheetPrefixCls}-destructive-button {
+	      	color: $brand-color-error;
+	    }
+	}
 }
 
 // Base_stylus
-.{$prefix}-action-sheet{
+.{$actionSheetPrefixCls}{
 	position: fixed;
 	left: 0;
 	bottom: 0;
@@ -61,7 +91,7 @@
 	    right: 0;
 	    left: 0;
 	    bottom: 0;
-	    background-color: $fill-mask;
+	    background-color: $background-color-mask;
 	    height: 100%;
 	    z-index: $action-sheet-zindex;
 	}
