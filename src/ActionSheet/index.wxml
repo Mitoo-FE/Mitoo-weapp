@@ -1,0 +1,34 @@
+ <view class="mit-action-sheet-container">
+	<view class="mit-action-sheet-mask"></view>
+    <view class="mit-action-sheet-wrap">
+        <view class="mit-action-sheet mit-action-sheet-noraml">
+            <view class="mit-action-sheet-content">
+                <button size="default" class="mit-action-sheet-close" type="default" plain="false" disabled="false" loading="false" form-type="" hover-class=""></button>
+                <view class="mit-action-sheet-body">
+                    <view class="">
+                        <view class="mit-action-sheet-message">
+                            I am description, description, description
+                        </view>
+                        <view class="mit-action-sheet-button-list">
+                            <view class="mit-action-sheet-button-list-item">
+                                Operation1
+                            </view>
+                            <view class="mit-action-sheet-button-list-item">
+                                Operation2
+                            </view>
+                            <view class="mit-action-sheet-button-list-item">
+                                Operation3
+                            </view>
+                            <view class="mit-action-sheet-button-list-item mit-action-sheet-destructive-button">
+                                Delete
+                            </view>
+                            <view class="mit-action-sheet-button-list-item mit-action-sheet-cancel-button">
+                                Cancel
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

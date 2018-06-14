@@ -40,6 +40,12 @@
 					"name": "index",
 					"pathName": "pages/index/index",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "actionSheet",
+					"pathName": "pages/actionSheet/actionSheet",
+					"query": ""
 				}
 			]
 		}

@@ -1,16 +1,16 @@
 page {
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
 .mit-card {
   font-size: 32rpx;
   margin: 20rpx;
   border-radius: 10rpx;
-  border: 1rpx solid #dddee1;
+  border: 1rpx solid #dddeee;
   background-color: #fff;
 }
 .mit-card-header {
   padding: 20rpx;
-  border-bottom: 1rpx solid #dddee1;
+  border-bottom: 1rpx solid #dddeee;
 }
 .mit-card-body {
   padding: 20rpx;

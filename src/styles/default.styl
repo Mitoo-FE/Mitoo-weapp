@@ -1,105 +1,147 @@
-$prefix                 = 'mit';
-// Color
-$primary-color          = #2d8cf0;
-$info-color             = #2db7f5;
-$success-color          = #19be6b;
-$warning-color          = #ff9900;
-$error-color            = #ed3f14;
-$link-color             = #2D8cF0;
-$link-hover-color       = tint($link-color, 20%);
-$link-active-color      = shade($link-color, 5%);
-$selected-color         = fade($primary-color, 90%);
-$tooltip-color          = #fff;
-$subsidiary-color       = #80848f;
-$rate-star-color        = #f5a623;
+// 项目前缀
+$prefix                 			= 'mit';
 
-$title-color            = #1c2438;
-$text-color             = #495060;
+// 基本单位
+$bu 								= 1rpx;		// 小程序单位（*px  rpx ）
 
-$background-color-base  = #f7f7f7;  // base
+// 全局/品牌色
+$brand-color-primary          		= #2d8cf0;
+$brand-color-primary-tap			= #0e80d2;
+$brand-color-info         			= #2db7f5;
+$brand-color-success       			= #19be6b;
+$brand-color-warning          		= #ff9900;
+$brand-color-error            		= #ed3f14;
 
-// Border color
-$border-color-base      = #dddee1;  // outside
-$border-color-split     = #e9eaec;  // inside
+// 文字色
+$color-text-base					= #000;          	// 基本
+$color-text-base-inverse			= #fff;          	// 基本 - 反色
+$color-text-secondary				= #a4a9b0;       	// 辅助色
+$color-text-placeholder				= #bbb;          	// 文本框提示
+$color-text-disabled				= #bbb;          	// 失效
+$color-text-caption					= #888;          	// 辅助描述
+$color-text-paragraph				= #333;          	// 段落
+$color-link 						= $brand-color-primary;   // 链接
+$color-link-hover       			= tint($color-link, 20%);
+$color-link-active     				= shade($color-link, 5%);
+$color-selected         			= darken($brand-color-primary, 90%);
+
+// 透明度
+$opacity							= 0.4; 				//普通透明度
+$opacity-disabled					= 0.3; 				//禁用时的透明度
+
+// 填充背景色
+$background-color-base  			= #fff;  			//组件背景色
+$background-color-body				= #f5f5f9;			//页面背景色
+$background-color-mask				= rgba(0, 0, 0, $opacity); //遮罩背景色
+$background-color-icon 				= #ccc;		// 图标背景色
+
+// 边框颜色
+$border-color-base      			= #dddeee;  // outside
 
 // Size
-$size-grid-icon         = 28px;
-$size-font-base         = 32rpx;
-$size-font-small        = 28rpx;
-
-// Button
-$btn-font-weight        = normal;
-$btn-padding-base       = 6px 15px;
-$btn-padding-large      = 6px 15px 7px 15px;
-$btn-padding-small      = 2px 7px;
-$btn-font-size          = 12px;
-$btn-font-size-large    = 14px;
-$btn-border-radius      = 4px;
-$btn-border-radius-small= 3px;
-$btn-group-border       = shade($primary-color, 5%);
-
-$btn-disable-color      = #bbbec4;
-$btn-disable-bg         = $background-color-base;
-$btn-disable-border     = $border-color-base;
-
-$btn-default-color      = $text-color;
-$btn-default-bg         = $background-color-base;
-$btn-default-border     = $border-color-base;
-
-$btn-primary-color      = #fff;
-$btn-primary-bg         = $primary-color;
-
-$btn-ghost-color        = $text-color;
-$btn-ghost-bg           = transparent;
-$btn-ghost-border       = $border-color-base;
-
-$btn-circle-size-large  = 48px;
-$btn-circle-size        = 44px;
-$btn-circle-size-small  = 40px;
+$size-grid-icon         			= 28 * $bu;
+$size-font-base         			= 32 * $bu;
+$size-font-small        			= 28 * $bu;
 
 // Avatar
-$avatar-bg              = #ccc;
-$avatar-color           = #fff;
-$avatar-size-base       = 32px;
-$avatar-size-lg         = 40px;
-$avatar-size-sm         = 24px;
-$avatar-font-size-base  = 18px;
-$avatar-font-size-lg    = 24px;
-$avatar-font-size-sm    = 14px;
-$avatar-border-radius   = $border-radius-small;
-$border-radius-small    = 4px;
+$avatar-bg              			= #ccc;
+$avatar-color           			= #fff;
+$avatar-size-base       			= 32 * $bu;
+$avatar-size-lg         			= 40 * $bu;
+$avatar-size-sm         			= 24 * $bu;
+$avatar-font-size-base  			= 18 * $bu;
+$avatar-font-size-lg    			= 24 * $bu;
+$avatar-font-size-sm    			= 14 * $bu;
+$avatar-border-radius   			= $border-radius-small;
+$border-radius-small    			= 4 * $bu;
 
-// Animation
-$animation-time         = .3s;
-$transition-time        = .2s;
-$ease-in-out            = ease-in-out;
+// 动画缓动
+$animation-time         			= .3s;
+$transition-time        			= .2s;
+$ease-in-out            			= ease-in-out;
 
 // Z-index
-$zindex-spin            = 8;
-$zindex-affix           = 10;
-$zindex-back-top        = 10;
-$zindex-select          = 900;
-$zindex-modal           = 1000;
-$zindex-message         = 1010;
-$zindex-notification    = 1010;
-$zindex-tooltip         = 1060;
-$zindex-transfer        = 1060;
-$zindex-loading-bar     = 2000;
-$zindex-spin-fullscreen = 2010;
+$zindex-spin            			= 8;
+$zindex-affix           			= 10;
+$zindex-back-top        			= 10;
+$zindex-select          			= 900;
+$zindex-modal           			= 1000;
+$zindex-message         			= 1010;
+$zindex-notification    			= 1010;
+$zindex-tooltip         			= 1060;
+$zindex-transfer        			= 1060;
+$zindex-loading-bar     			= 2000;
+$zindex-spin-fullscreen 			= 2010;
+$action-sheet-zindex    			= 2020;
 
-$default-bg-color       = #fff;
-
-$card-bg                = #fff;
-$card-border-radius     = 10rpx;
-$card-border-width      = 1rpx;
+$card-bg                			= #fff;
+$card-border-radius     			= 10 * $bu;
+$card-border-width      			= 1 * $bu;
 
 
-$mit-column = 24;
+$column = 24;
 
-$padding-small          = 10rpx;
-$padding-base           = 20rpx;
-$padding-large          = 30rpx;
-$margin-small           = 10rpx;
-$margin-base            = 20rpx;
-$margin-large           = 30rpx;
-$border-width-base      = 1rpx;
+$padding-small          			= 10 * $bu;
+$padding-base           			= 20 * $bu;
+$padding-large          			= 30 * $bu;
+$margin-small           			= 10 * $bu;
+$margin-base            			= 20 * $bu;
+$margin-large           			= 30 * $bu;
+$border-width-base      			= 1 * $bu;
+
+// 字体尺寸
+$font-size-heading 					= 17 * $bu;
+
+// 间距
+// ---
+// 水平间距
+$h-spacing-sm						= 5 * $bu;
+$h-spacing-md						= 8 * $bu;
+$h-spacing-lg						= 15 * $bu;
+
+//垂直间距
+$v-spacing-xs						= 3 * $bu;
+$v-spacing-sm						= 6 * $bu;
+$v-spacing-md						= 9 * $bu;
+$v-spacing-lg						= 15 * $bu;
+$v-spacing-xl						= 21 * $bu;
+
+// 组件变量
+// ---
+// 按钮
+$btn-font-weight        			= normal;
+$btn-padding-base       			= 6*$bu 15*$bu;
+$btn-padding-large      			= 6*$bu 15*$bu 7*$bu 15*$bu;
+$btn-padding-small      			= 2*$bu 7*$bu;
+$btn-font-size          			= 12 * $bu;
+$btn-font-size-large    			= 14 * $bu;
+$btn-border-radius      			= 4 * $bu;
+$btn-border-radius-small			= 3 * $bu;
+$btn-group-border       			= shade($brand-color-primary, 5%);
+
+$btn-disable-color      			= #bbbec4;
+$btn-disable-bg         			= $background-color-base;
+$btn-disable-border     			= $border-color-base;
+
+$btn-default-color      			= $text-color;
+$btn-default-bg         			= $background-color-base;
+$btn-default-border     			= $border-color-base;
+
+$btn-primary-color      			= #fff;
+$btn-primary-bg         			= $brand-color-primary;
+
+$btn-ghost-color        			= $text-color;
+$btn-ghost-bg           			= transparent;
+$btn-ghost-border       			= $border-color-base;
+
+$btn-circle-size-large  			= 48 * $bu;
+$btn-circle-size        			= 44 * $bu;
+$btn-circle-size-small  			= 40 * $bu;
+// action-sheet
+$actionsheet-item-height			= 50 * $bu;
+$actionsheet-item-font-size			= 18 * $bu;
+// rate-star
+$rate-star-color        			= #f5a623;
+// tooltip
+$tooltip-color          			= #fff;
+$subsidiary-color       			= #80848f;

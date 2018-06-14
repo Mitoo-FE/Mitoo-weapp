@@ -23,4 +23,10 @@
             <mit-cell title="Button" isLink url="/pages/button/button"></mit-cell>
         </mit-cell-group>
     </mit-panel>
+    <mit-panel title="操作反馈">
+        <mit-cell-group>
+            <mit-cell title="ActionSheet" isLink url="/pages/actionSheet/actionSheet"></mit-cell>
+            <view>开发中...</view>
+        </mit-cell-group>
+    </mit-panel>
 </view>

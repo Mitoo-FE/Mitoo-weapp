@@ -1,0 +1,77 @@
+@import "../styles/default";
+
+.{$prefix}-action-sheet{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: $fill-base;
+
+	&&-share {
+	    background-color: #f2f2f2;
+	}
+	&-title,
+	&-message {
+		margin: $h-spacing-lg auto;
+		padding: 0 $h-spacing-lg;
+		text-align: center;
+	}
+
+	&-title{
+		font-size: $font-size-heading;
+	}
+	&-message{
+		color: $color-text-caption;
+		font-size: $font-size-base;
+	}
+
+	&-button-list{
+		font-size: $actionsheet-item-font-size;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		height: $actionsheet-item-height;
+	}
+
+}
+
+// Base_stylus
+.{$prefix}-action-sheet{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+
+	&-wrap {
+		position: fixed;
+	    overflow: auto;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index: $action-sheet-zindex;
+	    -webkit-overflow-scrolling: touch;
+	    outline: 0;
+	}
+
+	&-mask {
+		position: fixed;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    bottom: 0;
+	    background-color: $fill-mask;
+	    height: 100%;
+	    z-index: $action-sheet-zindex;
+	}
+
+	&-hidden {
+    	display: none;
+    }
+
+	&-close {
+    	display: none;
+	}
+
+}

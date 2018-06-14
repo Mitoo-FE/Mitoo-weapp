@@ -7,10 +7,10 @@
 }
 
 genColStyle(num) {
-	.mit-col-{num} { width: ( num * 100% / $mit-column)  }
-	.mit-col-offset-{num} { margin-left: (num * 100% / $mit-column)}
+	.mit-col-{num} { width: ( num * 100% / $column)  }
+	.mit-col-offset-{num} { margin-left: (num * 100% / $column)}
 }
 
-for $i in 1..$mit-column{
+for $i in 1..$column{
 	genColStyle($i)
 }
