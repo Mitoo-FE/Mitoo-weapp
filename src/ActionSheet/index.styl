@@ -3,11 +3,10 @@
 $actionSheetPrefixCls = $prefix + '-action-sheet'
 
 .{$actionSheetPrefixCls}{
-	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: $background-color-base ;
+	background-color: $background-color-base;
 
 	&&-share {
 	    background-color: #f2f2f2;
@@ -39,19 +38,19 @@ $actionSheetPrefixCls = $prefix + '-action-sheet'
 			height: $actionsheet-item-height;
 			line-height: $actionsheet-item-height;
 			box-sizing: border-box;
-		    // .hairline('top');
-		    &&-active {
+		    hairline('top')
+		    &:active {
 				background-color: $background-color-tap;
 		    }
 		}
 
-		.{$actionSheetPrefixCls}-cacel-button{
-			margin-top: @v-spacing-sm;
+		.{$actionSheetPrefixCls}-cancel-button{
+			margin-top: $v-spacing-sm;
 			position: relative;
 
 			&-mask{
 				position: absolute;
-		        top: -$v-spacing-sm;
+		        top: -($v-spacing-sm);
 		        left: 0;
 		        width: 100%;
 		        height: $v-spacing-sm;
@@ -62,27 +61,47 @@ $actionSheetPrefixCls = $prefix + '-action-sheet'
 		.{$actionSheetPrefixCls}-destructive-button {
 	      	color: $brand-color-error;
 	    }
+
+		&-cancel-button {
+			height: $actionsheet-item-height;
+			line-height: $actionsheet-item-height;
+			text-align: center;
+			background-color: $background-color-base;
+			color: $color-text-base;
+			font-size: 24rpx;
+			position: relative;
+			hairline('top')
+			box-sizing: border-box;
+
+			&:active {
+				background-color: $background-color-tap;
+			}
+		}
 	}
 }
 
 // Base_stylus
 .{$actionSheetPrefixCls}{
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: #fff;
 
 	&-wrap {
-		position: fixed;
-	    overflow: auto;
-	    top: 0;
-	    right: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+	    transform: translate3d(0, 100%, 0);
+		-webkit-transition: all cubic-bezier(0.36, 0.66, 0.04, 1) 500ms;
+	    transition: all cubic-bezier(0.36, 0.66, 0.04, 1) 500ms;
+	    position: fixed;
+		width:100%;
+		box-sizing:border-box;
 	    bottom: 0;
 	    left: 0;
-	    z-index: $action-sheet-zindex;
-	    -webkit-overflow-scrolling: touch;
-	    outline: 0;
+	    right: 0;
+	    background-color: white;
+	    z-index: 2020;
+		visibility: hidden;
+		min-height: 200px;
+	}
+	&-wrap.action-sheet-up {
+	    transform: translate3d(0, 0, 0);
+		visibility: visible;
 	}
 
 	&-mask {
@@ -94,14 +113,16 @@ $actionSheetPrefixCls = $prefix + '-action-sheet'
 	    background-color: $background-color-mask;
 	    height: 100%;
 	    z-index: $action-sheet-zindex;
+		-webkit-transition: background-color 150ms ease-in-out;
+	    transition: background-color 150ms ease-in-out;
+	    width: 100%;
 	}
-
-	&-hidden {
-    	display: none;
-    }
 
 	&-close {
     	display: none;
 	}
 
+}
+.hidden {
+	visibility: hidden;
 }

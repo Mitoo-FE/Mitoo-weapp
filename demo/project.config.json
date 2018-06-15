@@ -6,7 +6,7 @@
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
-		"postcss": true,
+		"postcss": false,
 		"minified": true,
 		"newFeature": true
 	},
@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 0,
 			"list": [
 				{
 					"id": -1,
@@ -50,7 +50,8 @@
 				{
 					"id": -1,
 					"name": "drawer",
-					"pathName": "pages/drawer/drawer"
+					"pathName": "pages/drawer/drawer",
+					"query": ""
 				}
 			]
 		}

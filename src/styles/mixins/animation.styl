@@ -8,7 +8,7 @@ set_animation(name, during, delay, iteration_count, transition_timing_function) 
 }
 
 vendors = official
-@keyframes transitionin {
+@keyframes transition_in {
   0% {
     opacity: 0;
   }
@@ -17,6 +17,32 @@ vendors = official
   }
 }
 
+@keyframes transition_pull_left {
+  0% {
+    transform: translateX(-100%)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes transition_pull_right {
+  0% {
+    transform: translateX(100%)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
 transition_in(during, delay, iteration_count) {
-  set_animation('transitionin', during, delay, iteration_count, 'ease-in-out')
+  set_animation(transition_in, during, delay, iteration_count, 'ease-in-out')
+}
+
+transition_pull_left(during, delay, iteration_count) {
+  set_animation(transition_pull_left, during, delay, iteration_count, 'ease-in-out')
+}
+
+transition_pull_right(during, delay, iteration_count) {
+  set_animation(transition_pull_right, during, delay, iteration_count, 'ease-in-out')
 }

@@ -1,5 +1,6 @@
 {
 	"usingComponents": {
-		"mit-action-sheet": "/components/ActionSheet/index"
+		"mit-action-sheet": "/components/ActionSheet/index",
+		"mit-button": "/components/Button/index"
 	}
 }

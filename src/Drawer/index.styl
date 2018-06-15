@@ -12,24 +12,33 @@ page {
   height: 100%;
   font-size: $size-font-base;
   background-color: $background-color-mask;
-  transition_in('1s', '0s', 'initial');
+  transition_in(150ms, 0s, 'initial');
   .{$prefix}-drawer-content {
     position: absolute;
     top: 0;
     width: 50%;
     height: 100%;
-    background-color: $default-bg-color;
+    background-color: $background-color-body;
+    display: none;
     &-left {
       left: 0;
+      transition_pull_left(150ms, 0s, 'initial');
     }
     &-right {
       right: 0;
+      transition_pull_right(150ms, 0s, 'initial');
     }
   }
   &.{$prefix}-drawer-show {
     display: block;
+    .{$prefix}-drawer-content {
+      display: block;
+    }
   }
   &.{$prefix}-drawer-hidden {
     display: none;
+    .{$prefix}-drawer-content {
+      display: block;
+    }
   }
 }
