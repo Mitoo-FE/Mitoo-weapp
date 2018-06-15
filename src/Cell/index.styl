@@ -1,4 +1,5 @@
 @import "../styles/index";
+@import "../styles/mixins/hairline.styl";
 page {
   background-color: $background-color-base;
 }
@@ -7,9 +8,9 @@ page {
   display: flex;
   box-pack: justify
   justify-content: space-between;
-  border-bottom: $border-width-base solid $border-color-base;
   padding: $padding-base $padding-base $padding-base 0;
   margin: 0 0 0 $margin-base;
+  hairline('bottom')
   &-label {
     font-size: $size-font-small;
     color: $subsidiary-color;
