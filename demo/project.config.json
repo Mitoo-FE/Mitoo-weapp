@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -52,6 +52,11 @@
 					"name": "drawer",
 					"pathName": "pages/drawer/drawer",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "card",
+					"pathName": "pages/card/card"
 				}
 			]
 		}
