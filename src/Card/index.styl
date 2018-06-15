@@ -6,8 +6,8 @@ page {
   position: relative;
   font-size: $size-font-base;
   margin: $margin-base;
-  //border: $card-border-width solid $border-color-base;
-  hairline(radius=$border-radius-small);
+  hairline('all', $border-color-base, $border-radius-sm);
+
   background-color: $card-bg;
   &-header {
     position: relative;
@@ -28,4 +28,3 @@ page {
     border-right: none;
   }
 }
-

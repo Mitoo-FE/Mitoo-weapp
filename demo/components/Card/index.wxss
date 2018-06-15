@@ -6,11 +6,11 @@ page {
   font-size: 32rpx;
   margin: 20rpx;
   border: 1rpx solid #dddeee;
-  border-radius: 0;
+  border-radius: 10rpx;
   background-color: #fff;
 }
 @media (min-resolution: 2dppx) {
-  .mit-card {
+  .mit-card::after {
     content: '';
     position: absolute;
     left: 0;
@@ -18,7 +18,7 @@ page {
     width: 200%;
     height: 200%;
     border: 1rpx solid #dddeee;
-    border-radius: 0;
+    border-radius: 20rpx;
     transform-origin: 0 0;
     transform: scale(0.5);
     box-sizing: border-box;
