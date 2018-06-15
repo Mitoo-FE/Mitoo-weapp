@@ -8,9 +8,16 @@ Component({
             type: String,
             value: ''
         },
-        show: {
+        visible: {
             type: Boolean,
             value: false
         }
     },
+    methods: {
+        drawer_mask_tap: function(event) {
+            this.setData({
+                visible: false
+            })
+        }
+    }
 })

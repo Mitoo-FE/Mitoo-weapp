@@ -1,15 +1,14 @@
 Page({
     data: {
-        drawer1_show: false,
-        drawer2_show: false
+        visible1: false,
+        visible2: false,
     },
     open_left: function(evt) {
-        this.data.drawer1_show = !this.data.drawer1_show
-        this.setData({drawer1_show:this.data.drawer1_show})
+        this.data.visible1 = true;
+        this.setData({visible1:this.data.visible1})
     },
     open_right: function(evt) {
-        this.data.drawer2_show = !this.data.drawer2_show
-        console.log(this.data.drawer2_show)
-        this.setData({drawer2_show:this.data.drawer2_show})
+        this.data.visible2 = true;
+        this.setData({visible2:this.data.visible2})
     }
 })

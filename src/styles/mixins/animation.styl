@@ -1,80 +1,82 @@
-set_animation(name, during, delay, iteration_count, transition_timing_function) {
+set_animation(name, during, delay=0s, iteration_count=initial, fill_mode=both,transition_timing_function='ease-in-out') {
   animation-name: name;
   animation-duration: during;
   animation-delay: delay;
   animation-iteration-count: iteration_count;
-  animation-fill-mode: both;
+  animation-fill-mode: fill_mode;
   transition-timing-function: transition_timing_function;
 }
 
 vendors = official
-@keyframes transition_in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
-@keyframes transition_out {
-  0% {
-    opacity: 1;
+animation_keyframes(name, during, delay=0s, iteration_count=initial, fill_mode=both,transition_timing_function='ease-in-out') {
+  @keyframes name {
+    if (name == transition_in) {
+      0% {
+        opacity: 0
+      }
+      100% {
+        opacity: 1
+      }
+    }
+    else if (name == transition_out) {
+      0% {
+        opacity: 1
+      }
+      100% {
+        opacity: 0
+        visibility: hidden
+      }
+    }
+    else if (name == transition_pull_left) {
+      0% {
+        transform: translateX(-100%)
+      }
+      100% {
+        transform: translateX(0)
+      }
+    }
+    else if (name == transition_pull_right) {
+      0% {
+        transform: translateX(100%)
+      }
+      100% {
+        transform: translateX(0)
+      }
+    }
+    else if (name == transition_pull_up) {
+      0% {
+        transform: translateY(0)
+      }
+      100% {
+        transform: translateY(-100%)
+      }
+    }
+    else if (name == transition_pull_down) {
+      0% {
+        transform: translateY(100%)
+      }
+      100% {
+        transform: translateY(0)
+      }
+    }
+    else if (name == transition_push_left) {
+      0% {
+        transform: translateX(0)
+      }
+      100% {
+        transform: translateX(-100%)
+      }
+    }
+    else if (name == transition_push_right) {
+      0% {
+        transform: translateX(0)
+      }
+      100% {
+        transform: translateX(100%)
+      }
+    }
   }
-  100% {
-    opacity: 0;
-  }
-}
 
-@keyframes transition_pull_left {
-  0% {
-    transform: translateX(-100%)
-  }
-  100% {
-    transform: translateX(0)
-  }
-}
-
-@keyframes transition_pull_right {
-  0% {
-    transform: translateX(100%)
-  }
-  100% {
-    transform: translateX(0)
-  }
-}
-
-@keyframes transition_pull_up {
-  0% {
-    transform: translateY(100%)
-  }
-  100% {
-    transform: translateX(0)
-  }
-}
-
-@keyframes transition_pull_down {
-  0% {
-    transform: translateX(100%)
-  }
-  100% {
-    transform: translateX(0)
-  }
-}
-
-transition_out(during = 1000ms, delay = 0, iteration_count = 1) {
-  set_animation(transition_out, during, delay, iteration_count, 'ease-in-out')
-}
-
-
-transition_in(during = 1000ms, delay = 0, iteration_count = 1) {
-  set_animation(transition_in, during, delay, iteration_count, 'ease-in-out')
-}
-
-transition_pull_left(during, delay, iteration_count) {
-  set_animation(transition_pull_left, during, delay, iteration_count, 'ease-in-out')
-}
-
-transition_pull_right(during, delay, iteration_count) {
-  set_animation(transition_pull_right, during, delay, iteration_count, 'ease-in-out')
+  set_animation(name, during, delay, iteration_count, fill_mode,transition_timing_function);
 }
