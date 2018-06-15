@@ -12,7 +12,7 @@ scale-hairline-common(color, top, right, bottom, left) {
   left: left;
 }
 
-hairline(direction, color = $border-color-base, radius = 0){
+hairline(direction = 'all', color = $border-color-base, radius = 0){
 
     if direction == 'top' {
 
@@ -94,25 +94,27 @@ hairline(direction, color = $border-color-base, radius = 0){
           }
         }
     }
-    else{
+    else if direction == 'all'{
 
         border: 1rpx solid color;
         border-radius: radius;
 
         @media (min-resolution: 2dppx) {
 
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 200%;
-            height: 200%;
-            border: 1PX solid color;
-            border-radius: radius * 2;
-            transform-origin: 0 0;
-            transform: scale(0.5);
-            box-sizing: border-box;
-            pointer-events: none;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 200%;
+                height: 200%;
+                border: 1PX solid color;
+                border-radius: radius * 2;
+                transform-origin: 0 0;
+                transform: scale(0.5);
+                box-sizing: border-box;
+                pointer-events: none;
+            }
 
         }
 

@@ -5,8 +5,10 @@ page {
 .{$prefix}-card {
   font-size: $size-font-base;
   margin: $margin-base;
-  border-radius: $card-border-radius;
-  border: $card-border-width solid $border-color-base;
+  // border-radius: $card-border-radius;
+  position: relative;
+  // border: $card-border-width solid $border-color-base;
+  hairline('all')
   background-color: $card-bg;
   &-header {
     padding: $padding-base;
@@ -26,4 +28,3 @@ page {
     border-right: none;
   }
 }
-
