@@ -8,7 +8,9 @@
                 <mit-button text="right" bind:buttonTap="open_right"></mit-button>
             </mit-col>
         </mit-row>
-        <mit-drawer position="left" show="{{ drawer1_show }}"></mit-drawer>
-        <mit-drawer position="right" show="{{ drawer2_show }}"></mit-drawer>
+    </view>
+    <view>
+        <mit-drawer position="left" visible="{{ visible1 }}"></mit-drawer>
+        <mit-drawer position="right" visible="{{ visible2 }}"></mit-drawer>
     </view>
 </view>
