@@ -1,4 +1,4 @@
 <view class="">
 	<button text="showActionSheet" bindtap="showActionSheet">showActionSheet</button>
-	<mit-action-sheet visible="{{ visible }}"></mit-action-sheet>
+	<mit-action-sheet cancelButtonText="取消" title="{{ title }}" visible="{{ visible }}" mask-closable="{{ true }}" options="{{ options }}" bind:tapItem="onTapItem"></mit-action-sheet>
 </view>

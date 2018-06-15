@@ -7,7 +7,20 @@ Page({
 	showActionSheet() {
 		console.log('showActionSheet');
 		this.setData({
-			visible: true
+			visible: true,
+			title: '标题',
+			options: [{
+				title: '操作一'
+			},
+			{
+				title: '操作二'
+			},{
+				title: '操作三'
+			}]
 		})
+	},
+	onTapItem(evt) {
+		const index = evt.detail.index
+		console.log('点击第' + (index + 1) +'个按钮');
 	}
 })

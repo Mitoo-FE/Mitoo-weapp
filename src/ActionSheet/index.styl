@@ -1,4 +1,5 @@
-@import "../styles/index";
+@import "../styles/index"
+@import "../styles/mixins/animation";
 
 $actionSheetPrefixCls = $prefix + '-action-sheet'
 
@@ -70,7 +71,7 @@ $actionSheetPrefixCls = $prefix + '-action-sheet'
 			color: $color-text-base;
 			font-size: 24rpx;
 			position: relative;
-			hairline('top')
+			// hairline('top')
 			box-sizing: border-box;
 
 			&:active {
@@ -113,16 +114,20 @@ $actionSheetPrefixCls = $prefix + '-action-sheet'
 	    background-color: $background-color-mask;
 	    height: 100%;
 	    z-index: $action-sheet-zindex;
-		-webkit-transition: background-color 150ms ease-in-out;
-	    transition: background-color 150ms ease-in-out;
+	    transition: all 150ms ease-in-out;
 	    width: 100%;
+		visibility: hidden;
+		opacity: 0;
+
+		&.mask-show{
+			opacity: 1;
+			visibility: visible;
+		}
 	}
+
 
 	&-close {
     	display: none;
 	}
 
-}
-.hidden {
-	visibility: hidden;
 }

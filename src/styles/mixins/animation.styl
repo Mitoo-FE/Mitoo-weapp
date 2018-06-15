@@ -17,6 +17,15 @@ vendors = official
   }
 }
 
+@keyframes transition_out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes transition_pull_left {
   0% {
     transform: translateX(-100%)
@@ -35,7 +44,30 @@ vendors = official
   }
 }
 
-transition_in(during, delay, iteration_count) {
+@keyframes transition_pull_up {
+  0% {
+    transform: translateY(100%)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes transition_pull_down {
+  0% {
+    transform: translateX(100%)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+transition_out(during = 1000ms, delay = 0, iteration_count = 1) {
+  set_animation(transition_out, during, delay, iteration_count, 'ease-in-out')
+}
+
+
+transition_in(during = 1000ms, delay = 0, iteration_count = 1) {
   set_animation(transition_in, during, delay, iteration_count, 'ease-in-out')
 }
 
