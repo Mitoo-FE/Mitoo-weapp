@@ -20,5 +20,6 @@
     "url": "git@git.timipc.com:Mitoo/Mitoo-weapp.git"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {}
 }

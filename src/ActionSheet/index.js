@@ -1,11 +1,16 @@
 Component({
     behaviors: [],
     properties: {
-        show: {
+        visible: {
             type: Boolean,
             value: false
         },
-
     },
-
+    methods: {
+        close() {
+            this.setData({
+                visible: false
+            })
+        }
+    }
 })
