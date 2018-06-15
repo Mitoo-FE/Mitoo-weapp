@@ -1,4 +1,4 @@
-<view class="mit-drawer-wrap">
+<view class="mit-drawer-wrap {{show?'mit-drawer-show':'mit-drawer-hidden'}}">
     <view class="mit-drawer">
         <view class="mit-drawer-content mit-drawer-content-right">
 

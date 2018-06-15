@@ -1,3 +1,3 @@
-<view class="mit-button-wrap">
-    <button bindtap="onTap" class="mit-button {{circle?'mit-button-circle':''}} {{size==='small'?'mit-button-small':size==='large'?'mit-button-large':''}}">{{ text }}</button>
+<view class="mit-button-wrap" >
+    <button  bindtap="onTap" class="mit-button {{circle?'mit-button-circle':''}} {{size==='small'?'mit-button-small':size==='large'?'mit-button-large':''}}">{{ text }}</button>
 </view>

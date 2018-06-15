@@ -4,5 +4,13 @@ Component({
         multipleSlots: true
     },
     properties: {
+        position: {
+            type: String,
+            value: ''
+        },
+        show: {
+            type: Boolean,
+            value: false
+        }
     },
 })

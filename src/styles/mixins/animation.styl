@@ -1,0 +1,22 @@
+set_animation(name, during, delay, iteration_count, transition_timing_function) {
+  animation-name: name;
+  animation-duration: during;
+  animation-delay: delay;
+  animation-iteration-count: iteration_count;
+  animation-fill-mode: both;
+  transition-timing-function: transition_timing_function;
+}
+
+vendors = official
+@keyframes transitionin {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+transition_in(during, delay, iteration_count) {
+  set_animation('transitionin', during, delay, iteration_count, 'ease-in-out')
+}

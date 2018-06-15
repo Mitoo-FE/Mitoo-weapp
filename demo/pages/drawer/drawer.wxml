@@ -1,14 +1,14 @@
 <view>
     <view>
-        <mit-button text="left" bind:buttonTap="open"></mit-button>
         <mit-row>
             <mit-col span="12">
-
+                <mit-button text="left" bind:buttonTap="open_left"></mit-button>
             </mit-col>
             <mit-col span="12">
-                <mit-button text="right"></mit-button>
+                <mit-button text="right" bind:buttonTap="open_right"></mit-button>
             </mit-col>
         </mit-row>
-        <mit-drawer></mit-drawer>
+        <mit-drawer position="left" show="{{ drawer1_show }}"></mit-drawer>
+        <mit-drawer position="right" show="{{ drawer2_show }}"></mit-drawer>
     </view>
 </view>
