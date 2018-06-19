@@ -9,7 +9,8 @@
     "pages/actionSheet/actionSheet",
     "pages/drawer/drawer",
     "pages/tabs/tabs",
-    "pages/noticeBar/noticeBar"
+    "pages/noticeBar/noticeBar",
+    "pages/toast/toast"
   ],
   "window":{
     "backgroundTextStyle":"light",

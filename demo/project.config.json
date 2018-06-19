@@ -75,6 +75,18 @@
 					"id": -1,
 					"name": "NoticeBar",
 					"pathName": "pages/noticeBar/noticeBar"
+				},
+				{
+					"id": -1,
+					"name": "toast",
+					"pathName": "pages/tabs/tabs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "toast",
+					"pathName": "pages/toast/toast",
+					"query": ""
 				}
 			]
 		}

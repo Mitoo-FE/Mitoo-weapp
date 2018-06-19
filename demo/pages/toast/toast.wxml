@@ -1,0 +1,4 @@
+<view class="">
+	<button bindtap="showBase">基础样式</button>
+	<mit-toast id="toast"></mit-toast>
+</view>

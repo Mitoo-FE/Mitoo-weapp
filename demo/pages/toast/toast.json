@@ -1,0 +1,5 @@
+{
+	"usingComponents": {
+		"mit-toast": "/components/Toast/index"
+	}
+}

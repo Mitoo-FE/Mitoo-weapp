@@ -33,6 +33,7 @@
     <mit-panel title="操作反馈">
         <mit-cell-group>
             <mit-cell title="ActionSheet" isLink url="/pages/actionSheet/actionSheet"></mit-cell>
+            <mit-cell title="Toast" isLink url="/pages/toast/toast"></mit-cell>
         </mit-cell-group>
     </mit-panel>
 </view>

@@ -1,0 +1,58 @@
+@import "../styles/index"
+@import "../styles/mixins/animation";
+
+$toastPrefixCls = $prefix + '-toast'
+
+.{$toastPrefixCls}{
+
+	position: fixed;
+	width: 100%;
+	z-index: $zindex-toast;
+	font-size: $size-font-base;
+	text-align: center;
+
+	> span {
+		max-width: 50%;
+	}
+
+	&&-mask{
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		left: 0;
+		top: 0;
+		visibility: hidden;
+	}
+
+	&&-show{
+		visibility: visible;
+		transition: all 3000 ease-in-out;
+	}
+
+	&&-nomask{
+		position: fixed;
+		max-width: 50%;
+		width: auto;
+		left: 50%;
+		top: 50%;
+	}
+
+	&-text{
+		min-width: 60rpx;
+		border-radius: $border-radius-sm;
+		color: $color-text-base-inverse;
+		background-color: $toast-background;
+		line-height: $line-height-paragraph;
+		padding: $v-spacing-md @h-spacing-lg;
+		transition: all 150ms ease-in-out;
+		visibility: hidden;
+		opacity: 0;
+
+		&&-show{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+}
