@@ -1,0 +1,14 @@
+<view>
+    <mit-panel title="通告栏" withoutBorder>
+        <mit-notice-bar text="xcjvkldsjflksadjfklasjdflk">
+        </mit-notice-bar>
+    </mit-panel>
+    <mit-panel title="可关闭通告栏" withoutBorder>
+        <mit-notice-bar text="xcjvkldsjflksadjfklasjdflk" closeable>
+        </mit-notice-bar>
+    </mit-panel>
+    <mit-panel title="跑马灯" withoutBorder>
+        <mit-notice-bar text="床前明月光，疑是地上霜。举头望明月，低头思故乡，慨当以慷，忧思难忘，何以解忧，唯有杜康。" closeable transform>
+        </mit-notice-bar>
+    </mit-panel>
+</view>

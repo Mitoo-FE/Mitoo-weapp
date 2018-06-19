@@ -20,10 +20,10 @@ Component({
     data: {
     },
     relations: {
-        '../Tabs-Cell/index': {
+        '../TabsCell/index': {
             type: 'child',
             linked(target) {
-                let nodes = this.getRelationNodes('../Tabs-Cell/index');
+                let nodes = this.getRelationNodes('../TabsCell/index');
                 if (nodes.length > 6) {
                     this.setData({
                         'isScroll': true

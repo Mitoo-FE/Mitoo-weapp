@@ -21,12 +21,13 @@
     <mit-panel title="导航">
         <mit-cell-group>
             <mit-cell title="Tabs" isLink url="/pages/tabs/tabs"></mit-cell>
+            <mit-cell title="Drawer" isLink url="/pages/drawer/drawer"></mit-cell>
+            <mit-cell title="NoticeBar" isLink url="/pages/noticeBar/noticeBar"></mit-cell>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="基础组件">
         <mit-cell-group>
             <mit-cell title="Button" isLink url="/pages/button/button"></mit-cell>
-            <mit-cell title="Drawer" isLink url="/pages/drawer/drawer"></mit-cell>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="操作反馈">
