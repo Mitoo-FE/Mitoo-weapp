@@ -1,0 +1,4 @@
+<view class="">
+	<button bindtap="showBase">基础样式</button>
+	<mit-toast id="toast" content="this is a toast tip!!" visible="{{ visible1 }}" duration="{{ duration }}"></mit-toast>
+</view>
