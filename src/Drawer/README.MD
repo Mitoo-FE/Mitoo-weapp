@@ -27,5 +27,5 @@
 
 |参数 | 说明 | 类型 | 默认值 | 必须 | 可选参数 |
 |:--:|:--:|:--:|:--:|:--:|:--:|
-| position  | 出现的位置    | var  |   | true  | 'left','right'  |
-| visible   | 可见性   | var  | false  | true  | true, false   |
+| position  | 出现的位置    | String |   | true  | 'left','right'  |
+| visible   | 可见性   | Boolean  | false  | true  | true, false   |
