@@ -58,6 +58,12 @@
 					"name": "card",
 					"pathName": "pages/card/card",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "panel",
+					"pathName": "pages/panel/panel",
+					"query": ""
 				}
 			]
 		}
