@@ -76,6 +76,14 @@ animation_keyframes(name, during, delay=0s, iteration_count=initial, fill_mode=b
         transform: translateX(100%)
       }
     }
+    else if (name == transition_push_around) {
+      0% {
+        transform: translateX(100%)
+      }
+      100% {
+        transform: translateX(-200%)
+      }
+    }
   }
 
   set_animation(name, during, delay, iteration_count, fill_mode,transition_timing_function);

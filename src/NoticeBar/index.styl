@@ -1,0 +1,32 @@
+@import "../styles/index";
+@import "../styles/mixins/hairline.styl";
+page {
+  background-color: $background-color-body;
+}
+.{$prefix}-notice-bar {
+  position: relative;
+  color: $notice-bar-text-color;
+  background-color: $notice-bar-background-color;
+  font-size: $size-font-base;
+  padding: $padding-base;
+  overflow: hidden;
+  hairline('top', color=$notice-bar-border-color)
+  hairline('bottom', color=$notice-bar-border-color)
+  &-inner {
+    white-space: nowrap;
+  }
+  &-close {
+    color: $notice-bar-text-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: $padding-base;
+    background-color: $notice-bar-background-color;
+  }
+  &-closeable {
+    padding-right: $size-font-base;
+  }
+  .{$prefix}-notice-bar-text-scroll {
+    animation_keyframes(transition_push_around, 0s, 0s, infinite, both, linear)
+  }
+}

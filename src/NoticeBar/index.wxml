@@ -1,0 +1,10 @@
+<view wx:if="{{visible}}" class="mit-notice-bar">
+    <view class="mit-notice-bar-inner">
+        <view class="mit-notice-bar-text {{transform?'mit-notice-bar-text-scroll':''}}" style="animation-duration:{{text.length/2}}s">
+            {{text}}
+        </view>
+        <view wx:if="{{closeable}}" bind:tap="close" class="mit-notice-bar-close">
+            ×
+        </view>
+    </view>
+</view>

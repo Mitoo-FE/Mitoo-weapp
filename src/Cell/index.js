@@ -29,7 +29,7 @@ Component({
         lastItem: true
     },
     relations: {
-        '../Cell-Group/index': {
+        '../CellGroup/index': {
             type: 'parent',
             linked: function(target) {
                 this.setData(this.data.lastItem)
