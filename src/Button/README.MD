@@ -1,4 +1,4 @@
-## ActtionSheet
+## Button
 
 ## 使用指南
 
@@ -29,3 +29,4 @@
 |:-----------: |:---------------:| :-------------:| :-------- | :--------|
 | size | 大小 | Var | default | false | 'small', 'large', 'default'|
 | circle | 是否圆按钮 | Var | default | false | true, false |
+| text   | 按钮文字  | Var  |  |  false  |   | |
