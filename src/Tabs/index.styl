@@ -1,0 +1,20 @@
+@import "../styles/index";
+@import "../styles/mixins/hairline.styl";
+page {
+  background-color: $background-color-body;
+}
+.{$prefix}-tabs {
+  position: relative;
+  background-color: $background-color-base;
+  font-size: $size-font-base;
+  display: flex;
+  box-pack: justify;
+  justify-content: space-around;
+  position: relative;
+  hairline('bottom')
+  &-scroll {
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: left;
+  }
+}

@@ -7,7 +7,8 @@
     "pages/panel/panel",
     "pages/button/button",
     "pages/actionSheet/actionSheet",
-    "pages/drawer/drawer"
+    "pages/drawer/drawer",
+    "pages/tabs/tabs"
   ],
   "window":{
     "backgroundTextStyle":"light",

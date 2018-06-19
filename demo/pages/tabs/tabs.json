@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"mit-tabs": "/components/Tabs/index",
+		"mit-tabs-cell": "/components/Tabs-Cell/index",
+		"mit-panel": "/components/Panel/index"
+	}
+}
