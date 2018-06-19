@@ -1,0 +1,5 @@
+{
+	"usingComponents": {
+		"mit-icon": "/components/Icon/index",
+	}
+}
