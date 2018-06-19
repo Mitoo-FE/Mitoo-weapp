@@ -21,7 +21,6 @@
     <mit-panel title="导航">
         <mit-cell-group>
             <mit-cell title="Tabs" isLink url="/pages/tabs/tabs"></mit-cell>
-            <mit-cell title="deving"></mit-cell>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="基础组件">
