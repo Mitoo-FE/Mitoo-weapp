@@ -1,5 +1,5 @@
-<view class="mit-toast mit-toast-mask" wx:if="{{ visible }}">
-	<view class="mit-toast-text">
+<view class="mit-toast mit-toast-mask {{ visible ? 'mit-toast-show' : ''}}">
+	<view class="mit-toast-text {{ visible ? 'mit-toast-text-show' : ''}}">
 		{{ content }}
 	</view>
 </view>

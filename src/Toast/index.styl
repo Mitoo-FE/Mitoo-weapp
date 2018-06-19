@@ -22,6 +22,12 @@ $toastPrefixCls = $prefix + '-toast'
 		align-items: center;
 		left: 0;
 		top: 0;
+		visibility: hidden;
+	}
+
+	&&-show{
+		visibility: visible;
+		transition: all 3000 ease-in-out;
 	}
 
 	&&-nomask{
@@ -39,6 +45,14 @@ $toastPrefixCls = $prefix + '-toast'
 		background-color: $toast-background;
 		line-height: $line-height-paragraph;
 		padding: $v-spacing-md @h-spacing-lg;
+		transition: all 150ms ease-in-out;
+		visibility: hidden;
+		opacity: 0;
+
+		&&-show{
+			opacity: 1;
+			visibility: visible;
+		}
 	}
 
 }

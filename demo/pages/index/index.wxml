@@ -18,6 +18,11 @@
             <mit-cell title="Panel" isLink url="/pages/panel/panel"></mit-cell>
         </mit-cell-group>
     </mit-panel>
+    <mit-panel title="导航">
+        <mit-cell-group>
+            <mit-cell title="Tabs" isLink url="/pages/tabs/tabs"></mit-cell>
+        </mit-cell-group>
+    </mit-panel>
     <mit-panel title="基础组件">
         <mit-cell-group>
             <mit-cell title="Button" isLink url="/pages/button/button"></mit-cell>

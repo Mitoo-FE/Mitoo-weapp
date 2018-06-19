@@ -1,0 +1,62 @@
+<view>
+    <mit-panel withoutBorder title="基本用法">
+        <mit-tabs>
+            <mit-tabs-cell active>
+                选项1
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项2
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项3
+            </mit-tabs-cell>
+        </mit-tabs>
+    </mit-panel>
+    <mit-panel withoutBorder title="主题颜色">
+        <mit-tabs brandColor="#fb0543">
+            <mit-tabs-cell active>
+                选项1
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项2
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项3
+            </mit-tabs-cell>
+        </mit-tabs>
+    </mit-panel>
+    <mit-panel withoutBorder title="可滚动">
+        <mit-tabs scroll>
+            <mit-tabs-cell active>
+                选项1
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项2
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项3
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项4
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项5
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项6
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项7
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项8
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项9
+            </mit-tabs-cell>
+            <mit-tabs-cell>
+                选项10
+            </mit-tabs-cell>
+        </mit-tabs>
+    </mit-panel>
+</view>

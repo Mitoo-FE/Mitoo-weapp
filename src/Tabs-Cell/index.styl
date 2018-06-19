@@ -1,0 +1,15 @@
+@import "../styles/index";
+@import "../styles/mixins/hairline.styl";
+page {
+  background-color: $background-color-base;
+}
+.{$prefix}-tabs-cell {
+  position: relative;
+  padding: $padding-base 0;
+  margin: 0 $margin-base;
+  text-align: center;
+  &-active {
+    color: $brand-color-primary;
+    border-bottom: $border-width-lg solid $brand-color-primary;
+  }
+}

@@ -13,7 +13,7 @@ Page({
 	showBase() {
 
 		Toast({
-			content: 'test toast！！！'
+			content: 'this is a toast tip!!'
 		})
 
 	}

@@ -8,7 +8,8 @@
     "pages/button/button",
     "pages/actionSheet/actionSheet",
     "pages/drawer/drawer",
-    "pages/toast/toast"
+    "pages/toast/toast",
+    "pages/tabs/tabs"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,35 +1,34 @@
 Component({
     behaviors: [],
-    properties: {
-        visible: {
-            type: Boolean,
-            value: false
-        },
-		type: {
-			type: String,
-		},
-		content: {
-			type: String
-		},
-        duration: {
-            type: Number,
-            value: 2000
-        }
+    data: {
+        visible: false,
+        content: ''
     },
     methods: {
-		show() {
-            console.log('show show');
+		show(options) {
+
+            const { duration = 1500, content } = options
+
+            this.setData({
+                visible: true,
+                content: content
+            })
+
+            setTimeout(() => {
+                this.hide()
+            },duration)
+
 		},
 		hide() {
-            setTimeout( () => {
-                this.visible = false
-            },duration)
+            this.setData({
+                visible: false
+            })
 		},
         close() {
             this.setData({
                 visible: false
             })
-        },
+        }
     }
 
 })
