@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"mit-panel": "/components/Panel/index",
+		"mit-button": "/components/Button/index",
+		"mit-modal": "/components/Modal/index"
+	}
+}
