@@ -2,7 +2,7 @@
     <view class="mit-input-wrap">
         <view wx:if="{{label}}" class="mit-input-label">{{label}}</view>
         <view class="{{label ? 'mit-input-margin' : 'mit-input-no-margin'}}">
-            <input class="mit-input" placeholder="{{placeholder}}"/>
+            <input disabled="{{disabled?'disabled':''}}" value="{{value}}" type="{{number?'number':'text'}}" style="border-color:{{borderColor ? borderColor: ''}}" class="mit-input {{radius ? 'mit-input-radius': ''}}" placeholder="{{placeholder}}"/>
         </view>
     </view>
 </block>

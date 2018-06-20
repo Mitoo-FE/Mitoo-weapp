@@ -1,0 +1,8 @@
+<view>
+	<button bindtap="showToptips">通用样式</button>
+	<button bindtap="showSuccess">success</button>
+	<button bindtap="showWarn">warn</button>
+	<button bindtap="showError">error</button>
+	<button bindtap="showTimes">自定义事件时间</button>
+	<mit-toptips id="toptips"></mit-toptips>
+</view>

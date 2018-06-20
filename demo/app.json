@@ -13,7 +13,8 @@
     "pages/toast/toast",
     "pages/modal/modal",
     "pages/input/input",
-    "pages/icon/icon"
+    "pages/icon/icon",
+    "pages/toptips/toptips"
   ],
   "window":{
     "backgroundTextStyle":"light",

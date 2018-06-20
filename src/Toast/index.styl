@@ -44,10 +44,20 @@ $toastPrefixCls = $prefix + '-toast'
 		color: $color-text-base-inverse;
 		background-color: $toast-background;
 		line-height: $line-height-paragraph;
-		padding: $v-spacing-md @h-spacing-lg;
+		padding: $v-spacing-md $h-spacing-lg;
 		transition: all 150ms ease-in-out;
 		visibility: hidden;
 		opacity: 0;
+
+		&-icon{
+			border-radius: $radius-md;
+			padding: $v-spacing-lg $h-spacing-lg;
+
+			.{$toastPrefixCls}-text-info{
+				margin-top: $v-spacing-sm;
+			}
+
+		}
 
 		&&-show{
 			opacity: 1;

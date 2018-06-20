@@ -11,10 +11,26 @@ Page({
 
 	},
 	showBase() {
-
 		Toast({
 			content: 'this is a toast tip!!'
 		})
-
+	},
+	showSuccess() {
+		Toast({
+			content: 'loading success!!',
+			type: 'success'
+		})
+	},
+	showFail() {
+		Toast({
+			content: 'Some error occurred',
+			type: 'fail'
+		})
+	},
+	showNetwork() {
+		Toast({
+			content: 'network connection fail!',
+			type: 'network'
+		})
 	}
 })

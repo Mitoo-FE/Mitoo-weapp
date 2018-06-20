@@ -5,7 +5,27 @@
                 <mit-input placeholder="基本输入框" label="收货地址"/>
             </mit-cell>
             <mit-cell>
-                <mit-input placeholder="无标题输入框" label="发货地址"/>
+                <mit-input number placeholder="请输入手机号" label="手机号"/>
+            </mit-cell>
+            <mit-cell>
+                <mit-input disabled value="禁用的输入框" label="用户信息"/>
+            </mit-cell>
+        </mit-cell-group>
+    </mit-panel>
+    <mit-panel title="无标题输入框">
+        <mit-cell-group>
+            <mit-cell>
+                <mit-input placeholder="无标题的输入框"/>
+            </mit-cell>
+        </mit-cell-group>
+    </mit-panel>
+    <mit-panel title="圆角输入框">
+        <mit-cell-group>
+            <mit-cell>
+                <mit-input radius placeholder="圆角输入框"/>
+            </mit-cell>
+            <mit-cell>
+                <mit-input radius borderColor="red" placeholder="自定义边框颜色输入框"/>
             </mit-cell>
         </mit-cell-group>
     </mit-panel>

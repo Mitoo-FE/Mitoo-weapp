@@ -9,6 +9,7 @@ page {
   align-items: center;
   .{$prefix}-input-label {
     font-size: $font-size-base;
+    min-width: $font-size-base*4;
   }
   .{$prefix}-input-margin {
     margin-left: $margin-base;
@@ -23,6 +24,11 @@ page {
   .{$prefix}-input {
     font-size: $font-size-base;
     width: 100%;
-  }
+    &-radius {
+      position: relative;
+      padding: $padding-base;
+      hairline('all', $border-color-base, $border-radius-sm);
+    }
+}
 }
 
