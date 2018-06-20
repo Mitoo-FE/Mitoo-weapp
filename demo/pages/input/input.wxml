@@ -1,0 +1,12 @@
+<view>
+    <mit-panel title="基本用法">
+        <mit-cell-group>
+            <mit-cell>
+                <mit-input placeholder="基本输入框" label="收货地址"/>
+            </mit-cell>
+            <mit-cell>
+                <mit-input placeholder="无标题输入框" label="发货地址"/>
+            </mit-cell>
+        </mit-cell-group>
+    </mit-panel>
+</view>

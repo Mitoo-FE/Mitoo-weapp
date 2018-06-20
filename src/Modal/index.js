@@ -46,6 +46,11 @@ Component({
             }
             let index = target.index;
             this.properties.footer[index].event();
+        },
+        show() {
+            this.setData({
+                visible: true
+            })
         }
     }
 })

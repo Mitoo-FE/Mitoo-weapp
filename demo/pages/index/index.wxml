@@ -38,4 +38,9 @@
             <mit-cell title="Modal" isLink url="/pages/modal/modal"></mit-cell>
         </mit-cell-group>
     </mit-panel>
+    <mit-panel title="表单">
+        <mit-cell-group>
+            <mit-cell title="Input" isLink url="/pages/input/input"></mit-cell>
+        </mit-cell-group>
+    </mit-panel>
 </view>

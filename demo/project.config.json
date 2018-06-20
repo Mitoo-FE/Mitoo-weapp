@@ -14,7 +14,12 @@
 	"libVersion": "2.0.8",
 	"appid": "wx44f04f7ae2716e86",
 	"projectname": "mitoo-weapp",
-	"isGameTourist": false,
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"pluginRoot": "",
+	"scripts": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -29,15 +34,10 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
-			"current": 9,
-=======
-			"current": 8,
->>>>>>> 0374b8e8a36bca9ff8306c59cf86a7c420860ff9
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -84,19 +84,31 @@
 				{
 					"id": -1,
 					"name": "toast",
+					"pathName": "pages/tabs/tabs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "toast",
 					"pathName": "pages/toast/toast",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "icon",
-					"pathName": "pages/icon/icon",
+					"name": "modal",
+					"pathName": "pages/modal/modal",
 					"query": ""
 				},
 				{
 					"id": -1,
 					"name": "modal",
-					"pathName": "pages/modal/modal"
+					"pathName": "pages/modal/modal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "input",
+					"pathName": "pages/input/input"
 				}
 			]
 		}

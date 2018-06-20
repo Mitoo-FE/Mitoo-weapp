@@ -11,7 +11,10 @@ page {
   padding: $padding-base $padding-base $padding-base 0;
   margin: 0 0 0 $margin-base;
   position: relative;
-  hairline('bottom')
+  hairline('bottom');
+  &&-with-link {
+    display: block;
+  }
   &-label {
     font-size: $size-font-small;
     color: $subsidiary-color;

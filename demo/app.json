@@ -12,6 +12,7 @@
     "pages/noticeBar/noticeBar",
     "pages/toast/toast",
     "pages/modal/modal",
+    "pages/input/input",
     "pages/icon/icon"
   ],
   "window":{

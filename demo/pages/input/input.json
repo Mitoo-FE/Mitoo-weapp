@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"mit-panel": "/components/Panel/index",
+		"mit-cell-group": "/components/CellGroup/index",
+		"mit-cell": "/components/Cell/index",
+		"mit-input": "/components/Input/index"
+	}
+}

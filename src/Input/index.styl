@@ -1,0 +1,28 @@
+@import "../styles/index";
+@import "../styles/mixins/hairline.styl";
+page {
+  background-color: $background-color-base;
+}
+.{$prefix}-input-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .{$prefix}-input-label {
+    font-size: $font-size-base;
+  }
+  .{$prefix}-input-margin {
+    margin-left: $margin-base;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .{$prefix}-input-no-margin {
+    display: flex;
+    flex: 1;
+  }
+  .{$prefix}-input {
+    font-size: $font-size-base;
+    width: 100%;
+  }
+}
+
