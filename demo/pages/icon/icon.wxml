@@ -1,3 +1,60 @@
-<view class="">
-	<mit-icon type="fenlei"></mit-icon>
+<view class="container">
+	<view class="item">
+		<mit-icon type="circle-plus"></mit-icon>
+		<view class="text">circle-plus</view>
+	</view>
+	<view class="item">
+		<mit-icon type="circle-minus"></mit-icon>
+		<view class="text">circle-minus</view>
+	</view>
+	<view class="item">
+		<mit-icon type="minus"></mit-icon>
+		<view class="text">minus</view>
+	</view>
+	<view class="item">
+		<mit-icon type="plus"></mit-icon>
+		<view class="text">plus</view>
+	</view>
+	<view class="item">
+		<mit-icon type="search"></mit-icon>
+		<view class="text">search</view>
+	</view>
+	<view class="item">
+		<mit-icon type="category"></mit-icon>
+		<view class="text">category</view>
+	</view>
+	<view class="item">
+		<mit-icon type="error"></mit-icon>
+		<view class="text">error</view>
+	</view>
+	<view class="item">
+		<mit-icon type="exclamation-mark"></mit-icon>
+		<view class="text">exclamation-mark</view>
+	</view>
+
+	<view class="item">
+		<mit-icon type="left-arrows"></mit-icon>
+		<view class="text">left-arrows</view>
+	</view>
+	<view class="item">
+		<mit-icon type="right-arrows"></mit-icon>
+		<view class="text">right-arrows</view>
+	</view>
+	<view class="item">
+		<mit-icon type="up-arrows"></mit-icon>
+		<view class="text">up-arrows</view>
+	</view>
+	<view class="item">
+		<mit-icon type="down-arrows"></mit-icon>
+		<view class="text">down-arrows</view>
+	</view>
+
+	<view class="item">
+		<mit-icon type="sp-right-arrows"></mit-icon>
+		<view class="text">sp-right-arrows</view>
+	</view>
+	<view class="item">
+		<mit-icon type="sp-left-arrows"></mit-icon>
+		<view class="text">sp-left-arrows</view>
+	</view>
 </view>

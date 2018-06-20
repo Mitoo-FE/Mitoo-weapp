@@ -33,7 +33,11 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": 9,
+=======
+			"current": 8,
+>>>>>>> 0374b8e8a36bca9ff8306c59cf86a7c420860ff9
 			"list": [
 				{
 					"id": -1,
@@ -80,13 +84,13 @@
 				{
 					"id": -1,
 					"name": "toast",
-					"pathName": "pages/tabs/tabs",
+					"pathName": "pages/toast/toast",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "toast",
-					"pathName": "pages/toast/toast",
+					"name": "icon",
+					"pathName": "pages/icon/icon",
 					"query": ""
 				},
 				{

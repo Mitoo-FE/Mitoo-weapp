@@ -11,7 +11,8 @@
     "pages/tabs/tabs",
     "pages/noticeBar/noticeBar",
     "pages/toast/toast",
-    "pages/modal/modal"
+    "pages/modal/modal",
+    "pages/icon/icon"
   ],
   "window":{
     "backgroundTextStyle":"light",
