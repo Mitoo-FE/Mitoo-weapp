@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -80,13 +80,13 @@
 				{
 					"id": -1,
 					"name": "toast",
-					"pathName": "pages/tabs/tabs",
+					"pathName": "pages/toast/toast",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "toast",
-					"pathName": "pages/toast/toast",
+					"name": "icon",
+					"pathName": "pages/icon/icon",
 					"query": ""
 				}
 			]

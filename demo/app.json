@@ -10,7 +10,8 @@
     "pages/drawer/drawer",
     "pages/tabs/tabs",
     "pages/noticeBar/noticeBar",
-    "pages/toast/toast"
+    "pages/toast/toast",
+    "pages/icon/icon"
   ],
   "window":{
     "backgroundTextStyle":"light",
