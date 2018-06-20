@@ -6,6 +6,10 @@ Component({
         },
 		color: {
 			type: String
-		}
+		},
+        size: {
+            type: Number,
+            value: 24
+        },
     }
 })

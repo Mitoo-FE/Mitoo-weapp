@@ -1,4 +1,6 @@
 <view class="">
 	<button bindtap="showBase">基础样式</button>
+	<button bindtap="showSuccess">成功！</button>
+	<button bindtap="showFail">失败！</button>
 	<mit-toast id="toast"></mit-toast>
 </view>

@@ -1,3 +1,7 @@
+const iconTypes = {
+    'success': 'circle-empty-success',
+    'fail': 'circle-empty-error'
+};
 Component({
     behaviors: [],
     data: {
@@ -7,11 +11,13 @@ Component({
     methods: {
 		show(options) {
 
-            const { duration = 1500, content } = options
+            const { duration = 1500, content, type } = options
 
             this.setData({
                 visible: true,
-                content: content
+                content: content,
+                type: type && iconTypes[type] ? iconTypes[type] : '',
+                size: type ? "60" : 0
             })
 
             setTimeout(() => {
@@ -21,14 +27,10 @@ Component({
 		},
 		hide() {
             this.setData({
-                visible: false
+                visible: false,
+                type: 'circle'
             })
-		},
-        close() {
-            this.setData({
-                visible: false
-            })
-        }
+		}
     }
 
 })
