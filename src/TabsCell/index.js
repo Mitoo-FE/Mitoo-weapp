@@ -30,7 +30,7 @@ Component({
             }
             else {
                 let tab = parent[0];
-                let nodes = tab.getRelationNodes('../Tabs-Cell/index');
+                let nodes = tab.getRelationNodes('../TabsCell/index');
                 nodes.forEach((e)=> {
                     e.setData({
                         'active': false

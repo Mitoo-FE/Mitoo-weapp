@@ -34,6 +34,7 @@
         <mit-cell-group>
             <mit-cell title="ActionSheet" isLink url="/pages/actionSheet/actionSheet"></mit-cell>
             <mit-cell title="Toast" isLink url="/pages/toast/toast"></mit-cell>
+            <mit-cell title="Modal" isLink url="/pages/modal/modal"></mit-cell>
         </mit-cell-group>
     </mit-panel>
 </view>
