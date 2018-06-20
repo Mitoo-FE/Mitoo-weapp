@@ -1,0 +1,53 @@
+@import "../styles/index"
+@import "../styles/mixins/animation";
+
+$prefixTopTips = $prefix + '-toptips'
+
+.{$prefixTopTips}{
+
+	&-wrap{
+	    transform: translate3d(0, -100%, 0);
+	    transition: all cubic-bezier(0.36, 0.66, 0.04, 1) 500ms;
+		width: 100%;
+		height: 60rpx;
+		left: 0;
+		top: 0;
+		position: fixed;
+		z-index: $zindex-toptips;
+		visibility: hidden;
+		color: #fff;
+		word-wrap: break-word;
+		word-break: break-all;
+		padding: 10rpx;
+		text-align: center;
+		font-size: 28rpx;
+		height: 40rpx;
+		line-height: 40rpx;
+
+		&&-success{
+			background-color: green;
+		}
+
+		&&-info{
+			background-color: green;
+		}
+
+		&&-warn{
+			background-color: pink;
+		}
+
+		&&-error{
+			background-color: #E64340;
+		}
+
+		&&-default{
+			background-color: blue;
+		}
+	}
+
+	&-wrap.show{
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+
+}

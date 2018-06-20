@@ -1,0 +1,5 @@
+{
+	"usingComponents": {
+		"mit-toptips": "/components/Toptips/index"
+	}
+}

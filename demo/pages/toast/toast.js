@@ -26,5 +26,11 @@ Page({
 			content: 'Some error occurred',
 			type: 'fail'
 		})
+	},
+	showNetwork() {
+		Toast({
+			content: 'network connection fail!',
+			type: 'network'
+		})
 	}
 })
