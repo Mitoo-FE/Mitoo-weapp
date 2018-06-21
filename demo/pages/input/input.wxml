@@ -2,13 +2,22 @@
     <mit-panel title="基本用法">
         <mit-cell-group>
             <mit-cell>
-                <mit-input placeholder="基本输入框" label="收货地址"/>
+                <mit-input placeholder="基本输入框" focus label="收货地址"/>
             </mit-cell>
             <mit-cell>
                 <mit-input number placeholder="请输入手机号" label="手机号"/>
             </mit-cell>
             <mit-cell>
+                <mit-input lengthLimit="{{50}}" placeholder="限制长度的输入框" label="描述"/>
+            </mit-cell>
+            <mit-cell>
                 <mit-input disabled value="禁用的输入框" label="用户信息"/>
+            </mit-cell>
+            <mit-cell>
+                <mit-input password label="密码"/>
+            </mit-cell>
+            <mit-cell>
+                <mit-input confirmType="发射" label="键盘" placeholder="键盘右下角完成按钮文案"/>
             </mit-cell>
         </mit-cell-group>
     </mit-panel>

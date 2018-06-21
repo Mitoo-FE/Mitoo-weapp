@@ -26,9 +26,13 @@ page {
     width: 100%;
     &-radius {
       position: relative;
-      padding: $padding-base;
+      padding: $padding-small $padding-base;
       hairline('all', $border-color-base, $border-radius-sm);
     }
+  }
+  .{$prefix}-input-limit {
+    display: flex;
+    justify-content: flex-end;
+    font-size: $font-size-base;
+  }
 }
-}
-

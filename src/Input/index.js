@@ -31,10 +31,35 @@ Component({
         borderColor: {
             type: String,
             value: false
+        },
+        lengthLimit: {
+            type: Number,
+            value: 0
+        },
+        password: {
+            type: Boolean,
+            value: false
+        },
+        confirmType: {
+            type: String,
+            value: 'done'
+        },
+        focus: {
+            type: Boolean,
+            value: false
         }
     },
-    data: {
+    ready() {
+        let getInputLength = () => (this.properties.value ? this.properties.value.length : 0);
+        this.setData({
+            inputLength : getInputLength()
+        })
     },
     methods: {
+        refreshInputLength($evt) {
+            this.setData({
+                inputLength: $evt.detail.value.length
+            })
+        }
     }
 })
