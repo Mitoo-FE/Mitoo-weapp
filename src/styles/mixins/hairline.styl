@@ -96,10 +96,13 @@ hairline(direction = 'all', color = $border-color-base, radius = 0){
     }
     else if direction == 'all'{
 
-        border: 1rpx solid color;
+        border: 1px solid color;
         border-radius: radius;
 
-        @media (min-resolution: 2dppx) {
+        @media (min-resolution: 96dpi) {
+
+            position: relative;
+            border: none;
 
             &::after {
                 content: '';
@@ -114,6 +117,14 @@ hairline(direction = 'all', color = $border-color-base, radius = 0){
                 transform: scale(0.5);
                 box-sizing: border-box;
                 pointer-events: none;
+
+                @media (min-resolution: 300dpi) {
+                    width: 300%;
+                    height: 300%;
+                    border: 1px solid color;
+                    border-radius: radius * 3;
+                    transform: scale(0.33);
+                }
             }
 
         }

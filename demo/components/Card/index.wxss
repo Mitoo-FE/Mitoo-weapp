@@ -5,11 +5,15 @@ page {
   position: relative;
   font-size: 32rpx;
   margin: 20rpx;
-  border: 1rpx solid #dddeee;
+  border: 1px solid #dddeee;
   border-radius: 10rpx;
   background-color: #fff;
 }
-@media (min-resolution: 2dppx) {
+@media (min-resolution: 96dpi) {
+  .mit-card {
+    position: relative;
+    border: none;
+  }
   .mit-card::after {
     content: '';
     position: absolute;
@@ -67,4 +71,13 @@ page {
   border-radius: 0;
   border-left: none;
   border-right: none;
+}
+@media (min-resolution: 96dpi) and (min-resolution: 300dpi) {
+  .mit-card::after {
+    width: 300%;
+    height: 300%;
+    border: 1px solid #dddeee;
+    border-radius: 30rpx;
+    transform: scale(0.33);
+  }
 }
