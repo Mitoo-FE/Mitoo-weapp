@@ -68,10 +68,17 @@ Component({
         })
     },
     methods: {
-        refreshInputLength($evt) {
+        handleInputEvent($evt) {
             this.setData({
                 inputLength: $evt.detail.value.length
             })
+            this.triggerEvent('change', $evt)
+        },
+        handleFocusEvent($evt) {
+            this.triggerEvent('focus', $evt)
+        },
+        handleBlurEvent($evt) {
+            this.triggerEvent('blur', $evt)
         }
     }
 })

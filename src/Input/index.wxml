@@ -2,7 +2,9 @@
     <view class="mit-input-wrap">
         <view wx:if="{{label}}" class="mit-input-label">{{label}}</view>
         <view class="{{label ? 'mit-input-margin' : 'mit-input-no-margin'}}">
-            <input bindinput="refreshInputLength"
+            <input bindinput="handleInputEvent"
+                   bindfocus="handleFocusEvent"
+                   bindblur="handleBlurEvent"
                    password="{{password}}"
                    focus="{{focus}}"
                    disabled="{{disabled?'disabled':''}}"

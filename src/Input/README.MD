@@ -43,4 +43,11 @@
 | placeholderStyle | placeholder样式 | String | false | false | |
 
 
+## 事件
+| 事件名称 | 说明 |
+|:-------:|:---:|
+| change  | 绑定变化时触发 |
+| focus   | 获取焦点时触发 |
+| blur    | 失焦时触发     |
+
 

@@ -14,13 +14,13 @@
                 <mit-input disabled value="禁用的输入框" label="用户信息"/>
             </mit-cell>
             <mit-cell>
-                <mit-input password type="password" label="密码"/>
+                <mit-input bind:blur="blur" password type="password" label="密码"/>
             </mit-cell>
             <mit-cell>
-                <mit-input confirmType="send" label="键盘" placeholder="键盘右下角完成按钮文案"/>
+                <mit-input bind:focus="focus" confirmType="send" label="键盘" placeholder="键盘右下角完成按钮文案"/>
             </mit-cell>
             <mit-cell>
-                <mit-input type="idcard" label="身份证" placeholder="特殊类型输入框"/>
+                <mit-input bind:change="change" type="idcard" label="身份证" placeholder="特殊类型输入框"/>
             </mit-cell>
         </mit-cell-group>
     </mit-panel>
