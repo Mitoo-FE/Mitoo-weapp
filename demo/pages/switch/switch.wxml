@@ -1,0 +1,18 @@
+<view>
+    <mit-panel>
+        <mit-cell-group>
+            <mit-cell>
+                <view>普通用法</view>
+                <mit-switch name="sw1" />
+            </mit-cell>
+            <mit-cell>
+                <view>自定义颜色、大小</view>
+                <mit-switch name="sw2" bind:change="change" large color="red"/>
+            </mit-cell>
+            <mit-cell>
+                <view>禁用样式</view>
+                <mit-switch name="sw3" disabled />
+            </mit-cell>
+        </mit-cell-group>
+    </mit-panel>
+</view>
