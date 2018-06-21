@@ -7,12 +7,14 @@
                    focus="{{focus}}"
                    disabled="{{disabled?'disabled':''}}"
                    value="{{value}}"
-                   type="{{number?'number':'text'}}"
+                   type="{{type}}"
                    maxlength="{{lengthLimit ? lengthLimit : -1}}"
                    style="border-color:{{borderColor ? borderColor: ''}}"
                    class="mit-input {{radius ? 'mit-input-radius': ''}}"
                    placeholder="{{placeholder}}"
                    confirm-type="{{confirmType}}"
+                   placeholder-style="{{placeholderStyle}}"
+                   placeholder-class="{{placeholderClass}}"
             />
             <view wx:if="{{lengthLimit}}" class="mit-input-limit">
                 <view>{{inputLength}}</view>

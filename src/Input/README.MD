@@ -38,5 +38,9 @@
 | lengthLimit | 长度限制 | Number | false | false |  |
 | confirmType | 键盘右下角完成文字 | String | "done"  |  |  |
 | focus | 自动获取焦点 | Boolean | false | false |  |
+| type | 文本框类型 | String | false | false | 'text', 'password', 'idcard', 'digit' |
+| placeholderClass | placeholder类 | String | false | false | |
+| placeholderStyle | placeholder样式 | String | false | false | |
+
 
 

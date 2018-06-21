@@ -47,6 +47,18 @@ Component({
         focus: {
             type: Boolean,
             value: false
+        },
+        type: {
+            type: String,
+            value: "text"
+        },
+        placeholderClass: {
+            type: String,
+            value: ""
+        },
+        placeholderStyle: {
+            type: String,
+            value: ""
         }
     },
     ready() {
