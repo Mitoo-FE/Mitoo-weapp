@@ -5,16 +5,16 @@ page {
   position: relative;
   font-size: 32rpx;
   margin: 20rpx;
-  border: 1px solid #dddeee;
+  border: 1rpx solid #dddeee;
   border-radius: 10rpx;
   background-color: #fff;
 }
-@media (min-resolution: 96dpi) {
+@media (min-resolution: 2dppx) {
   .mit-card {
     position: relative;
     border: none;
   }
-  .mit-card::after {
+  .mit-card::before {
     content: '';
     position: absolute;
     left: 0;
@@ -72,11 +72,11 @@ page {
   border-left: none;
   border-right: none;
 }
-@media (min-resolution: 96dpi) and (min-resolution: 300dpi) {
-  .mit-card::after {
+@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {
+  .mit-card::before {
     width: 300%;
     height: 300%;
-    border: 1px solid #dddeee;
+    border: 1rpx solid #dddeee;
     border-radius: 30rpx;
     transform: scale(0.33);
   }
