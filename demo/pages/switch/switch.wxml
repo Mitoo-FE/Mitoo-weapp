@@ -1,0 +1,15 @@
+<view>
+    <mit-panel>
+        <mit-cell-group>
+            <mit-cell>
+                <mit-switch name="sw1" />
+            </mit-cell>
+            <mit-cell>
+                <mit-switch name="sw2" bind:change="change" large color="red"/>
+            </mit-cell>
+            <mit-cell>
+                <mit-switch name="sw3" disabled />
+            </mit-cell>
+        </mit-cell-group>
+    </mit-panel>
+</view>

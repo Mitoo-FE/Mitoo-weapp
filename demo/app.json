@@ -14,7 +14,8 @@
     "pages/modal/modal",
     "pages/input/input",
     "pages/icon/icon",
-    "pages/toptips/toptips"
+    "pages/toptips/toptips",
+    "pages/switch/switch"
   ],
   "window":{
     "backgroundTextStyle":"light",

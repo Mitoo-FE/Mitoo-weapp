@@ -42,6 +42,7 @@
     <mit-panel title="表单">
         <mit-cell-group>
             <mit-cell title="Input" isLink url="/pages/input/input"></mit-cell>
+            <mit-cell title="Switch" isLink url="/pages/switch/switch"></mit-cell>
         </mit-cell-group>
     </mit-panel>
 </view>
