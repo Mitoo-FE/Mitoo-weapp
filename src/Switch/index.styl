@@ -27,7 +27,7 @@ page {
     }
     &.{$prefix}-switch-on {
       .{$prefix}-switch-inner {
-        left: $switch-size-large;
+        transform: translateX($switch-size-large);
       }
     }
   }
@@ -50,7 +50,7 @@ page {
     transition: all $transition-time ease-in-out;
     .{$prefix}-switch-inner {
       transition: all $transition-time ease-in-out;
-      left: $switch-size-base;
+      transform: translateX($switch-size-base);
     }
   }
 }
