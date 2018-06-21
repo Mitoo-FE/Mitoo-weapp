@@ -2,8 +2,29 @@
     <view class="mit-input-wrap">
         <view wx:if="{{label}}" class="mit-input-label">{{label}}</view>
         <view class="{{label ? 'mit-input-margin' : 'mit-input-no-margin'}}">
-            <input disabled="{{disabled?'disabled':''}}" value="{{value}}" type="{{number?'number':'text'}}" style="border-color:{{borderColor ? borderColor: ''}}" class="mit-input {{radius ? 'mit-input-radius': ''}}" placeholder="{{placeholder}}"/>
+            <input bindinput="handleInputEvent"
+                   bindfocus="handleFocusEvent"
+                   bindblur="handleBlurEvent"
+                   password="{{password}}"
+                   focus="{{focus}}"
+                   disabled="{{disabled?'disabled':''}}"
+                   value="{{value}}"
+                   type="{{type}}"
+                   maxlength="{{lengthLimit ? lengthLimit : -1}}"
+                   style="border-color:{{borderColor ? borderColor: ''}}"
+                   class="mit-input {{radius ? 'mit-input-radius': ''}}"
+                   placeholder="{{placeholder}}"
+                   confirm-type="{{confirmType}}"
+                   placeholder-style="{{placeholderStyle}}"
+                   placeholder-class="{{placeholderClass}}"
+            />
+            <view wx:if="{{lengthLimit}}" class="mit-input-limit">
+                <view>{{inputLength}}</view>
+                <view>/</view>
+                <view>{{lengthLimit}}</view>
+            </view>
         </view>
+
     </view>
 </block>
 

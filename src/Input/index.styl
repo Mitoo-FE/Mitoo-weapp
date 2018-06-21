@@ -9,7 +9,7 @@ page {
   align-items: center;
   .{$prefix}-input-label {
     font-size: $font-size-base;
-    min-width: $font-size-base*4;
+    min-width: $font-size-base * 5;
   }
   .{$prefix}-input-margin {
     margin-left: $margin-base;
@@ -25,8 +25,14 @@ page {
     font-size: $font-size-base;
     width: 100%;
     &-radius {
-      padding: $padding-base;
+      position: relative;
+      padding: $padding-small $padding-base;
       hairline('all', $border-color-base, $border-radius-sm);
     }
-}
+  }
+  .{$prefix}-input-limit {
+    display: flex;
+    justify-content: flex-end;
+    font-size: $font-size-base;
+  }
 }
