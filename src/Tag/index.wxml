@@ -1,0 +1,1 @@
+<view bind:tap="select" style="color: {{borderColor? borderColor: ''}};border-color:{{borderColor ? borderColor : ''}}; background-color:{{backgroundColor ? backgroundColor : ''}}" class="mit-tag">{{text}}</view>

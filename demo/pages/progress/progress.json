@@ -1,0 +1,6 @@
+{
+	"usingComponents": {
+		"mit-progress": "/components/Progress/index",
+		"mit-button": "/components/Button/index"
+	}
+}

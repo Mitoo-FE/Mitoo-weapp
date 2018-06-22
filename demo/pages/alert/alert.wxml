@@ -1,0 +1,7 @@
+<view>
+    <mit-alert>Content of prompt. Content of prompt.</mit-alert>
+    <mit-alert warning>Content of prompt. Content of prompt.</mit-alert>
+    <mit-alert error>Content of prompt. Content of prompt.</mit-alert>
+    <mit-alert success>Content of prompt. Content of prompt.</mit-alert>
+    <mit-alert closeable>Content of prompt. Content of prompt.</mit-alert>
+</view>

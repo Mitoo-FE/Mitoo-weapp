@@ -1,0 +1,5 @@
+{
+	"usingComponents": {
+		"mit-alert": "/components/Alert/index"
+	}
+}

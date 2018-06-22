@@ -17,7 +17,11 @@
     "pages/toptips/toptips",
     "pages/switch/switch",
     "pages/radio/radio",
-    "pages/checkbox/checkbox"
+    "pages/checkbox/checkbox",
+    "pages/badge/badge",
+    "pages/tag/tag",
+    "pages/alert/alert",
+    "pages/progress/progress"
   ],
   "window":{
     "backgroundTextStyle":"light",

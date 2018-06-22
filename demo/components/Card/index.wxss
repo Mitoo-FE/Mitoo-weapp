@@ -69,8 +69,14 @@ page {
 .mit-card.mit-card-full {
   margin: 0;
   border-radius: 0;
-  border-left: none;
-  border-right: none;
+  border-left: 0;
+  border-right: 0;
+}
+.mit-card.mit-card-full:before {
+  display: none !important;
+}
+.mit-card.mit-card-full:after {
+  display: none !important;
 }
 @media (min-resolution: 2dppx) and (min-resolution: 3dppx) {
   .mit-card::before {

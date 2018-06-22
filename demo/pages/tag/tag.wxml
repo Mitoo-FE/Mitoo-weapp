@@ -1,0 +1,27 @@
+<view>
+    <mit-card full>
+        <view slot="header">基本用法</view>
+        <mit-tag slot="body" text="标签一"/>
+    </mit-card>
+    <mit-card full>
+        <view slot="header">边框颜色</view>
+        <mit-tag style="margin-left:10rpx" borderColor="red" slot="body" text="标签一"/>
+        <mit-tag style="margin-left:10rpx" borderColor="yellow" slot="body" text="标签一"/>
+        <mit-tag style="margin-left:10rpx" borderColor="blue" slot="body" text="标签一"/>
+        <mit-tag style="margin-left:10rpx" borderColor="orange" slot="body" text="标签一"/>
+    </mit-card>
+    <mit-card full>
+        <view slot="header">各种颜色</view>
+        <mit-tag backgroundColor="red" borderColor="#fff"  slot="body" text="标签一"/>
+        <mit-tag style="margin-left:10rpx" borderColor="#fff" backgroundColor="yellow" slot="body" text="标签一"/>
+        <mit-tag style="margin-left:10rpx" borderColor="#fff"  backgroundColor="blue" slot="body" text="标签一"/>
+        <mit-tag style="margin-left:10rpx" borderColor="#fff"  backgroundColor="orange" slot="body" text="标签一"/>
+    </mit-card>
+    <mit-card full>
+        <view slot="header">反馈</view>
+        <mit-tag selectable bind:change="change" borderColor="#fff"  backgroundColor="red" slot="body" text="标签一"/>
+        <mit-tag selectable bind:change="change" borderColor="#fff"  style="margin-left:10rpx" backgroundColor="yellow" slot="body" text="标签一"/>
+        <mit-tag selectable bind:change="change" borderColor="#fff"  style="margin-left:10rpx" backgroundColor="blue" slot="body" text="标签一"/>
+        <mit-tag selectable bind:change="change" borderColor="#fff"  style="margin-left:10rpx" backgroundColor="orange" slot="body" text="标签一"/>
+    </mit-card>
+</view>

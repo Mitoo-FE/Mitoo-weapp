@@ -1,0 +1,37 @@
+@import "../styles/index";
+page {
+  background-color: $background-color-body;
+}
+.{$prefix}-progress {
+  position: flex;
+  justify-content: flex-start;
+  font-size: $size-font-small;
+  margin: $padding-base;
+  &-wrap {
+    position: relative;
+    flex: 1;
+    height: $progress-height;
+    border-radius: $progress-height;
+    background-color: $background-color-body;
+    overflow: hidden;
+    &&-hidden-number {
+       flex: 3;
+
+    }
+  }
+  &-flow {
+
+  }
+  &-inner {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $brand-color-primary;
+    border-radius: $progress-height;
+  }
+  &-progress {
+    flex: 1;
+
+  }
+}
