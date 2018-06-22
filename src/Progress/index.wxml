@@ -7,13 +7,14 @@
 
 <wxs module="parser">
 module.exports = {
-getProgress : function(color, progress) {
-    let style = '';
-    if (progress) {
-        style += 'transform: translateX(-100 + progress + "%");';
-    }
-    if (color) {
-        style += 'background-color: '+ color;
+    getProgress : function(color, progress) {
+        let style = '';
+        if (progress) {
+            style += 'transform: translateX(-100 + progress + "%");';
+        }
+        if (color) {
+            style += 'background-color: '+ color;
+        }
     }
 }
 </wxs>

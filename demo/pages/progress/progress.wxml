@@ -1,8 +1,10 @@
 <view>
-    <mit-progress progress="{{80}}"/>
+<!--    <mit-progress progress="{{80}}"/>
     <mit-progress color="red" progress="{{60}}"/>
     <mit-progress flow progress="{{20}}"/>
     <mit-progress percent="{{10}}" progress="{{10}}"/>
     <mit-button text="增加"></mit-button>
     <mit-button text="减少"></mit-button>
+
+    -->
 </view>

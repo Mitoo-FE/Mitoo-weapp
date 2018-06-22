@@ -26,8 +26,8 @@ Component({
 	data: {
 		colors : {
 			checked: '#108ee9',
-			uncheck: '#c3c3c3',
-			disabled: '#c3c3c3'
+			uncheck: '#e3e3e3',
+			disabled: '#e3e3e3'
 		},
 		checked: false
 	},
