@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"mit-tag": "/components/Tag/index",
+		"mit-panel": "/components/Panel/index",
+		"mit-card": "/components/Card/index"
+	}
+}

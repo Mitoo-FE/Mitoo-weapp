@@ -16,7 +16,8 @@
     "pages/icon/icon",
     "pages/toptips/toptips",
     "pages/switch/switch",
-    "pages/badge/badge"
+    "pages/badge/badge",
+    "pages/tag/tag"
   ],
   "window":{
     "backgroundTextStyle":"light",

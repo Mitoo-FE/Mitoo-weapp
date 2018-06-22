@@ -48,6 +48,7 @@
     <mit-panel title="视图">
         <mit-cell-group>
             <mit-cell title="Badge" isLink url="/pages/badge/badge"></mit-cell>
+            <mit-cell title="Tag" isLink url="/pages/tag/tag"></mit-cell>
         </mit-cell-group>
     </mit-panel>
 </view>
