@@ -18,7 +18,8 @@
     "pages/switch/switch",
     "pages/badge/badge",
     "pages/tag/tag",
-    "pages/alert/alert"
+    "pages/alert/alert",
+    "pages/progress/progress"
   ],
   "window":{
     "backgroundTextStyle":"light",
