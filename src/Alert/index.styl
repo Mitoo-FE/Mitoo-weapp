@@ -1,0 +1,21 @@
+@import "../styles/index";
+page {
+  background-color: $background-color-body;
+}
+.{$prefix}-alert {
+  position: relative;
+  margin: $margin-base;
+  border-radius: $alert-border-radius;
+
+  font-size: $font-size-base;
+  color: $background-color-base;
+  background-color: $brand-color-primary;
+  padding: $padding-base;
+  &-close {
+    position: absolute;
+    line-height: $font-size-base;
+    right: $padding-base;
+    top: 50%;
+    margin-top: - ($font-size-base/2) ;
+  }
+}
