@@ -25,19 +25,5 @@ Component({
 
     },
     methods: {
-        increase() {
-            if (this.properties.progress + this.properties.percent < 100) {
-                this.setData({
-                    progress: this.properties.progress + this.properties.percent
-                })
-            }
-        },
-        decrease() {
-            if (this.properties.progress - this.properties.percent > 0) {
-                this.setData({
-                    progress: this.properties.progress - this.properties.percent
-                })
-            }
-        }
     }
 })
