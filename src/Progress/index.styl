@@ -13,7 +13,7 @@ page {
     flex: 9;
     height: $progress-height;
     border-radius: $progress-height;
-    background-color: $background-color-body;
+    background-color: $background-color-icon;
     overflow: hidden;
   }
 
@@ -24,7 +24,8 @@ page {
     width: 100%;
     background-color: $brand-color-primary;
     border-radius: $progress-height;
-    transition: all $transition-time ease;
+    transition: transform $transition-time ease;
+    overflow: hidden;
     &-flow {
       position: absolute;
       width: 100%;
