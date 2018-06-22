@@ -1,0 +1,33 @@
+@import "../styles/index";
+page {
+  background-color: $background-color-body;
+}
+.{$prefix}-badge {
+  position: relative;
+  display: inline-block;
+  &-dot {
+    right: 0;
+    top: 0;
+    width: $badge-size;
+    height: $badge-size;
+    border-radius: 100%;
+    background-color: $badge-color;
+    border: 1rpx solid #fff;
+    &&-slot {
+      position: absolute;
+    }
+  }
+  &-number {
+    right: 0;
+    top: 0;
+    font-size: $badge-size;
+    padding: $badge-number-padding;
+    border-radius: $badge-size;
+    background-color: $badge-color;
+    color: #fff;
+    border: 1rpx solid #fff;
+    &&-slot {
+      position: absolute;
+    }
+  }
+}

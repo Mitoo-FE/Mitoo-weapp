@@ -15,7 +15,8 @@
     "pages/input/input",
     "pages/icon/icon",
     "pages/toptips/toptips",
-    "pages/switch/switch"
+    "pages/switch/switch",
+    "pages/badge/badge"
   ],
   "window":{
     "backgroundTextStyle":"light",

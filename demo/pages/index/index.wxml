@@ -45,4 +45,9 @@
             <mit-cell title="Switch" isLink url="/pages/switch/switch"></mit-cell>
         </mit-cell-group>
     </mit-panel>
+    <mit-panel title="视图">
+        <mit-cell-group>
+            <mit-cell title="Badge" isLink url="/pages/badge/badge"></mit-cell>
+        </mit-cell-group>
+    </mit-panel>
 </view>
