@@ -1,0 +1,31 @@
+@import "../styles/index";
+@import "../styles/mixins/hairline.styl";
+
+$prefixCls = $prefix + '-checkbox'
+
+.{$prefixCls}-item{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex: 1;
+	padding-right: 10rpx;
+
+	&-left{
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: row;
+		align-items: center;
+
+		&-extra{
+			font-size: 30rpx;
+			margin-right: 30rpx;
+		}
+
+		&-title{
+			line-height: 1.5;
+			width: auto;
+		}
+	}
+
+}

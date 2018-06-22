@@ -1,0 +1,10 @@
+<view class="">
+	<mit-panel title="基本用法">
+		<mit-checkbox-group bind:change="onCheckboxChange">
+			<mit-checkbox title="西瓜" value="watermelon"></mit-checkbox>
+			<mit-checkbox title="香蕉" value="banana"></mit-checkbox>
+			<mit-checkbox title="苹果" value="apple"></mit-checkbox>
+			<mit-checkbox title="梨" value="pear"></mit-checkbox>
+		</mit-checkbox-group>
+	</mit-panel>
+</view>

@@ -1,15 +1,17 @@
-<view class="mit-cell mit-class {{!isLink?'mit-cell-with-link':''}} {{lastItem?'mit-cell-last':''}}" bindtap="redirectTo">
-    <view class="mit-cell-left-container">
-        <view class="mit-cell-title" wx:if="{{title}}">
-            {{title}}
+<view class="mit-cell mit-class {{isLink?'mit-cell-with-link':''}} {{lastItem?'mit-cell-last':''}}" bindtap="redirectTo">
+    <view class="mit-cell-container" wx:if="{{title}}">
+        <view class="mit-cell-left-container">
+            <view class="mit-cell-title" >
+                {{title}}
+            </view>
+            <view class="mit-cell-label" wx:if="{{label}}">{{label}}</view>
+
         </view>
-        <view class="mit-cell-title" wx:else>
-            <slot/>
+        <view wx:if="{{isLink}}" class="mit-cell-right-container">
+            <view class="mit-cell-link" >></view>
         </view>
-        <view class="mit-cell-label" wx:if="{{label}}">{{label}}</view>
     </view>
-    <view wx:if="{{isLink}}" class="mit-cell-right-container">
-        <view class="mit-cell-link" >></view>
+    <view class="mit-cell-container-slot" wx:else>
+        <slot/>
     </view>
 </view>
-

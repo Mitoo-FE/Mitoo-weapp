@@ -43,6 +43,8 @@
         <mit-cell-group>
             <mit-cell title="Input" isLink url="/pages/input/input"></mit-cell>
             <mit-cell title="Switch" isLink url="/pages/switch/switch"></mit-cell>
+            <mit-cell title="Radio" isLink url="/pages/radio/radio"></mit-cell>
+            <mit-cell title="Checkbox" isLink url="/pages/checkbox/checkbox"></mit-cell>
         </mit-cell-group>
     </mit-panel>
 </view>

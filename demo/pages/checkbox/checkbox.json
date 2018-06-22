@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"mit-panel": "/components/Panel/index",
+		"mit-checkbox": "/components/Checkbox/index",
+		"mit-checkbox-group": "/components/Checkbox-Group/index"
+	}
+}

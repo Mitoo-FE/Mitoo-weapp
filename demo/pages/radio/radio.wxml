@@ -1,0 +1,23 @@
+<view class="">
+	<mit-panel title="基本用法">
+		<mit-radio-group bind:change="onRadioChange">
+			<mit-radio title="西瓜" value="watermelon"></mit-radio>
+			<mit-radio title="香蕉" value="banana"></mit-radio>
+			<mit-radio title="苹果" value="apple"></mit-radio>
+			<mit-radio title="梨" value="pear"></mit-radio>
+		</mit-radio-group>
+	</mit-panel>
+
+	<mit-panel title="默认选中">
+		<mit-radio-group>
+			<mit-radio title="西瓜" checked></mit-radio>
+			<mit-radio title="香蕉"></mit-radio>
+		</mit-radio-group>
+	</mit-panel>
+	<mit-panel title="禁用">
+		<mit-radio-group>
+			<mit-radio title="西瓜" disabled></mit-radio>
+			<mit-radio title="香蕉" disabled checked></mit-radio>
+		</mit-radio-group>
+	</mit-panel>
+</view>

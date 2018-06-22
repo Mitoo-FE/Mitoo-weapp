@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"mit-panel": "/components/Panel/index",
+		"mit-radio": "/components/Radio/index",
+		"mit-radio-group": "/components/Radio-Group/index"
+	}
+}

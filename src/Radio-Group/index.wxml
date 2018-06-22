@@ -1,0 +1,3 @@
+<mit-cell-group>
+	<slot></slot>
+</mit-cell-group>

@@ -4,14 +4,20 @@ page {
   background-color: $background-color-base;
 }
 .{$prefix}-cell {
-  font-size: $size-font-base;
   display: flex;
-  box-pack: justify
-  justify-content: space-between;
-  padding: $padding-base $padding-base $padding-base 0;
-  margin: 0 0 0 $margin-base;
-  position: relative;
-  hairline('bottom');
+  &-container, &-container-slot{
+    flex: 1;
+    font-size: $size-font-base;
+    padding: $padding-base $padding-base $padding-base 0;
+    margin: 0 0 0 $margin-base;
+    position: relative;
+    hairline('bottom');
+  }
+  &-container{
+    display: flex;
+    box-pack: justify
+    justify-content: space-between;
+  }
   &&-with-link {
     display: block;
   }
@@ -27,6 +33,6 @@ page {
     }
   }
   &-last {
-    border: none;
+    hairline-remove('bottom');
   }
 }

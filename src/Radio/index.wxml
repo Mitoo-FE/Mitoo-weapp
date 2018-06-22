@@ -1,0 +1,10 @@
+<mit-cell>
+	<view class="mit-radio-item" bindtap="onTap">
+		<view class="mit-radio-title">
+			{{ title }}
+		</view>
+		<view class="mit-radio-extra" wx:if="{{ checked }}">
+			<mit-icon type="check" size="30" color="{{ disabled ? colors.disabled : colors.default }}"></mit-icon>
+		</view>
+	</view>
+</mit-cell>

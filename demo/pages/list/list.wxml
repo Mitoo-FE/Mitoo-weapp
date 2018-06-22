@@ -13,7 +13,7 @@
         <mit-cell title="点我调回首页" label="描述 balabalabala" isLink url="/pages/index/index">
         </mit-cell>
     </mit-panel>
-    <mit-panel title="分组">
+    <mit-panel withoutBorder title="分组">
         <mit-cell-group>
             <mit-cell title="走起"></mit-cell>
             <mit-cell title="走起"></mit-cell>

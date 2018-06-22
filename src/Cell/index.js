@@ -35,8 +35,6 @@ Component({
                 this.setData(this.data.lastItem)
             }
         }
-
-
     },
     methods: {
         redirectTo: function() {
