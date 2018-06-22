@@ -7,4 +7,12 @@
 			<mit-checkbox title="梨" value="pear"></mit-checkbox>
 		</mit-checkbox-group>
 	</mit-panel>
+	<mit-panel title="默认选中 不可选">
+		<mit-checkbox-group bind:change="onCheckboxChange">
+			<mit-checkbox title="西瓜" value="watermelon"></mit-checkbox>
+			<mit-checkbox title="香蕉" checked value="banana"></mit-checkbox>
+			<mit-checkbox title="苹果" disabled checked value="apple"></mit-checkbox>
+			<mit-checkbox title="梨" disabled value="pear"></mit-checkbox>
+		</mit-checkbox-group>
+	</mit-panel>
 </view>
