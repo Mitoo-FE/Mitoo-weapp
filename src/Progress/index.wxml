@@ -12,7 +12,7 @@ module.exports = {
     getProgress : function(color, progress) {
         var style = '';
         if (progress >= 0) {
-            style += 'transform: translateX('+ (-100+progress)+'%);';
+            style += 'width: ' + progress + '%;';
         }
         if (color) {
             style += 'background-color: '+ color;
