@@ -1,16 +1,16 @@
 <view>
     <view>
-        <mit-badge slot>
+        <mit-badge flag>
             <mit-icon size="60" type="scan"/>
         </mit-badge>
     </view>
     <view>
-        <mit-badge slot number="{{10}}">
+        <mit-badge flag number="{{10}}">
             <mit-icon size="60" type="scan"/>
         </mit-badge>
     </view>
     <view>
-        <mit-badge slot number="{{200}}">
+        <mit-badge flag number="{{200}}">
             <mit-icon size="60" type="scan"/>
         </mit-badge>
     </view>

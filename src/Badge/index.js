@@ -7,7 +7,7 @@ Component({
             type: Number,
             value: 0
         },
-        slot: {
+        flag: {
             type: Boolean,
             value: false
         },
