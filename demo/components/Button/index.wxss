@@ -1,5 +1,5 @@
 .mit-button-wrap {
-  padding: 20rpx;
+  padding: 18rpx;
 }
 .mit-button-wrap .mit-button {
   background-color: #2d8cf0;
