@@ -3,5 +3,6 @@
 	<button bindtap="showSuccess">成功！</button>
 	<button bindtap="showFail">失败！</button>
 	<button bindtap="showNetwork">网络连接失败！</button>
+	<button bindtap="showLoading">加载中</button>
 	<mit-toast id="toast"></mit-toast>
 </view>

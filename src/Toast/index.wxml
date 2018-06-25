@@ -2,7 +2,20 @@
 	<view class="mit-toast mit-toast-mask {{ visible ? 'mit-toast-show' : ''}}">
 		<view class="mit-toast-text {{ visible ? 'mit-toast-text-show' : ''}}">
 			<view class="mit-toast-text-icon">
-				<mit-icon type="{{ type }}" size="{{ size }}"></mit-icon>
+				<block wx:if="{{ type !== 'loading' }}">
+					<mit-icon type="{{ type }}" size="{{ size }}"></mit-icon>
+				</block>
+				<block wx:else>
+					<view class="mit-toast-loading"></view>
+					<!--<mit-icon mit-class="mit-toast-loading" type="{{ type }}" size="{{ size }}"></mit-icon>-->
+					<!--<view class="mit-toast-loading">
+						<view class="mit-toast-loading-view"></view>
+						<view class="mit-toast-loading-view"></view>
+						<view class="mit-toast-loading-view"></view>
+						<view class="mit-toast-loading-view"></view>
+						<view class="mit-toast-loading-view"></view>
+					</view>-->
+				</block>
 			</view>
 			<view class="mit-toast-text-info">{{ content }}</view>
 		</view>

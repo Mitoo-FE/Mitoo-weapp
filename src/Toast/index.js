@@ -1,7 +1,8 @@
 const iconTypes = {
     'success': 'circle-empty-success',
     'fail': 'circle-empty-error',
-    'network': 'grieved'
+    'network': 'grieved',
+    'loading': 'loading'
 };
 Component({
     behaviors: [],

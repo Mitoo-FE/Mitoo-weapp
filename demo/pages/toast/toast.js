@@ -32,5 +32,11 @@ Page({
 			content: 'network connection fail!',
 			type: 'network'
 		})
+	},
+	showLoading() {
+		Toast({
+			content: '加载中，请稍后',
+			type: 'loading'
+		})
 	}
 })
