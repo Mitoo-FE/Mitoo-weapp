@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="项目logo" src="https://mp.weixin.qq.com/wxopen/basicprofile?action=get_headimg&token=175954104&t=20180611160032">
+    <img alt="项目logo" src="https://mp.weixin.qq.com/wxopen/basicprofile?action=get_headimg&token=2110797867&t=20180625102042">
 </p>
 <p align="center">小程序 UI 组件库</p>
 
@@ -42,7 +42,7 @@
 	* Checkbox 复选
 	* Switch开关
 
-![Mitoo-WeApp 演示](https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3842044582&token=175954104)
+![Mitoo-WeApp 演示](https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3842044582&token=2110797867)
 
 
 ## 下载
