@@ -6,7 +6,8 @@
 					<mit-icon type="{{ type }}" size="{{ size }}"></mit-icon>
 				</block>
 				<block wx:else>
-					<mit-icon mit-class="mit-toast-loading" type="{{ type }}" size="{{ size }}"></mit-icon>
+					<view class="mit-toast-loading"></view>
+					<!--<mit-icon mit-class="mit-toast-loading" type="{{ type }}" size="{{ size }}"></mit-icon>-->
 					<!--<view class="mit-toast-loading">
 						<view class="mit-toast-loading-view"></view>
 						<view class="mit-toast-loading-view"></view>

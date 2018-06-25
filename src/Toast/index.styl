@@ -66,7 +66,15 @@ $toastPrefixCls = $prefix + '-toast'
 	}
 
 	&-loading{
-        display: inline-block;
+		margin: 18rpx 0;
+		display: inline-block;
+        vertical-align: middle;
+        width: 46rpx;
+        height: 46rpx;
+        background: transparent;
+        border-radius: 50%;
+        border: 2px solid #fff;
+		border-color: #fff #fff #fff $brand-color-primary;
 		animation: loading 0.8s linear;
 		animation-iteration-count: infinite;
 	}
@@ -104,9 +112,11 @@ $toastPrefixCls = $prefix + '-toast'
 @keyframes loading {
     0% {
         transform: rotate(0);
+		transform-origin: center center;
     }
     100% {
         transform: rotate(360deg);
+		transform-origin: center center;
     }
 }
 //
