@@ -2,7 +2,7 @@
   padding: 18rpx;
 }
 .mit-button-wrap .mit-button {
-  background-color: #2d8cf0;
+  background-color: #ff6b22;
   color: #fff;
   font-size: 32rpx;
   padding: 6rpx 15rpx;
@@ -17,5 +17,5 @@
   border-radius: 100rpx;
 }
 .mit-button-wrap .mit-button-hover {
-  background-color: #2470c0;
+  background-color: #cc561b;
 }
