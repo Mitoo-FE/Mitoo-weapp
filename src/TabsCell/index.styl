@@ -8,8 +8,17 @@ page {
   padding: $padding-base 0;
   margin: 0 $margin-base;
   text-align: center;
+  font-size: $font-size-sm;
+  line-height: $line-height-paragraph;
   &-active {
     color: $brand-color-primary;
-    border-bottom: $border-width-lg solid $brand-color-primary;
+    .{$prefix}-tabs-cell-bottom {
+      border-bottom: $border-width-lg solid $brand-color-primary;
+      position: absolute;
+      bottom: 0;
+      width: $tab-active-bottom-width;
+      left: 50%;
+      margin-left: - ($tab-active-bottom-width / 2);
+    }
   }
 }

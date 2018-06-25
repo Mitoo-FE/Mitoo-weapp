@@ -4,7 +4,7 @@ page {
 .mit-card {
   position: relative;
   font-size: 32rpx;
-  margin: 20rpx;
+  margin: 18rpx;
   border: 1rpx solid #dddeee;
   border-radius: 10rpx;
   background-color: #fff;
@@ -31,7 +31,7 @@ page {
 }
 .mit-card-header {
   position: relative;
-  padding: 20rpx;
+  padding: 18rpx;
   border-bottom: 1rpx solid #dddeee;
 }
 @media (min-resolution: 2dppx) {
@@ -60,7 +60,7 @@ page {
   }
 }
 .mit-card-body {
-  padding: 20rpx;
+  padding: 18rpx;
 }
 .mit-card-footer {
   font-size: 28rpx;
