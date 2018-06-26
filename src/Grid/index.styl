@@ -10,22 +10,9 @@ $flexPrefixCls = $prefix + '-flexbox';
 
 	&.{$gridPrefixCls}-line {
 		position: relative;
-
 		.{$flexPrefixCls} {
 			position: relative;
 			hairline('bottom');
-
-			.{$flexPrefixCls}-item {
-				position: relative;
-				&:first-child {
-					hairline('left');
-				}
-				&:not(:last-child) {
-					hairline('right');
-				}
-			}
 		}
-
 	}
-
 }
