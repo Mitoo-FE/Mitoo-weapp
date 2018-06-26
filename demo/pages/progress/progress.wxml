@@ -3,6 +3,6 @@
     <mit-progress color="red" progress="{{60}}"/>
     <mit-progress flow progress="{{100}}"/>
     <mit-progress percent="{{percent}}" progress="{{progress}}"/>
-    <mit-button text="增加" bind:buttonTap="increase"/>
-    <mit-button text="减少" bind:buttonTap="decrease"/>
+    <mit-button bind:buttonTap="increase">增加</mit-button>
+    <mit-button bind:buttonTap="decrease">减少</mit-button>
 </view>

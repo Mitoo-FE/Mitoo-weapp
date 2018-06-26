@@ -79,6 +79,7 @@ Component({
         },
         onTap: function() {
             this.triggerEvent('buttonTap', {bubbles: true, composed: true});
-        }
+        },
+
     }
 })

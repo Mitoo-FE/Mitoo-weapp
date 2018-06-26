@@ -27,6 +27,7 @@
     </mit-panel>
     <mit-panel title="基础组件">
         <mit-cell-group>
+            <mit-cell title="Color" isLink url="/pages/color/color"></mit-cell>
             <mit-cell title="Button" isLink url="/pages/button/button"></mit-cell>
             <mit-cell title="Icon" isLink url="/pages/icon/icon"></mit-cell>
         </mit-cell-group>
