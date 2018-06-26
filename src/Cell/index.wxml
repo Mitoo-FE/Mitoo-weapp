@@ -8,7 +8,9 @@
 
         </view>
         <view wx:if="{{isLink}}" class="mit-cell-right-container">
-            <view class="mit-cell-link" >></view>
+            <view class="mit-cell-link">
+                <mit-icon type="sp-right-arrows" size="30"></mit-icon>
+            </view>
         </view>
     </view>
     <view class="mit-cell-container-slot" wx:else>
