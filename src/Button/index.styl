@@ -1,23 +1,66 @@
 @import "../styles/index";
 
+.{$prefix}-button-wrap-small {
+  display: inline-block;
+}
+.{$prefix}-button-wrap-default-size {
+  display: inline-block;
+  width: 50%;
+}
 .{$prefix}-button-wrap {
-  padding: $padding-base;
+
   .{$prefix}-button {
-    background-color: $btn-primary-bg;
-    color: white;
-    font-size: $size-font-base;
-    padding: $btn-padding-base;
+    margin: $padding-base;
+    font-size: $font-size-heading;
+    line-height: $line-height-paragraph;
+    padding: $padding-base + $padding-small;
+    border-radius: $border-radius-sm;
+    &-primary {
+      background-color: $brand-color-primary;
+      color: $color-text-base-inverse;
+      &.{$prefix}-button-hover {
+        background-color: $brand-color-primary * $hover-percent;
+      }
+    }
+    &-default {
+      background-color: $color-text-base-inverse;
+      color: $color-text-base;
+      &.{$prefix}-button-hover {
+        background-color: $color-text-base-inverse * $hover-percent;
+      }
+    }
     &-small {
-      padding: $btn-padding-small;
+      display: inline-block;
+      padding: $padding-base ($padding-base*2);
     }
     &-large {
-      padding: $btn-padding-large;
     }
     &-circle {
       border-radius: 100rpx;
     }
-    &-hover {
-      background-color: $btn-primary-bg*0.8;
+    &-disabled {
+      opacity: 0.3;
+    }
+  }
+  &-full {
+    .{$prefix}-button {
+      margin: 0;
+      border-radius: 0;
+      border: 0;
+    }
+  }
+  &-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $background-color-base;
+    box-shadow: 1rpx 0rpx 3rpx $shadow-color;
+    hairline('top');
+    .{$prefix}-botton {
+      margin: $padding-base;
+      border-radius: 0;
+      border: 0;
     }
   }
 }

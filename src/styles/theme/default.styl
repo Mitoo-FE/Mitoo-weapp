@@ -6,7 +6,7 @@ $bu 								= 1rpx;		// 小程序单位（*px  rpx ）
 
 // 全局/品牌色
 $brand-color-primary          		= #FF6B22;
-$brand-color-primary-tap			= #0e80d2;
+$brand-color-primary-tap			= $brand-color-primary * 0.95;
 $brand-color-info         			= #2db7f5;
 $brand-color-success       			= #19be6b;
 $brand-color-warning          		= #ff9900;
@@ -54,8 +54,9 @@ $avatar-font-size-base  			= 18 * $bu;
 $avatar-font-size-lg    			= 24 * $bu;
 $avatar-font-size-sm    			= 14 * $bu;
 $avatar-border-radius   			= $border-radius-small;
-$border-radius-sm    			    = 10 * $bu;
-$border-radius-lg                   = 20 * $bu;
+$border-radius-sm    			    = 6 * $bu;
+$border-radius-base                 = 12 * $bu;
+$border-radius-lg                   = 18 * $bu;
 
 // 动画缓动
 $animation-time         			= .3s;
@@ -193,3 +194,8 @@ $alert-border-radius                = 4 * $bu;
 
 //progress
 $progress-height                    = 15 * $bu;
+
+//button
+$hover-percent                      = 0.95;
+
+$shadow-color                       = #eee;

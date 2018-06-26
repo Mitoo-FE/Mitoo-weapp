@@ -10,6 +10,10 @@ Component({
         withoutBorder: {
             type: Boolean,
             value: false
+        },
+        noBackground: {
+            type: Boolean,
+            value: false
         }
     }
 })

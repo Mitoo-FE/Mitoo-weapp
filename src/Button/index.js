@@ -11,6 +11,22 @@ Component({
         circle: {
             type: String,
             value: ''
+        },
+        type: {
+            type: String,
+            value: 'primary'
+        },
+        disabled: {
+            type: Boolean,
+            value: false
+        },
+        full: {
+            type: Boolean,
+            value: false
+        },
+        bottom: {
+            type: Boolean,
+            value: false
         }
     },
     methods: {

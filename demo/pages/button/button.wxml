@@ -1,8 +1,22 @@
-<view>
-    <mit-button text="button" size="small"></mit-button>
-    <mit-button text="button" size="default"></mit-button>
-    <mit-button text="button" size="large"></mit-button>
-    <mit-button circle text="button" size="small"></mit-button>
-    <mit-button circle text="button" size="default"></mit-button>
-    <mit-button circle text="button" size="large"></mit-button>
+<view style="padding-bottom: 200rpx;">
+    <mit-panel noBackground title="长按钮">
+        <mit-button size="large" type="primary">主按钮</mit-button>
+        <mit-button size="large" type="default">次要按钮</mit-button>
+    </mit-panel>
+    <mit-panel noBackground title="禁用的按钮">
+        <mit-button size="large" type="primary" disabled>主按钮</mit-button>
+        <mit-button size="large" type="default" disabled>次要按钮</mit-button>
+    </mit-panel>
+    <mit-panel noBackground title="短按钮">
+        <mit-button size="default" type="primary">主按钮</mit-button>
+        <mit-button size="default" type="default">次要按钮</mit-button>
+    </mit-panel>
+    <mit-panel noBackground title="小按钮">
+        <mit-button size="small" type="primary">按钮</mit-button>
+        <mit-button size="small" type="default">按钮</mit-button>
+    </mit-panel>
+    <mit-panel noBackground title="通栏按钮">
+        <mit-button size="large" full type="primary">通栏按钮</mit-button>
+    </mit-panel>
+    <mit-button size="large" bottom type="primary">底部固定按钮</mit-button>
 </view>
