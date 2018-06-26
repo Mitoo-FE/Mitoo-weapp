@@ -1,8 +1,8 @@
 <view>
-	<mit-button size="large" bindtap="showToptips">通用样式</mit-button>
-	<mit-button size="large" bindtap="showSuccess">success</mit-button>
-	<mit-button size="large" bindtap="showWarn">warn</mit-button>
-	<mit-button size="large" bindtap="showError">error</mit-button>
-	<mit-button size="large" bindtap="showTimes">自定义事件时间</mit-button>
+	<mit-button size="large" type="default" bindtap="showToptips">通用样式</mit-button>
+	<mit-button size="large" type="default" bindtap="showSuccess">success</mit-button>
+	<mit-button size="large" type="default" bindtap="showWarn">warn</mit-button>
+	<mit-button size="large" type="default" bindtap="showError">error</mit-button>
+	<mit-button size="large" type="default" bindtap="showTimes">自定义事件时间</mit-button>
 	<mit-toptips id="toptips"></mit-toptips>
 </view>
