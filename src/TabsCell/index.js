@@ -7,7 +7,9 @@ Component({
         }
     },
     data: {
-        brandColor: ''
+        brandColor: '',
+        translation: 0,
+        nodeLeft: 0
     },
     relations: {
         '../Tabs/index': {
@@ -18,9 +20,18 @@ Component({
                         'brandColor':target.properties.brandColor
                     })
                 }
-
             }
         }
+    },
+    ready() {
+        let _self = this;
+        let query = wx.createSelectorQuery().in(_self);
+        let active_node = query.select('.mit-tabs-cell');
+        active_node.boundingClientRect((rect) => {
+            _self.setData({
+                'nodeLeft': rect.left
+            });
+        }).exec();
     },
     methods: {
         change_tab(evt) {
@@ -32,14 +43,21 @@ Component({
                 let tab = parent[0];
                 let nodes = tab.getRelationNodes('../TabsCell/index');
                 nodes.forEach((e)=> {
-                    e.setData({
-                        'active': false
-                    })
-                })
+                    if (e.properties.active) {
+                        e.setData({
+                            'active': false
+                        });
+                    }
+                });
+
                 this.setData({
-                    'active': true
-                })
+                    'active': true,
+                    'translation': 0
+                });
             }
+        },
+        get_active($evt) {
+            console.log($evt)
         }
     }
 })

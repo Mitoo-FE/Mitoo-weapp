@@ -1,5 +1,6 @@
 {
 	"usingComponents": {
-		"mit-button": "/components/Button/index"
+		"mit-button": "/components/Button/index",
+		"mit-panel": "/components/Panel/index"
 	}
 }

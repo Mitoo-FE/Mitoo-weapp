@@ -1,8 +1,7 @@
 @import "../styles/index";
 @import "../styles/mixins/hairline.styl";
-page {
-  background-color: $background-color-base;
-}
+
+
 .{$prefix}-tabs-cell {
   position: relative;
   padding: $padding-base 0;
@@ -11,13 +10,19 @@ page {
   font-size: $font-size-sm;
   line-height: $line-height-paragraph;
   color: $color-text-secondary;
+  .{$prefix}-tabs-cell-bottom {
+    width: 0;
+  }
   &-active {
     color: $brand-color-primary;
+    transition: all $transition-time ease;
     .{$prefix}-tabs-cell-bottom {
+      transform-origin: right;
       border-bottom: $border-width-lg solid $brand-color-primary;
       position: absolute;
       bottom: 0;
       width: $tab-active-bottom-width;
+      transition: border-bottom $transition-time ease;
       left: 50%;
       margin-left: - ($tab-active-bottom-width / 2);
     }

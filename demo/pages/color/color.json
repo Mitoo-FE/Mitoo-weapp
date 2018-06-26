@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"mit-panel": "/components/Panel/index",
+		"mit-row": "/components/Row/index",
+		"mit-col": "/components/Col/index"
+	}
+}

@@ -22,7 +22,8 @@
     "pages/tag/tag",
     "pages/alert/alert",
     "pages/progress/progress",
-    "pages/grid/grid"
+    "pages/grid/grid",
+    "pages/color/color"
   ],
   "window":{
     "backgroundTextStyle":"light",

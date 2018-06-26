@@ -1,0 +1,117 @@
+<view>
+    <mit-panel noBackground title="主色">
+        <mit-row>
+            <mit-col span="12">
+                <view class="color-card main-color1">
+                    <view class="color-card-title">主色1</view>
+                    <view class="color-card-color">#FF6B22</view>
+                </view>
+            </mit-col>
+            <mit-col span="12">
+                <view class="color-card main-color2">
+                    <view class="color-card-title">主色2</view>
+                    <view class="color-card-color">#EC0D33</view>
+                </view>
+            </mit-col>
+        </mit-row>
+        <mit-row>
+            <mit-col span="12">
+                <view class="color-card main-color3">
+                    <view class="color-card-title">主色3</view>
+                    <view class="color-card-color">#FFC70A</view>
+                </view>
+            </mit-col>
+            <mit-col span="12">
+                <view class="color-card main-color4">
+                    <view class="color-card-title">主色4</view>
+                    <view class="color-card-color">#25C38D</view>
+                </view>
+            </mit-col>
+        </mit-row>
+        <mit-row>
+            <mit-col span="12">
+                <view class="color-card main-color5">
+                    <view class="color-card-title">主色5</view>
+                    <view class="color-card-color">#1B9CFF</view>
+                </view>
+            </mit-col>
+            <mit-col span="12">
+                <view class="color-card main-color6">
+                    <view class="color-card-title">主色6</view>
+                    <view class="color-card-color">#3F63C6</view>
+                </view>
+            </mit-col>
+        </mit-row>
+    </mit-panel>
+    <mit-panel noBackground title="辅助颜色">
+        <mit-row>
+            <mit-col span="12">
+                <view class="color-card status-color1">
+                    <view class="color-card-title">Success</view>
+                    <view class="color-card-color">#10BC66</view>
+                </view>
+            </mit-col>
+            <mit-col span="12">
+                <view class="color-card status-color2">
+                    <view class="color-card-title">Warning</view>
+                    <view class="color-card-color">#EC0D33</view>
+                </view>
+            </mit-col>
+        </mit-row>
+        <mit-row>
+            <mit-col span="12">
+                <view class="color-card status-color3">
+                    <view class="color-card-title">Error</view>
+                    <view class="color-card-color">#ED3F14</view>
+                </view>
+            </mit-col>
+            <mit-col span="12">
+            </mit-col>
+        </mit-row>
+    </mit-panel>
+    <mit-panel noBackground title="中性色">
+
+        <mit-row>
+            <mit-col span="12">
+                <view class="color-card mid-color1">
+                    <view class="color-card-title">主标题/Tab</view>
+                    <view class="color-card-color">#333333</view>
+                </view>
+            </mit-col>
+            <mit-col span="12">
+                <view class="color-card mid-color2">
+                    <view class="color-card-title">正文/次要信息</view>
+                    <view class="color-card-color">#666666</view>
+                </view>
+            </mit-col>
+        </mit-row>
+        <mit-row>
+            <mit-col span="12">
+                <view class="color-card mid-color3">
+                    <view class="color-card-title">辅助信息</view>
+                    <view class="color-card-color">#999999</view>
+                </view>
+            </mit-col>
+            <mit-col span="12">
+                <view class="color-card mid-color4">
+                    <view class="color-card-title">输入提示信息</view>
+                    <view class="color-card-color">#CCCCCC</view>
+                </view>
+            </mit-col>
+        </mit-row>
+        <mit-row>
+            <mit-col span="12">
+                <view class="color-card mid-color5">
+                    <view class="color-card-title">分割线</view>
+                    <view class="color-card-color">#EEEEEE</view>
+                </view>
+            </mit-col>
+            <mit-col span="12">
+                <view class="color-card mid-color6">
+                    <view class="color-card-title">背景</view>
+                    <view class="color-card-color">#F8F8F8</view>
+                </view>
+            </mit-col>
+        </mit-row>
+    </mit-panel>
+</view>

@@ -1,8 +1,8 @@
 <view>
-    <mit-button text="普通对话框" bind:buttonTap="default_modal"></mit-button>
-    <mit-button text="无标题对话框" bind:buttonTap="default_no_title_modal"></mit-button>
-    <mit-button text="多按钮对话框" bind:buttonTap="multiple_button_modal"></mit-button>
-    <mit-button text="纵向按钮对话框" bind:buttonTap="vertical_button_modal"></mit-button>
+    <mit-button bind:buttonTap="default_modal">普通对话框</mit-button>
+    <mit-button bind:buttonTap="default_no_title_modal">无标题对话框</mit-button>
+    <mit-button bind:buttonTap="multiple_button_modal">多按钮对话框</mit-button>
+    <mit-button bind:buttonTap="vertical_button_modal">纵向按钮对话框</mit-button>
     <mit-modal visible="{{defaultVisible}}" title="普通对话框" footer="{{defaultFooter}}">
         <view>我是一个普通对话框</view>
     </mit-modal>

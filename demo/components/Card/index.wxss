@@ -1,12 +1,9 @@
-page {
-  background-color: #f5f5f9;
-}
 .mit-card {
   position: relative;
   font-size: 32rpx;
   margin: 18rpx;
   border: 1rpx solid #dddeee;
-  border-radius: 10rpx;
+  border-radius: 6rpx;
   background-color: #fff;
 }
 @media (min-resolution: 2dppx) {
@@ -22,7 +19,7 @@ page {
     width: 200%;
     height: 200%;
     border: 1rpx solid #dddeee;
-    border-radius: 20rpx;
+    border-radius: 12rpx;
     transform-origin: 0 0;
     transform: scale(0.5);
     box-sizing: border-box;
@@ -83,7 +80,7 @@ page {
     width: 300%;
     height: 300%;
     border: 1rpx solid #dddeee;
-    border-radius: 30rpx;
+    border-radius: 18rpx;
     transform: scale(0.33);
   }
 }
