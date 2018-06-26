@@ -20,6 +20,10 @@ Component({
         disabled: {
             type: Boolean,
             value: false
+        },
+        circle: {
+            type: Boolean,
+            value: false
         }
     },
     methods: {
