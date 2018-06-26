@@ -1,19 +1,19 @@
-<view wx:if="{{visible}}" style="{{parser.getBackgroundColor(warning, error, success)}}" class="mit-alert">
+<view wx:if="{{visible}}" class="mit-alert {{parser.getBackgroundCls(warning, error, success)}}">
     <slot></slot>
     <view wx:if="{{closeable}}" bind:tap="close" class="mit-alert-close">×</view>
 </view>
 
 <wxs module="parser">
 module.exports = {
-    getBackgroundColor: function(warning, error, success) {
+    getBackgroundCls: function(warning, error, success) {
         if (warning) {
-            return 'background-color: orange'
+            return 'mit-alert-warning'
         }
         else if (error) {
-            return 'background-color: red'
+            return 'mit-alert-error'
         }
         else if (success) {
-            return 'background-color: green'
+            return 'mit-alert-success'
         }
         else {
             return ''
