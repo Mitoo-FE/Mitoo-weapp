@@ -3,9 +3,15 @@
 
 
 .{$prefix}-switch {
+  &-circle {
+    border-radius: $switch-size-base;
+    .{$prefix}-switch-inner {
+      border-radius: 100%;
+    }
+  }
+  border-radius: $border-radius-sm;
   position: relative;
-  border-radius: $switch-size-base;
-  width: $switch-size-base * 2;
+  width: $switch-size-base * 2.5;
   height: $switch-size-base;
   background-color: $background-color-tap;
   transition: all $transition-time ease-in-out;
@@ -18,25 +24,26 @@
     }
   }
   &-large {
-    width: $switch-size-large * 2;
+    width: $switch-size-large * 2.5;
     height: $switch-size-large;
     .{$prefix}-switch-inner {
-      width: $switch-size-large - 4rpx;
-      height: $switch-size-large - 4rpx;
+      width: $switch-size-large - 8rpx;
+      height: $switch-size-large - 8rpx;
     }
     &.{$prefix}-switch-on {
       .{$prefix}-switch-inner {
-        transform: translateX($switch-size-large);
+        transform: translateX($switch-size-large*1.5);
       }
     }
   }
   &-inner {
     position: absolute;
-    border-radius: 100%;
-    width: $switch-size-base - 4rpx;
-    height: $switch-size-base - 4rpx;
-    margin: 2rpx;
+    width: $switch-size-base - 8rpx;
+    height: $switch-size-base - 8rpx;
+    margin: 4rpx;
     background-color: $background-color-base;
+    border-radius: $border-radius-sm;
+    box-shadow: 1rpx 3rpx 3rpx $shadow-color;
   }
   &-off {
     .{$prefix}-switch-inner {
@@ -49,7 +56,7 @@
     transition: all $transition-time ease-in-out;
     .{$prefix}-switch-inner {
       transition: all $transition-time ease-in-out;
-      transform: translateX($switch-size-base);
+      transform: translateX($switch-size-base*1.5);
     }
   }
 }

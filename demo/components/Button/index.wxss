@@ -47,7 +47,7 @@
   bottom: 0;
   width: 100%;
   background-color: #fff;
-  box-shadow: 1rpx 0rpx 3rpx #eee;
+  box-shadow: 1rpx 0rpx 3rpx rgba(0,0,0,0.15);
   border-top: 1rpx solid #dddeee;
 }
 @media (min-resolution: 2dppx) {
