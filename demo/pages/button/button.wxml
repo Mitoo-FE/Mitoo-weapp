@@ -1,6 +1,6 @@
 <view style="padding-bottom: 200rpx;">
     <mit-panel noBackground title="长按钮">
-        <mit-button size="large" type="primary">主按钮</mit-button>
+        <mit-button openType="getUserInfo" bindgetuserinfo="onGotUserInfo" size="large" type="primary">主按钮</mit-button>
         <mit-button size="large" type="default">次要按钮</mit-button>
     </mit-panel>
     <mit-panel noBackground title="禁用的按钮">

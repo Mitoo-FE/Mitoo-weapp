@@ -27,10 +27,57 @@ Component({
         bottom: {
             type: Boolean,
             value: false
-        }
+        },
+        openType: {
+            type: String,
+            value: ''
+        },
+        lang: {
+            type: String,
+            value: ''
+        },
+        sessionFrom: {
+            type: String,
+            value: ''
+        },
+        sendMessageTitle: {
+            type: String,
+            value: ''
+        },
+        sendMessagePath: {
+            type: String,
+            value: ''
+        },
+        sendMessageImg: {
+            type: String,
+            value: ''
+        },
+        showMessageCard: {
+            type: String,
+            value: ''
+        },
+        appParameter: {
+            type: String,
+            value: ''
+        },
     },
     methods: {
-        onTap: function (evt) {
+        bindgetuserinfo: function(e) {
+            this.triggerEvent('getuserinfo', e.detail);
+        },
+        bindcontact: function(e) {
+            this.triggerEvent('contact', e.detail);
+        },
+        bindgetphonenumber: function(e) {
+            this.triggerEvent('getphonenumber', e.detail);
+        },
+        binderror: function(e) {
+            this.triggerEvent('error', e.detail);
+        },
+        bindopensetting: function(e) {
+            this.triggerEvent('opensetting', e.detail);
+        },
+        onTap: function() {
             this.triggerEvent('buttonTap', {bubbles: true, composed: true});
         }
     }

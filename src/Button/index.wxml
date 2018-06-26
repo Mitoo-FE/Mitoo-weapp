@@ -1,5 +1,18 @@
 <view class="mit-button-wrap {{ bottom ? 'mit-button-wrap-bottom': '' }} {{ full ? 'mit-button-wrap-full' : '' }} {{size==='small'?'mit-button-wrap-small':size==='large'?'mit-button-wrap-large':'mit-button-wrap-default-size'}}">
-    <button hover-class="{{disabled? '':'mit-button-hover'}}"
+    <button open-type="{{ openType }}"
+            lang="{{ lang }}"
+            bindgetuserinfo="bindgetuserinfo"
+            session-from="{{ sessionFrom }}"
+            send-message-title="{{ sendMessageTitle }}"
+            send-message-path="{{ sendMessagePath }}"
+            send-message-img="{{ sendMessageImg }}"
+            show-message-card="{{ showMessageCard }}"
+            bindcontact="bindcontact"
+            bindgetphonenumber="bindgetphonenumber"
+            app-parameter="{{ appParameter }}"
+            binderror="binderror"
+            bindopensetting="bindopensetting"
+            hover-class="{{ disabled? '':'mit-button-hover' }}"
             bindtap="onTap"
             class="mit-button {{ disabled ? 'mit-button-disabled' : ''}} {{ type ? 'mit-button-' + type : 'mit-button-primary' }} {{circle?'mit-button-circle':''}} {{size==='small'?'mit-button-small':size==='large'?'mit-button-large':'mit-button-default-size'}}">
         <slot/>
