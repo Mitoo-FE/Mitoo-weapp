@@ -4,7 +4,7 @@
 			{{ title }}
 		</view>
 		<view class="mit-radio-extra" wx:if="{{ checked }}">
-			<mit-icon type="check" size="30" color="{{ disabled ? colors.disabled : colors.default }}"></mit-icon>
+			<mit-icon mit-class="{{ disabled ? 'disabled': 'default'}}" type="check"></mit-icon>
 		</view>
 	</view>
 </mit-cell>

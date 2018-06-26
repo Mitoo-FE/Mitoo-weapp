@@ -8,8 +8,7 @@ Component({
 			type: String
 		},
         size: {
-            type: Number,
-            value: 24
+            type: Number
         },
     }
 })

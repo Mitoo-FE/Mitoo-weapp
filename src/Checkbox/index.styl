@@ -21,10 +21,15 @@ $prefixCls = $prefix + '-checkbox'
 			font-size: 30rpx;
 			margin-right: 30rpx;
 
+			.checked{
+				color: $brand-color-primary;
+			}
+			.uncheck{
+				color: $color-text-disabled;
+			}
+
 			.disabled{
-				color: #e3e3e3;
-				background-color: #e3e3e3;
-				border-radius: 50;
+				color: $color-text-disabled;
 			}
 		}
 
@@ -33,6 +38,5 @@ $prefixCls = $prefix + '-checkbox'
 			width: auto;
 		}
 	}
-
 
 }
