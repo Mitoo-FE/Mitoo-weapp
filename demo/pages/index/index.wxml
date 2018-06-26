@@ -1,23 +1,11 @@
-<!--index.wxml-->
 <view>
-  <!--<view class="userinfo">-->
-    <!--<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>-->
-    <!--<block wx:else>-->
-      <!--<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>-->
-      <!--<text class="userinfo-nickname">{{userInfo.nickName}}</text>-->
-    <!--</block>-->
-  <!--</view>-->
-  <!--<view class="usermotto">-->
-    <!--<text class="user-motto">{{motto}}</text>-->
-  <!--</view>-->
     <mit-panel title="布局">
         <mit-cell-group>
+            <mit-cell title="Layout" isLink url="/pages/layout/layout"></mit-cell>
+            <mit-cell title="Grid" isLink url="/pages/grid/grid"></mit-cell>
             <mit-cell title="Card" isLink url="/pages/card/card"></mit-cell>
             <mit-cell title="List" isLink url="/pages/list/list"></mit-cell>
-            <mit-cell title="Layout" isLink url="/pages/layout/layout"></mit-cell>
             <mit-cell title="Panel" isLink url="/pages/panel/panel"></mit-cell>
-            <mit-cell title="Grid" isLink url="/pages/grid/grid"></mit-cell>
-
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="导航">
