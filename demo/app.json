@@ -21,7 +21,8 @@
     "pages/badge/badge",
     "pages/tag/tag",
     "pages/alert/alert",
-    "pages/progress/progress"
+    "pages/progress/progress",
+    "pages/grid/grid"
   ],
   "window":{
     "backgroundTextStyle":"light",

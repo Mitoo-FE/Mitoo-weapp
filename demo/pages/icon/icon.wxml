@@ -74,4 +74,5 @@
 		<mit-icon size="40" type="circle-empty-success"></mit-icon>
 		<view class="text">circle-empty-success</view>
 	</view>
+
 </view>

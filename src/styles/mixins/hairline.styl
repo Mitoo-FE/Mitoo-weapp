@@ -40,7 +40,7 @@ hairline(direction = 'all', color = $border-color-base, radius = 0){
         @media (min-resolution: 2dppx) {
           border-bottom: none;
 
-          &::before {
+          &::after {
             scale-hairline-common($border-color-base, auto, auto, 0, 0);
             width: 100%;
             height: 1rpx;
@@ -80,7 +80,7 @@ hairline(direction = 'all', color = $border-color-base, radius = 0){
         @media (min-resolution: 2dppx) {
           border-right: none;
 
-          &::before {
+          &::after {
             scale-hairline-common($border-color-base, 0, 0, auto, auto);
             width: 100%;
             height: 1rpx;

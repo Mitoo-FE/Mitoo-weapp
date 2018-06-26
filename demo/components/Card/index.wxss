@@ -38,7 +38,7 @@ page {
   .mit-card-header {
     border-bottom: none;
   }
-  .mit-card-header::before {
+  .mit-card-header::after {
     content: '';
     position: absolute;
     background-color: #dddeee;
@@ -55,7 +55,7 @@ page {
   }
 }
 @media (min-resolution: 2dppx) and (min-resolution: 3dppx) {
-  .mit-card-header::before {
+  .mit-card-header::after {
     transform: scaleY(0.33);
   }
 }

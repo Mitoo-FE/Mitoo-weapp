@@ -1,0 +1,10 @@
+{
+	"usingComponents": {
+		"mit-panel": "/components/Panel/index",
+		"mit-grid": "/components/Grid/index",
+		"mit-grid-item": "/components/Grid-Item/index",
+		"mit-icon": "/components/Icon/index",
+		"mit-col": "/components/Col/index",
+		"mit-row": "/components/Row/index"
+	}
+}

@@ -1,0 +1,6 @@
+{
+  	"component": true,
+    "usingComponents": {
+		"mit-grid-item": "/components/Grid-Item/index"
+	}
+}

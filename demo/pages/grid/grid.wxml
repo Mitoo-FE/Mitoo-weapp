@@ -1,0 +1,40 @@
+<view class="">
+	<mit-panel title="3列">
+		<view>
+			<mit-grid columnNum="3">
+				<mit-grid-item>
+					<view slot="icon"><mit-icon type="category" size="40" /></view>
+					<view slot="title">我是一个分类</view>
+				</mit-grid-item>
+				<mit-grid-item>
+					<view slot="icon"><mit-icon type="category" size="40" /></view>
+					<view slot="title">我是一个分类</view>
+				</mit-grid-item>
+				<mit-grid-item>
+					<view slot="icon"><mit-icon type="category" size="40" /></view>
+					<view slot="title">我是一个分类</view>
+				</mit-grid-item>
+			</mit-grid>
+		</view>
+	</mit-panel>
+	<mit-panel title="4列">
+		<mit-grid columnNum="4">
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+		</mit-grid>
+	</mit-panel>
+</view>

@@ -1,0 +1,5 @@
+<view class="mit-grid mit-grid-square mit-grid-line">
+	<view class="mit-flexbox mit-flexbox-justify-center mit-flexbox-align-stretch">
+		<slot></slot>
+	</view>
+</view>

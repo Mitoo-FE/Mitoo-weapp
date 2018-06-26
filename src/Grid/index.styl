@@ -1,0 +1,35 @@
+@import "../styles/index";
+
+$gridPrefixCls = $prefix + '-grid';
+$flexPrefixCls = $prefix + '-flexbox';
+
+.{$gridPrefixCls} {
+	.{$flexPrefixCls} {
+		background: $background-color-base;
+	}
+
+
+
+	&.{$gridPrefixCls}-square {
+		.{$gridPrefixCls}-item {
+			&:before {
+				display: block;
+				content: '  ';
+				padding-bottom: 100%;
+			}
+			.{$gridPrefixCls}-item-content {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			.{$gridPrefixCls}-item-inner-content {
+				height: 100%;
+				.{$gridPrefixCls}-icon {
+					margin-top: $v-spacing-md;
+					width: 28%!important;
+				}
+			}
+		}
+	}
+
+}
