@@ -37,4 +37,48 @@
 			</mit-grid-item>
 		</mit-grid>
 	</mit-panel>
+	<mit-panel title="5列">
+		<mit-grid columnNum="5">
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+			<mit-grid-item>
+				<view slot="icon"><mit-icon type="category" size="40" /></view>
+				<view slot="title">我是一个分类</view>
+			</mit-grid-item>
+		</mit-grid>
+	</mit-panel>
 </view>

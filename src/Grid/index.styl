@@ -8,28 +8,24 @@ $flexPrefixCls = $prefix + '-flexbox';
 		background: $background-color-base;
 	}
 
+	&.{$gridPrefixCls}-line {
+		position: relative;
 
+		.{$flexPrefixCls} {
+			position: relative;
+			hairline('bottom');
 
-	&.{$gridPrefixCls}-square {
-		.{$gridPrefixCls}-item {
-			&:before {
-				display: block;
-				content: '  ';
-				padding-bottom: 100%;
-			}
-			.{$gridPrefixCls}-item-content {
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-			}
-			.{$gridPrefixCls}-item-inner-content {
-				height: 100%;
-				.{$gridPrefixCls}-icon {
-					margin-top: $v-spacing-md;
-					width: 28%!important;
+			.{$flexPrefixCls}-item {
+				position: relative;
+				&:first-child {
+					hairline('left');
+				}
+				&:not(:last-child) {
+					hairline('right');
 				}
 			}
 		}
+
 	}
 
 }
