@@ -15,6 +15,10 @@ Component({
         text: {
             type: String,
             value: ''
+        },
+        icon: {
+            type: Boolean,
+            value: false
         }
     },
     data: {

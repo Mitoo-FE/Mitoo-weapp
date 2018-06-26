@@ -9,10 +9,18 @@
   font-size: $size-font-base;
   padding: $padding-base;
   overflow: hidden;
-  hairline('top', color=$notice-bar-border-color)
-  hairline('bottom', color=$notice-bar-border-color)
+
   &-inner {
+    display: inline-block;
     white-space: nowrap;
+    .{$prefix}-notice-bar-icon {
+      display: inline-block;
+      padding-right: $padding-base;
+      background-color: $notice-bar-background-color;
+    }
+    .{$prefix}-notice-bar-text {
+      display: inline-block;
+    }
   }
   &-close {
     color: $notice-bar-text-color;

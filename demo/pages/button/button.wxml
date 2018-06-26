@@ -7,9 +7,16 @@
         <mit-button size="large" type="primary" disabled>主按钮</mit-button>
         <mit-button size="large" type="default" disabled>次要按钮</mit-button>
     </mit-panel>
-    <mit-panel noBackground title="自定义颜色的按钮">
-        <mit-button size="large">主按钮</mit-button>
-        <mit-button size="large" type="default">次要按钮</mit-button>
+    <mit-panel noBackground title="不同类型的按钮">
+        <mit-button type="info" size="large">按钮</mit-button>
+        <mit-button type="error" size="large">按钮</mit-button>
+        <mit-button type="warning" size="large">按钮</mit-button>
+        <mit-button type="brand" size="large">按钮</mit-button>
+        <mit-button type="brand-yellow" size="large">按钮</mit-button>
+        <mit-button type="brand-red" size="large">按钮</mit-button>
+        <mit-button type="brand-green" size="large">按钮</mit-button>
+        <mit-button type="brand-blue" size="large">按钮</mit-button>
+        <mit-button type="brand-dark-blue" size="large">按钮</mit-button>
     </mit-panel>
     <mit-panel noBackground title="短按钮">
         <mit-button size="default" type="primary">主按钮</mit-button>

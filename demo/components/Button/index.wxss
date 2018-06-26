@@ -26,6 +26,62 @@
 .mit-button-wrap .mit-button-default.mit-button-hover {
   background-color: #f2f2f2;
 }
+.mit-button-wrap .mit-button-info {
+  background-color: #2db7f5;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-info.mit-button-hover {
+  background-color: #2baee9;
+}
+.mit-button-wrap .mit-button-error {
+  background-color: #ed3f14;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-error.mit-button-hover {
+  background-color: #e13c13;
+}
+.mit-button-wrap .mit-button-brand {
+  background-color: #ff6b22;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-brand.mit-button-hover {
+  background-color: #f26620;
+}
+.mit-button-wrap .mit-button-brand-yellow {
+  background-color: #ffc70a;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-brand-yellow.mit-button-hover {
+  background-color: #f2bd0a;
+}
+.mit-button-wrap .mit-button-brand-red {
+  background-color: #ec0d33;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-brand-red.mit-button-hover {
+  background-color: #e00c30;
+}
+.mit-button-wrap .mit-button-brand-green {
+  background-color: #25c38d;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-brand-green.mit-button-hover {
+  background-color: #23b986;
+}
+.mit-button-wrap .mit-button-brand-blue {
+  background-color: #1b9cff;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-brand-blue.mit-button-hover {
+  background-color: #1a94f2;
+}
+.mit-button-wrap .mit-button-brand-dark-blue {
+  background-color: #3f63c6;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-brand-dark-blue.mit-button-hover {
+  background-color: #3c5ebc;
+}
 .mit-button-wrap .mit-button-small {
   display: inline-block;
   padding: 18rpx 36rpx;
