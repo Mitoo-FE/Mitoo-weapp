@@ -1,5 +1,6 @@
 {
 	"usingComponents": {
-		"mit-toptips": "/components/Toptips/index"
+		"mit-toptips": "/components/Toptips/index",
+		"mit-button": "/components/Button/index"
 	}
 }

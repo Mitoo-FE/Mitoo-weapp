@@ -1,5 +1,6 @@
 {
 	"usingComponents": {
-		"mit-toast": "/components/Toast/index"
+		"mit-toast": "/components/Toast/index",
+		"mit-button": "/components/Button/index"
 	}
 }

@@ -1,8 +1,8 @@
 <view class="">
-	<button bindtap="showBase">基础样式</button>
-	<button bindtap="showSuccess">成功！</button>
-	<button bindtap="showFail">失败！</button>
-	<button bindtap="showNetwork">网络连接失败！</button>
-	<button bindtap="showLoading">加载中</button>
+	<mit-button size="large" bindtap="showBase">基础样式</mit-button>
+	<mit-button size="large" bindtap="showSuccess">成功！</mit-button>
+	<mit-button size="large" bindtap="showFail">失败！</mit-button>
+	<mit-button size="large" bindtap="showNetwork">网络连接失败！</mit-button>
+	<mit-button size="large" bindtap="showLoading">加载中</mit-button>
 	<mit-toast id="toast"></mit-toast>
 </view>
