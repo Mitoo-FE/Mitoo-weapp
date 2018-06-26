@@ -6,26 +6,24 @@
     </mit-panel>
     <mit-panel noBackground title="边框颜色">
         <view style="padding: 18rpx;">
-            <mit-tag borderColor="red" text="标签一"/>
-            <mit-tag style="margin-left:10rpx" borderColor="yellow" text="标签一"/>
-            <mit-tag style="margin-left:10rpx" borderColor="blue" text="标签一"/>
-            <mit-tag style="margin-left:10rpx" borderColor="orange" text="标签一"/>
+            <mit-tag borderColor="#EC0D33" text="标签一"/>
+            <mit-tag style="margin-left:10rpx" borderColor="#FFC70A" text="标签二"/>
+            <mit-tag style="margin-left:10rpx" borderColor="#1B9CFF" text="标签三"/>
+            <mit-tag style="margin-left:10rpx" borderColor="#1B9CFF" text="标签四"/>
         </view>
     </mit-panel>
     <mit-panel noBackground title="各种颜色">
         <view style="padding: 18rpx;">
-            <mit-tag backgroundColor="red" borderColor="#fff" text="标签一"/>
-            <mit-tag style="margin-left:10rpx" borderColor="#fff" backgroundColor="yellow" text="标签一"/>
-            <mit-tag style="margin-left:10rpx" borderColor="#fff"  backgroundColor="blue" text="标签一"/>
-            <mit-tag style="margin-left:10rpx" borderColor="#fff"  backgroundColor="orange" text="标签一"/>
+            <mit-tag backgroundColor="#EC0D33" borderColor="#fff" text="标签一"/>
+            <mit-tag style="margin-left:10rpx" borderColor="#fff" backgroundColor="#FFC70A" text="标签二"/>
+            <mit-tag style="margin-left:10rpx" borderColor="#fff"  backgroundColor="#3F63C6" text="标签三"/>
         </view>
     </mit-panel>
     <mit-panel noBackground title="反馈">
         <view style="padding: 18rpx;">
-            <mit-tag selectable bind:change="change" borderColor="#fff"  backgroundColor="red" text="标签一"/>
-            <mit-tag selectable bind:change="change" borderColor="#fff"  style="margin-left:10rpx" backgroundColor="yellow" text="标签一"/>
-            <mit-tag selectable bind:change="change" borderColor="#fff"  style="margin-left:10rpx" backgroundColor="blue" text="标签一"/>
-            <mit-tag selectable bind:change="change" borderColor="#fff"  style="margin-left:10rpx" backgroundColor="orange" text="标签一"/>
+            <mit-tag selectable bind:change="change" borderColor="#fff"  backgroundColor="#FFC70A" text="标签一"/>
+            <mit-tag selectable bind:change="change" borderColor="#fff"  style="margin-left:10rpx" backgroundColor="#EC0D33" text="标签一"/>
+            <mit-tag selectable bind:change="change" borderColor="#fff"  style="margin-left:10rpx" backgroundColor="#1B9CFF" text="标签一"/>
         </view>
     </mit-panel>
 </view>
