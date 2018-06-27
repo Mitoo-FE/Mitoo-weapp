@@ -1,18 +1,84 @@
 <view>
     <mit-panel noBackground title="默认">
         <mit-card>
-            <view slot="header">
-                <view>Every thing</view>
+            <view class="header-custom" slot="header">
+                <view class="left">
+                    <image class="image" src="/assets/image/news.jpg" />
+                </view>
+                <view class="right">
+                    <view class="title">卡片标题文字一行</view>
+                    <view class="desc">次要信息展示</view>
+                </view>
             </view>
-            <view slot="body">正文</view>
-            <view slot="footer">底部内容</view>
+            <view class="body-custom" slot="body">
+                正文描述内容长度可以更加实际情况自己定义字数的多少，此处可以灵活运用，超出的可加省此处可以灵活运用，超出的可加省
+            </view>
+        </mit-card>
+    </mit-panel>
+    <mit-panel noBackground title="默认">
+        <mit-card full>
+            <view class="header-custom" slot="header">
+                <view class="left">
+                    <image class="image" src="/assets/image/news.jpg" />
+                </view>
+                <view class="right">
+                    <view class="title">卡片标题文字最多显示两行的情况</view>
+                    <view class="info">
+                        <view class="item">1小时前 | 2.5万关注</view>
+                    </view>
+                </view>
+            </view>
+            <view class="body-custom" slot="body">
+                正文描述内容长度可以更加实际情况自己定义字数的多少，此处可以灵活运用，超出的可加省此处可以灵活运用，超出的可加省
+            </view>
         </mit-card>
     </mit-panel>
     <mit-panel noBackground title="通栏">
         <mit-card full>
-            <view slot="header">顶部内容</view>
-            <view slot="body">正文</view>
-            <view slot="footer">底部内容</view>
+            <view class="header-custom" slot="header">
+                <view class="left">
+                    <image class="image" src="/assets/image/news.jpg" />
+                </view>
+                <view class="right">
+                    <view class="title">卡片标题文字一行</view>
+                    <view class="desc">次要信息展示</view>
+                </view>
+            </view>
+            <view class="body-custom" slot="body">
+                正文描述内容长度可以更加实际情况自己定义字数的多少，此处可以灵活运用，超出的可加省此处可以灵活运用，超出的可加省
+            </view>
+        </mit-card>
+    </mit-panel>
+    <mit-panel noBackground title="带大图">
+        <mit-card>
+            <view class="header-bigimg" slot="header">
+                <mit-avatar src="/assets/image/avatar.png"></mit-avatar>
+                <view class="right">
+                    <view class="title">卡片标题文字最多显示一行</view>
+                    <view class="info">
+                        <view class="item">2018-09-12  12:30   |   2.5万关注</view>
+                    </view>
+                </view>
+            </view>
+            <view class="body-bigimg" slot="body">
+                <image class="desc-img" src="/assets/image/desc.jpg"  />
+            </view>
+        </mit-card>
+    </mit-panel>
+    <mit-panel noBackground title="带大图 通栏">
+        <mit-card full>
+            <view class="header-bigimg" slot="header">
+                <mit-avatar src="/assets/image/avatar.png"></mit-avatar>
+                <view class="right">
+                    <view class="title">卡片标题文字最多显示一行</view>
+                    <view class="info">
+                        <view class="item">2018-09-12  12:30   |   2.5万关注</view>
+                    </view>
+                </view>
+            </view>
+            <view class="body-bigimg" slot="body">
+                <image class="desc-img" src="/assets/image/desc.jpg"  />
+            </view>
         </mit-card>
     </mit-panel>
 </view>
