@@ -1,0 +1,34 @@
+@import "../styles/index";
+@import "../styles/mixins/hairline.styl";
+
+.{$prefix}-avatar {
+    display: inline-block;
+    image {
+        border-radius: 100%;
+        width: $avatar-size-base;
+        height: $avatar-size-base;
+    }
+    &-bordered {
+        image {
+            border: $avatar-border-width solid $border-color-base;
+        }
+    }
+    &-no-circle {
+        image {
+            border-radius: $border-radius-base;
+        }
+    }
+    &-large {
+        image {
+            width: $avatar-size-lg;
+            height: $avatar-size-lg;
+        }
+    }
+    &-small {
+        image {
+            width: $avatar-size-sm;
+            height: $avatar-size-sm;
+        }
+    }
+
+}

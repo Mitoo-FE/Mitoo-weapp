@@ -2,7 +2,7 @@
     <view wx:if="{{ icon }}" class="mit-notice-bar-icon">
         <mit-icon size="30"  type="sound"/>
     </view>
-    <view class="mit-notice-bar-inner {{icon ? '' : 'mit-notice-bar-inner-noicon' }}">
+    <view class="mit-notice-bar-inner {{icon ? '' : 'mit-notice-bar-inner-noicn' }}">
         <view class="mit-notice-bar-text {{transform?'mit-notice-bar-text-scroll':''}}" style="animation-duration:{{text.length/2}}s">
             {{text}}
         </view>

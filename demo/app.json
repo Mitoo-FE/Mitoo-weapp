@@ -23,7 +23,8 @@
     "pages/alert/alert",
     "pages/progress/progress",
     "pages/grid/grid",
-    "pages/color/color"
+    "pages/color/color",
+    "pages/avatar/avatar"
   ],
   "window":{
     "backgroundTextStyle":"light",
