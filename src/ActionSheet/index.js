@@ -40,7 +40,7 @@ Component({
             const options = {
                 index
             }
-            this.triggerEvent('tapItem', options, {})
+            this.triggerEvent('tapItem', options, { bubbles: false, composed: false })
         }
     }
 

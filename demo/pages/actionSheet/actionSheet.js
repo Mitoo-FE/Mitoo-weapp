@@ -1,3 +1,4 @@
+const { Toptips } = require('../../components/Mixins/Toptips');
 Page({
 	data() {
 		return {
@@ -21,6 +22,8 @@ Page({
 	},
 	onTapItem(evt) {
 		const index = evt.detail.index
-		console.log('点击第' + (index + 1) +'个按钮');
+		Toptips({
+			content: '点击第' + (index + 1) +'个按钮'
+		})
 	}
 })
