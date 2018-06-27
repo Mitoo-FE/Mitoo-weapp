@@ -1,34 +1,16 @@
 .mit-card {
+  color: #333;
   position: relative;
-  font-size: 32rpx;
+  font-size: 28rpx;
   margin: 18rpx;
-  border: 1rpx solid #dddeee;
-  border-radius: 6rpx;
+  padding: 0 24rpx;
   background-color: #fff;
-}
-@media (min-resolution: 2dppx) {
-  .mit-card {
-    position: relative;
-    border: none;
-  }
-  .mit-card::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200%;
-    height: 200%;
-    border: 1rpx solid #dddeee;
-    border-radius: 12rpx;
-    transform-origin: 0 0;
-    transform: scale(0.5);
-    box-sizing: border-box;
-    pointer-events: none;
-  }
 }
 .mit-card-header {
   position: relative;
-  padding: 18rpx;
+  padding: 24rpx 0;
+  font-size: 36rpx;
+  font-weight: 500;
   border-bottom: 1rpx solid #dddeee;
 }
 @media (min-resolution: 2dppx) {
@@ -57,30 +39,13 @@
   }
 }
 .mit-card-body {
-  padding: 18rpx;
+  padding: 24rpx 0;
 }
-.mit-card-footer {
-  font-size: 28rpx;
-  color: #80848f;
+.mit-card .mit-card-footer {
+  font-size: 24rpx;
+  color: #666;
 }
 .mit-card.mit-card-full {
   margin: 0;
   border-radius: 0;
-  border-left: 0;
-  border-right: 0;
-}
-.mit-card.mit-card-full:before {
-  display: none !important;
-}
-.mit-card.mit-card-full:after {
-  display: none !important;
-}
-@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {
-  .mit-card::before {
-    width: 300%;
-    height: 300%;
-    border: 1rpx solid #dddeee;
-    border-radius: 18rpx;
-    transform: scale(0.33);
-  }
 }

@@ -1,5 +1,6 @@
 {
 	"usingComponents": {
-		"mit-card": "/components/Card/index"
+		"mit-card": "/components/Card/index",
+		"mit-panel": "/components/Panel/index"
 	}
 }

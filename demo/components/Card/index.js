@@ -6,6 +6,7 @@ Component({
         full: {
             type: Boolean,
             value: false
-        }
+        },
+
     },
 })

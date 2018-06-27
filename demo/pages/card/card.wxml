@@ -1,16 +1,18 @@
 <view>
-    <view style="padding:20rpx;">Default</view>
-    <mit-card>
-        <view slot="header">
-            <view>Every thing</view>
-        </view>
-        <view slot="body">正文</view>
-        <view slot="footer">底部内容</view>
-    </mit-card>
-    <view style="padding:20rpx;">Full</view>
-    <mit-card full>
-        <view slot="header">顶部内容</view>
-        <view slot="body">正文</view>
-        <view slot="footer">底部内容</view>
-    </mit-card>
+    <mit-panel noBackground title="默认">
+        <mit-card>
+            <view slot="header">
+                <view>Every thing</view>
+            </view>
+            <view slot="body">正文</view>
+            <view slot="footer">底部内容</view>
+        </mit-card>
+    </mit-panel>
+    <mit-panel noBackground title="通栏">
+        <mit-card full>
+            <view slot="header">顶部内容</view>
+            <view slot="body">正文</view>
+            <view slot="footer">底部内容</view>
+        </mit-card>
+    </mit-panel>
 </view>
