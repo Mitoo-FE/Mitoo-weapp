@@ -1,4 +1,4 @@
-set_animation(name, during, delay=0s, iteration_count=initial, fill_mode=both,transition_timing_function='ease-in-out') {
+set_animation(name, during, delay=0s, iteration_count=initial, fill_mode=both,transition_timing_function=ease-in-out) {
   animation-name: name;
   animation-duration: during;
   animation-delay: delay;
@@ -9,9 +9,10 @@ set_animation(name, during, delay=0s, iteration_count=initial, fill_mode=both,tr
 
 vendors = official
 
-animation_keyframes(name, during, delay=0s, iteration_count=initial, fill_mode=both,transition_timing_function='ease-in-out') {
+animation_keyframes(name, during, delay=0s, iteration_count=initial, fill_mode=both,transition_timing_function=ease-in-out) {
   @keyframes name {
     if (name == transition_in) {
+
       0% {
         opacity: 0
       }
@@ -81,7 +82,7 @@ animation_keyframes(name, during, delay=0s, iteration_count=initial, fill_mode=b
         transform: translateX(100%)
       }
       100% {
-        transform: translateX(-200%)
+        transform: translateX(-100%)
       }
     }
     else if (name == flow) {

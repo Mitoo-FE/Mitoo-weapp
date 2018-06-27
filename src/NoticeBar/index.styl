@@ -9,17 +9,22 @@
   font-size: $size-font-base;
   padding: $padding-base;
   overflow: hidden;
-
+  .{$prefix}-notice-bar-icon {
+    position: absolute;
+    padding: $padding-base;
+    left: 0;
+    top: 0;
+  }
   &-inner {
     display: inline-block;
-    white-space: nowrap;
-    .{$prefix}-notice-bar-icon {
-      display: inline-block;
-      padding-right: $padding-base;
-      background-color: $notice-bar-background-color;
-    }
+    margin-left: $padding-base + $font-size-base;
+    overflow: hidden;
+    margin-right: $padding-base * 2;
     .{$prefix}-notice-bar-text {
       display: inline-block;
+    }
+    &-noicon {
+      margin-left: 0;
     }
   }
   &-close {
@@ -34,6 +39,7 @@
     padding-right: $size-font-base;
   }
   .{$prefix}-notice-bar-text-scroll {
+    white-space: nowrap;
     animation_keyframes(transition_push_around, 0s, 0s, infinite, both, linear)
   }
 }
