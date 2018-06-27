@@ -7,6 +7,7 @@
 [Mitoo-WeApp]是一款基于小程序的ui组件库，旨在解决ios和android上展示的差异化，提升开发者的开发效率，把更多的精力放到业务上。
 
 一期组件列表：
+
 * 布局
 	* Layout 栅格布局
 	* Grid 宫格
@@ -22,7 +23,6 @@
 	* Tabs 标签页
 	* Drawer 抽屉
 	* Page 分页
-	* Steps 步骤条
 	* NoticeBar 通告栏
 * 操作反馈
  	* ActionSheet 动作面板
@@ -41,6 +41,20 @@
 	* Radio 单选
 	* Checkbox 复选
 	* Switch开关
+
+
+二期组件列表：
+
+*	Slider	滑块
+* 	carousel	滚动
+*  	Steps 步骤条
+*  search 搜索框
+
+二期组件增加复杂demo
+
+*  Menu 菜单
+*  citySearch 城市选择器
+
 
 ![Mitoo-WeApp 演示](https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3842044582&token=2110797867)
 
