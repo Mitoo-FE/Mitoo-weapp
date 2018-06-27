@@ -26,29 +26,30 @@
   &-large {
     width: $switch-size-large * 2.5;
     height: $switch-size-large;
+    margin: 2rpx;
     .{$prefix}-switch-inner {
-      width: $switch-size-large - 8rpx;
-      height: $switch-size-large - 8rpx;
+      width: $switch-size-large - 4rpx;
+      height: $switch-size-large - 4rpx;
     }
     &.{$prefix}-switch-on {
       .{$prefix}-switch-inner {
-        transform: translateX($switch-size-large*1.5);
+        transform: translateX($switch-size-large*1.5+2);
       }
     }
   }
   &-inner {
     position: absolute;
-    width: $switch-size-base - 8rpx;
-    height: $switch-size-base - 8rpx;
-    margin: 4rpx;
+    width: $switch-size-base - 4rpx;
+    height: $switch-size-base - 4rpx;
+    margin: 2rpx;
     background-color: $background-color-base;
     border-radius: $border-radius-sm;
-    box-shadow: 1rpx 3rpx 3rpx $shadow-color;
+    box-shadow: 1rpx 1rpx 3rpx $shadow-color;
   }
   &-off {
     .{$prefix}-switch-inner {
       transition: all $transition-time ease-in-out;
-      left: 0;
+      left: 0rpx;
     }
   }
   &-on {
