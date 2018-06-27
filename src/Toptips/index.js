@@ -13,8 +13,6 @@ Component({
 
             const { duration = 1.5, content, type = 'default' } = options
 
-			console.log(options);
-
             this.setData({
                 visible: true,
                 content: content,
