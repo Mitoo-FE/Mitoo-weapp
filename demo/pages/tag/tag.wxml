@@ -9,7 +9,6 @@
             <mit-tag borderColor="#EC0D33" text="标签一"/>
             <mit-tag style="margin-left:10rpx" borderColor="#FFC70A" text="标签二"/>
             <mit-tag style="margin-left:10rpx" borderColor="#1B9CFF" text="标签三"/>
-            <mit-tag style="margin-left:10rpx" borderColor="#1B9CFF" text="标签四"/>
         </view>
     </mit-panel>
     <mit-panel noBackground title="各种颜色">
