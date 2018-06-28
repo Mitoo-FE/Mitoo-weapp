@@ -4,15 +4,9 @@ $gridPrefixCls = $prefix + '-grid';
 $flexPrefixCls = $prefix + '-flexbox';
 
 .{$gridPrefixCls} {
+	position: relative;
+	hairline('top');
 	.{$flexPrefixCls} {
 		background: $background-color-base;
-	}
-
-	&.{$gridPrefixCls}-line {
-		position: relative;
-		.{$flexPrefixCls} {
-			position: relative;
-			hairline('bottom');
-		}
 	}
 }

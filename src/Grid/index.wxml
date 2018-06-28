@@ -1,3 +1,3 @@
-<view class="mit-grid mit-grid-square mit-grid-line">
+<view class="mit-grid">
 	<slot></slot>
 </view>

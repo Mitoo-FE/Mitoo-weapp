@@ -1,4 +1,4 @@
-<view class="mit-flexbox-item mit-grid-item " style="width: {{ rowWidth }}">
+<view class="mit-grid-item " style="width: {{ rowWidth }}">
 	<view class="mit-grid-item-content">
 		<view class="mit-grid-item-inner-content column-num-{{ columnNum }}">
 			<view class="mit-grid-icon"><slot name="icon"></slot></view>
