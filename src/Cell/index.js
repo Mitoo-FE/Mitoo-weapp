@@ -23,6 +23,10 @@ Component({
         url: {
             type: String,
             value: ''
+        },
+        noBorder: {
+            type: Boolean,
+            value: false
         }
     },
     data: {

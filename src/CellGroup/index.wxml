@@ -1,4 +1,5 @@
 <view class="mit-cell-group" mit-class="mit-cell-group-group">
-    <slot></slot>
+    <view class="mit-cell-group-title" wx:if="{{ title }}">{{title}}</view>
+    <slot/>
 </view>
 

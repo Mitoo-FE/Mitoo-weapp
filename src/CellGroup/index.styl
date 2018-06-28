@@ -1,1 +1,12 @@
 @import "../styles/index";
+@import "../styles/mixins/hairline";
+
+.{$prefix}-cell-group {
+  &-title {
+    hairline('bottom')
+    margin: 0 $margin-x-large;
+    padding: $padding-x-large 0;
+    font-size: $font-size-large;
+    color: $color-text-secondary;
+  }
+}

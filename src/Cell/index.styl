@@ -3,13 +3,20 @@
 
 .{$prefix}-cell {
   display: flex;
+
   &-container, &-container-slot{
     flex: 1;
-    font-size: $size-font-base;
-    padding: $padding-base 0;
-    margin: 0 $margin-base;
+    font-size: $font-size-heading;
+    padding: $padding-x-large 0;
+    margin: 0 $margin-x-large;
     position: relative;
     hairline('bottom');
+    line-height: $line-height-paragraph;
+  }
+  &-no-border {
+    .{$prefix}-cell-container, .{$prefix}-cell-container-slot {
+      hairline-remove('bottom');
+    }
   }
   &-container{
     display: flex;
@@ -20,14 +27,14 @@
     display: block;
   }
   &-label {
-    font-size: $size-font-small;
-    color: $subsidiary-color;
+    margin-top: $padding-base;
+    font-size: $font-size-sm;
   }
   &-right-container {
     display: flex;
     align-items: center;
     .{$prefix}-cell-link {
-      color: $subsidiary-color;
+      color: $color-text-secondary;
     }
   }
   &-last {

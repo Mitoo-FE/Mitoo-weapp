@@ -1,5 +1,11 @@
 Component({
     externalClasses: ['mit-class'],
+    properties: {
+        title: {
+            type: String,
+            value: ''
+        }
+    },
     options: {
         multipleSlots: true
     },

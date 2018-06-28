@@ -6,19 +6,19 @@
         </view>
     </mit-panel>
     <mit-panel title="带描述和详情的列表">
-        <mit-cell title="列表项" label="描述 balabalabala" isLink>
+        <mit-cell title="单行列表" label="附加文本在此处" isLink>
         </mit-cell>
     </mit-panel>
     <mit-panel title="带跳转的列表">
-        <mit-cell title="点我调回首页" label="描述 balabalabala" isLink url="/pages/index/index">
+        <mit-cell title="点我调回首页" label="附加文本在此处" isLink url="/pages/index/index">
         </mit-cell>
     </mit-panel>
-    <mit-panel withoutBorder title="分组">
-        <mit-cell-group>
-            <mit-cell title="走起"></mit-cell>
-            <mit-cell title="走起"></mit-cell>
-            <mit-cell title="走起"></mit-cell>
-            <mit-cell title="走起"></mit-cell>
+    <mit-panel withoutBorder title="Cell 组">
+        <mit-cell-group title="Cell 组">
+            <mit-cell noBorder title="单行列表" isLink/>
+            <mit-cell noBorder title="单行列表" isLink/>
+            <mit-cell noBorder title="单行列表" isLink/>
+            <mit-cell noBorder title="单行列表" isLink/>
         </mit-cell-group>
     </mit-panel>
 </view>
