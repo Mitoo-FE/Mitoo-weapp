@@ -1,28 +1,27 @@
 @import "../styles/index";
 @import "../styles/mixins/hairline.styl";
 
-
 .{$prefix}-tabs-cell {
-  position: relative;
-  padding: $padding-base 0;
-  margin: 0 $margin-base;
-  text-align: center;
-  font-size: $font-size-sm;
-  line-height: $line-height-paragraph;
-  color: $color-text-secondary;
-  .{$prefix}-tabs-cell-bottom {
-    width: 0;
-  }
-  &-active {
-    color: $color-text-base;
+    position: relative;
+    padding: $padding-base 0;
+    margin: 0 $margin-base;
+    text-align: center;
+    font-size: $font-size-sm;
+    line-height: $line-height-paragraph;
+    color: $color-text-secondary;
     .{$prefix}-tabs-cell-bottom {
-      border-bottom: $border-width-lg solid $color-text-base;
-      position: absolute;
-      bottom: 0;
-      width: $tab-active-bottom-width;
-      transition: transform $transition-time 0s linear;
-      left: 50%;
-      margin-left: - ($tab-active-bottom-width / 2);
+        width: 0;
     }
-  }
+    &-active {
+        color: $color-text-base;
+        .{$prefix}-tabs-cell-bottom {
+            border-bottom: $border-width-lg solid $color-text-base;
+            position: absolute;
+            bottom: 0;
+            width: $tab-active-bottom-width;
+            transition: transform $transition-time 0s linear;
+            left: 50%;
+            margin-left: - ($tab-active-bottom-width / 2);
+        }
+    }
 }

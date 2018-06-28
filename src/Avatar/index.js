@@ -9,7 +9,7 @@ Component({
             value: false
         },
         size: {
-            type: String,
+            type: [String, Number],
             value: 'default'
         },
         src: {
