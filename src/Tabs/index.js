@@ -22,7 +22,7 @@ Component({
 
     relations: {
         '../TabsCell/index': {
-            type: 'child'
+            type: 'child',
         }
     },
     ready() {
@@ -31,6 +31,19 @@ Component({
             this.setData({
                 'isScroll': true
             })
+        }
+        for (let n of nodes) {
+            if (n.properties.active) {
+                let query = wx.createSelectorQuery().in(n);
+                query.select('.mit-tabs-cell-active .mit-tabs-cell-bottom').boundingClientRect(function (rect) {
+                    for (let j of nodes) {
+                        j.setData({
+                            'activeLeft': rect.left
+                        });
+                    }
+                }).exec();
+                break;
+            }
         }
     },
     methods: {
