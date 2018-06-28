@@ -1,5 +1,5 @@
-<mit-cell>
-	<view class="mit-checkbox-item" bindtap="onTap">
+<mit-cell bindtap="onTap">
+	<view class="mit-checkbox-item" >
 		<view class="mit-checkbox-item-left">
 			<view class="mit-checkbox-item-left-extra">
 				<block wx:if="{{ checked }}">

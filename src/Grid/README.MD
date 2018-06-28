@@ -41,13 +41,11 @@
 
 |参数	    	  |说明  			   |类型            |默认值     |必须  |
 |:-----------: |:---------------:| :-------------:| :-------- | :--------|
-| title | 标题 | String | | true |
-| value | checkbox的value值，当value为空时，取title值 | String | | false |
-| checked | 默认选中 | Boolean | | false |
-| disabled | 不取选 | Boolean | | false |
+| columnNum | 标题 | String | | true |
 
-### Checkbox-Group
+### Grid-Item
 
 |参数	    	  |说明  			   |类型            |默认值     |必须  |
 |:-----------: |:---------------:| :-------------:| :-------- | :--------|
-| change | 点击的时候触发的时间 | Function | | false |
+| icon | icon | slot | | false |
+| title | title | slot | | false |

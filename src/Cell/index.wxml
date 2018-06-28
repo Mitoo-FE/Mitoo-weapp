@@ -1,4 +1,4 @@
-<view class="mit-cell mit-class {{ noBorder?'mit-cell-no-border':'' }} {{isLink?'mit-cell-with-link':''}} {{lastItem?'mit-cell-last':''}}" bindtap="redirectTo">
+<view class="mit-cell mit-class {{ noBorder?'mit-cell-no-border':'' }} {{isLink?'mit-cell-with-link':''}}" bindtap="redirectTo">
     <view class="mit-cell-container" wx:if="{{title}}">
         <view class="mit-cell-left-container">
             <view class="mit-cell-title" >
@@ -12,7 +12,7 @@
             </view>
         </view>
     </view>
-    <view class="mit-cell-container-slot" wx:else>
+    <view class="mit-cell-container-slot {{lastItem?'mit-cell-last':''}}" wx:else>
         <slot/>
     </view>
 </view>

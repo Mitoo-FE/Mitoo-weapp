@@ -4,6 +4,10 @@ Component({
         title: {
             type: String,
             value: ''
+        },
+        noCheckBorder: {
+            type: Boolean,
+            value: false
         }
     },
     options: {

@@ -46,8 +46,6 @@ Component({
 
 			parent.onChange({checked: !this.data.checked, value: this.data.value})
 
-
-
 		}
 	}
 

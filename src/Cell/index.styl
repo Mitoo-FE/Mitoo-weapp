@@ -11,7 +11,7 @@
     margin: 0 $margin-x-large;
     position: relative;
     hairline('bottom');
-    line-height: $line-height-paragraph;
+    // line-height: $line-height-paragraph;
   }
   &-no-border {
     .{$prefix}-cell-container, .{$prefix}-cell-container-slot {
@@ -41,6 +41,9 @@
     .{$prefix}-cell-container, .{$prefix}-cell-container-slot {
       hairline-remove('bottom');
     }
+  }
 
+  &:active{
+      background-color: $background-color-tap;
   }
 }
