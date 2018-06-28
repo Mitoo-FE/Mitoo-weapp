@@ -1,5 +1,5 @@
-<view wx:if="{{visible}}" class="mit-alert {{parser.getBackgroundCls(warning, error, success)}}">
-    <slot></slot>
+<view wx:if="{{ visible }}" class="mit-alert {{parser.getBackgroundCls(warning, error, success)}}">
+    <slot/>
     <view wx:if="{{closeable}}" bind:tap="close" class="mit-alert-close">×</view>
 </view>
 

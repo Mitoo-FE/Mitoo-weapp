@@ -28,7 +28,7 @@
 |参数 |说明 |类型 |默认值 |必须 |可选参数 |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | src  |  头像图片地址   | String |   | false  |   |
-| size  |  头像大小   | String  | false  | true  | 'large', 'small', 'default', number   |
+| size  |  头像大小   | String  | 'default'  | true  | 'large', 'small', 'default', number   |
 | noCircle |  是否圆头像   | Boolean  | false  | false  |    |
 | border |  是否有边框   | Boolean  | false  | false  |    |
 
