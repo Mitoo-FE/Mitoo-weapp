@@ -1,4 +1,4 @@
 <view class="mit-tabs-cell {{active?'mit-tabs-cell-active':''}}" style="color:{{active&&brandColor?brandColor:''}};border-bottom-color: {{active&&brandColor?brandColor:''}};" bind:tap="change_tab">
-  <slot></slot>
-  <view class="mit-tabs-cell-bottom" style="border-color:{{active&&brandColor?brandColor:''}};"/>
+  <slot/>
+  <view class="mit-tabs-cell-bottom" style="transform: translateX({{ activeLeft - nodeLeft }}rpx);border-color:{{active&&brandColor?brandColor:'' }};"/>
 </view>

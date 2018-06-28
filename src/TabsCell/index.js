@@ -4,12 +4,16 @@ Component({
         active: {
             type: Boolean,
             value: false
+        },
+        activeLeft: {
+            type: Number,
+            value: 0
         }
     },
     data: {
         brandColor: '',
         translation: 0,
-        nodeLeft: 0
+        activeLeft: 0
     },
     relations: {
         '../Tabs/index': {
@@ -24,11 +28,9 @@ Component({
         }
     },
     ready() {
-        let _self = this;
-        let query = wx.createSelectorQuery().in(_self);
-        let active_node = query.select('.mit-tabs-cell');
-        active_node.boundingClientRect((rect) => {
-            _self.setData({
+        let query = wx.createSelectorQuery().in(this);
+        query.select('.mit-tabs-cell-bottom').boundingClientRect((rect) => {
+            this.setData({
                 'nodeLeft': rect.left
             });
         }).exec();
@@ -42,22 +44,25 @@ Component({
             else {
                 let tab = parent[0];
                 let nodes = tab.getRelationNodes('../TabsCell/index');
-                nodes.forEach((e)=> {
+                for (let e of nodes) {
                     if (e.properties.active) {
                         e.setData({
                             'active': false
                         });
                     }
-                });
-
+                }
                 this.setData({
-                    'active': true,
-                    'translation': 0
+                    'active': true
                 });
+                for (let e of nodes) {
+                    e.setData({
+                        'activeLeft': this.data.nodeLeft
+                    });
+                }
             }
-        },
-        get_active($evt) {
-            console.log($evt)
         }
+    },
+    get_active($evt) {
+        console.log($evt)
     }
 })

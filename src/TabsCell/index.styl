@@ -14,15 +14,14 @@
     width: 0;
   }
   &-active {
-    color: $brand-color-primary;
+    color: $color-text-base;
     transition: all $transition-time ease;
     .{$prefix}-tabs-cell-bottom {
-      transform-origin: right;
-      border-bottom: $border-width-lg solid $brand-color-primary;
+      border-bottom: $border-width-lg solid $color-text-base;
       position: absolute;
       bottom: 0;
       width: $tab-active-bottom-width;
-      transition: border-bottom $transition-time ease;
+      transition: transform $transition-time ease;
       left: 50%;
       margin-left: - ($tab-active-bottom-width / 2);
     }
