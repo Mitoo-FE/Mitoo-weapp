@@ -76,6 +76,9 @@ npm run dev
 ```
 
 2. 打开[微信web开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)，'本地小程序项目 - 添加项目'，把 mitoo-weapp/demo 目录添加进去就可以预览示例demo了。
+
+
+
 ## ActtionSheet
 
 ## 使用指南
