@@ -1,3 +1,3 @@
-<view class="mit-tabs {{isScroll?'mit-tabs-scroll':''}}">
-  <slot></slot>
+<view class="mit-tabs {{isScroll?'mit-tabs-scroll':''}}" style="{{isScroll?'justify-content: left':'justify-content: space-around'}}">
+  <slot/>
 </view>

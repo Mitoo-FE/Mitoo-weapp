@@ -1,8 +1,8 @@
 page {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 .color-card {
-    padding: 18rpx;
+    padding: 30rpx;
     border-radius: 6rpx;
     margin: 18rpx;
     color: #fff;

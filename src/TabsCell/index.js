@@ -23,16 +23,6 @@ Component({
             }
         }
     },
-    ready() {
-        let _self = this;
-        let query = wx.createSelectorQuery().in(_self);
-        let active_node = query.select('.mit-tabs-cell');
-        active_node.boundingClientRect((rect) => {
-            _self.setData({
-                'nodeLeft': rect.left
-            });
-        }).exec();
-    },
     methods: {
         change_tab(evt) {
             let parent = this.getRelationNodes('../Tabs/index');

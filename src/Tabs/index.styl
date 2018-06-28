@@ -7,12 +7,14 @@
   background-color: $background-color-base;
   display: flex;
   box-pack: justify;
-  justify-content: space-around;
   hairline('bottom')
   padding: $padding-base;
   &-scroll {
     overflow-x: scroll;
     white-space: nowrap;
-    justify-content: left;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
   }
 }
