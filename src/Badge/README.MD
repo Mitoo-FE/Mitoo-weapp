@@ -1,6 +1,4 @@
-## Panel
-
-与其他组件配合使用
+## Badge 
 
 ## 使用指南
 
@@ -11,7 +9,7 @@
 ```json
 {
 	"usingComponents": {
-		"mit-panel": "/components/Panel/index",
+		"mit-badge": "/components/Badge/index",
 	}
 }
 ```
@@ -20,14 +18,16 @@
 在wxml文件里添加组件代码
 
 ```html
-<mit-panel>
+<mit-badge>
     ...
-</mit-panel>
+</mit-badge>
 ```
 
 ## API
 
 |参数	    |说明  			   |类型            |默认值     |必须  | 可选参数 |
 |:-----------:|:---------------:|:-------------:|:----------:|:---------:|:---:|
-| title  | 标题   |  Boolean  | false  |  true |  |
-| withoutBorder | 不带边框 | Boolean | false | false | true, false|
+| number  | 徽章上的数字   |  Number  |   |   |  |
+| flag | 是否加到其他组件上面 | Boolean | false | false | true, false |
+| color | 自定义徽章颜色 | String | | | |
+
