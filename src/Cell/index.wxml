@@ -1,5 +1,5 @@
 <view class="mit-cell mit-class {{ noBorder?'mit-cell-no-border':'' }} {{isLink?'mit-cell-with-link':''}}" bindtap="redirectTo">
-    <view class="mit-cell-container" wx:if="{{title}}">
+    <view class="mit-cell-container {{lastItem?'mit-cell-last':''}}" wx:if="{{title}}">
         <view class="mit-cell-left-container">
             <view class="mit-cell-title" >
                 {{title}}
