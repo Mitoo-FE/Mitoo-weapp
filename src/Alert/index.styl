@@ -1,29 +1,28 @@
 @import "../styles/index";
 
-
 .{$prefix}-alert {
-  position: relative;
-  margin: $margin-base;
-  border-radius: $alert-border-radius;
+    position: relative;
+    margin: $margin-base;
+    border-radius: $alert-border-radius;
 
-  font-size: $font-size-base;
-  color: $background-color-base;
-  background-color: $brand-color-primary;
-  padding: $padding-base;
-  &-warning {
-    background-color: $brand-color-warning;
-  }
-  &-error {
-    background-color: $brand-color-error;
-  }
-  &-success {
-    background-color: $brand-color-success;
-  }
-  &-close {
-    position: absolute;
-    line-height: $font-size-base;
-    right: $padding-base;
-    top: 50%;
-    margin-top: - ($font-size-base/2) ;
-  }
+    font-size: $font-size-base;
+    color: $background-color-base;
+    background-color: $brand-color-primary;
+    padding: $padding-base;
+    &-warning {
+        background-color: $brand-color-warning;
+    }
+    &-error {
+        background-color: $brand-color-error;
+    }
+    &-success {
+        background-color: $brand-color-success;
+    }
+    &-close {
+        position: absolute;
+        line-height: $font-size-base;
+        right: $padding-base;
+        top: 50%;
+        margin-top: - ($font-size-base/ 2);
+    }
 }
