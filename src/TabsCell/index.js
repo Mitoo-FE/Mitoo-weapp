@@ -44,21 +44,22 @@ Component({
             else {
                 let tab = parent[0];
                 let nodes = tab.getRelationNodes('../TabsCell/index');
-                for (let e of nodes) {
+                nodes.forEach( (e) => {
                     if (e.properties.active) {
                         e.setData({
                             'active': false
                         });
                     }
-                }
+                });
                 this.setData({
                     'active': true
                 });
-                for (let e of nodes) {
+                nodes.forEach( (e) => {
                     e.setData({
                         'activeLeft': this.data.nodeLeft
                     });
-                }
+                })
+
             }
         }
     },

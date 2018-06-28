@@ -1,6 +1,7 @@
 {
 	"usingComponents": {
 		"mit-badge": "/components/Badge/index",
-		"mit-icon": "/components/Icon/index"
+		"mit-avatar": "/components/Avatar/index",
+		"mit-panel": "/components/Panel/index"
 	}
 }
