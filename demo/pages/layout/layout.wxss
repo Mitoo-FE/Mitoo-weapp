@@ -7,20 +7,26 @@
 .mit-col {
     border-radius: 4px;
 }
-.bg-purple {
-    background: #d3dce6;
-  }
-.bg-purple-dark {
-    background: #99a9bf;
-}
-.bg-purple-light{
-	background: #e5e9f2;
-}
+
 .grid-content {
     border-radius: 4px;
-    min-height: 36px;
+    min-height: 30px;
+	background-color: #ebebef;
+	color: #bbb;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
 }
-.row-bg {
-    padding: 10px 0;
-    background-color: #f9fafc;
+.bg-grey {
+    background: #ebebef;
   }
+.bg-grey-dark {
+    background: #ddd;
+}
+.bg-grey-light{
+	background: #f2f2f2;
+}
+.fonts{
+	color: #a5a5a5;
+}
