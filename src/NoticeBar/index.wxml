@@ -3,7 +3,7 @@
         <mit-icon size="30"  type="sound"/>
     </view>
     <view class="mit-notice-bar-inner {{icon ? '' : 'mit-notice-bar-inner-noicn' }}">
-        <view class="mit-notice-bar-text {{transform?'mit-notice-bar-text-scroll':''}}" style="animation-duration:{{text.length/2}}s">
+        <view class="mit-notice-bar-text {{transform?'mit-notice-bar-text-scroll':''}}" style="animation-duration:{{text.length/4}}s">
             {{text}}
         </view>
         <view wx:if="{{closeable}}" bind:tap="close" class="mit-notice-bar-close">
