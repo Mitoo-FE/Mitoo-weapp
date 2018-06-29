@@ -6,7 +6,7 @@
 ### 介绍
 
 
-[Mitoo-weapp]是一款基于微信小程序的ui组件库，旨在解决ios和android上展示的差异化，提升开发者的开发效率，把更多的精力放到业务上。
+[Mitoo-weapp]是一款基于小程序的ui组件库，旨在解决ios和android上展示的差异化，提升开发者的开发效率，把更多的精力放到业务上。
 
 
 <p align="center" style="margin: 40px 0;">
@@ -74,7 +74,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | options | 按钮标题列表	| Object | | ture |
 | cancelButtonText | 取消按钮的文案	| String | 取消 | false |
 | tapItem | 点击按钮的时间 | Function | | false |
-## Alert
+## Alert 
 
 提示框组件
 
@@ -110,7 +110,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | error | 错误样式提示框 | Boolean | false | false | true, false |
 | success | 成功样式提示框 | Boolean | false | false | true, false |
 | closeable | 可关闭提示框 | Boolean | false | false | true, false |
-## Avatar
+## Avatar 
 
 头像组件
 
@@ -144,7 +144,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | noCircle |  是否圆头像   | Boolean  | false  | false  |    |
 | border |  是否有边框   | Boolean  | false  | false  |    |
 
-## Badge
+## Badge 
 
 ## 使用指南
 
@@ -208,7 +208,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 |:-----------: |:---------------:| :-------------:| :--------: | :--------:|:-----:| :----:|
 | size | 大小 | String | default | false | 'small', 'large', 'default'|
 | circle | 是否圆按钮 | Boolean | default | false | true, false |
-| text   | 按钮文字  | String  |  |  false  |   |
+| text   | 按钮文字  | String  |  |  false  |   | 
 | type  | 按钮类型 | String | false | 'primary' | 'primary', 'info', 'default', 'error', 'brand', 'brand-yellow', 'brand-red', 'brand-green', 'brand-blue', 'brand-dark-blue' |
 | disabled   | 是否禁用  | Boolean  | false |  false  | true, false  |
 | full   | 是否通栏  | Boolean  | false |  false  | true, false  |
@@ -257,7 +257,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | full | 是否通栏 | Boolean | false | false |
 ## Cell
 
-与Cell-Group配合使用
+与Cell-Group配合使用 
 
 ## 使用指南
 
@@ -575,7 +575,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | mit-class | 字体样式类 | String | | false |
 
 ##### <font color="#660000">注：如果给了size和color属性，mit-class不会覆盖size和color样式。</font>
-## Input
+## Input 
 
 ## 使用指南
 
@@ -628,7 +628,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | blur    | 失焦时触发     |
 
 
-## Modal
+## Modal 
 
 ## 使用指南
 
@@ -669,7 +669,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 
 
 
-## NoticeBar
+## NoticeBar 
 
 ## 使用指南
 
@@ -941,9 +941,9 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | change  | 绑定变化时触发 |
 
 
-## Tabs
+## Tabs 
 
-与Tabs-Cell配合使用
+与Tabs-Cell配合使用 
 
 ## 使用指南
 
@@ -975,9 +975,9 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | brandColor | 自定义品牌色 | String |  | false  | |
 | scroll | 是否可滑动 | Boolean | false | false | |
 
-## Tabs-Cell
+## Tabs-Cell 
 
-与Tabs配合使用
+与Tabs配合使用 
 
 ## 使用指南
 
