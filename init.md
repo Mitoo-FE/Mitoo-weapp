@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="项目logo" src="https://mp.weixin.qq.com/wxopen/basicprofile?action=get_headimg&token=364575243&t=20180629152711">
+    <img alt="项目logo" width="50%" src="http://ozcvsuh4t.bkt.clouddn.com/mitoo-weapp-logo.png">
 </p>
 <p align="center">小程序 UI 组件库</p>
 
@@ -10,7 +10,7 @@
 
 
 <p align="center" style="margin: 40px 0;">
-    <img alt="qrCode" src="https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3842044582&token=364575243">
+    <img alt="qrCode" width="30%" src="http://ozcvsuh4t.bkt.clouddn.com/mitoo-weapp-qrcode.jpg">
 </p>
 
 
