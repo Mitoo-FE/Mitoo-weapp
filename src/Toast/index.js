@@ -23,15 +23,22 @@ Component({
             })
 
             setTimeout(() => {
-                this.hide()
+                this.hide(options)
             },duration)
 
 		},
-		hide() {
-            this.setData({
-                visible: false,
-                type: 'circle'
-            })
+		hide(options) {
+            if (options.type === 'loading' ) {
+                this.setData({
+                    visible: false
+                })
+            }else {
+                this.setData({
+                    visible: false,
+                    type: 'circle'
+                })
+            }
+
 		}
     }
 
