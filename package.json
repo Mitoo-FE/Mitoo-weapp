@@ -5,19 +5,22 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-filter": "^5.1.0",
+    "gulp-minify-css": "^1.2.4",
     "gulp-rename": "^1.2.3",
     "gulp-stylus": "^2.7.0",
+    "gulp-uglify-es": "^1.0.4",
     "gulp-watch": "^5.0.0",
     "rename": "^1.0.4",
     "watch": "^1.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp --gulpfile build/build-dev.js"
+    "dev": "gulp --gulpfile build/build-dev.js",
+    "prod": "gulp --gulpfile build/build-prod.js"
+
   },
   "repository": {
     "type": "git",
-    "url": "git@git.timipc.com:Mitoo/Mitoo-weapp.git"
+    "url": "git@github.com:Mitoo-FE/Mitoo-weapp.git"
   },
   "author": "",
   "license": "MIT",
