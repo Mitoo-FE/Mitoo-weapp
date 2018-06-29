@@ -1,5 +1,17 @@
 <view class="container">
 	<view class="item">
+		<mit-icon size="40" type="wechat-fill"></mit-icon>
+		<view class="text">wechat-fill</view>
+	</view>
+	<view class="item">
+		<mit-icon size="40" type="weibo"></mit-icon>
+		<view class="text">weibo</view>
+	</view>
+	<view class="item">
+		<mit-icon size="40" type="phone-fill"></mit-icon>
+		<view class="text">phone-fill</view>
+	</view>
+	<view class="item">
 		<mit-icon size="40" type="circle-plus"></mit-icon>
 		<view class="text">circle-plus</view>
 	</view>
