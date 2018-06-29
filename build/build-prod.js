@@ -9,23 +9,27 @@ gulp.task('compile-styl', function() {
         .pipe(styl())
 		.pipe(minify())
         .pipe(rename({extname: '.wxss'}))
-        .pipe(gulp.dest('../demo/components/'))
+        .pipe(gulp.dest('../dist/components/'))
 })
 
 gulp.task('compile-js', () => {
     return gulp.src(['../src/**/*.js'])
 		.pipe(uglify())
-        .pipe(gulp.dest('../demo/components/'));
+        .pipe(gulp.dest('../dist/components/'));
 });
 
 gulp.task('compile-json', () => {
     return gulp.src(['../src/**/*.json'])
-        .pipe(gulp.dest('../demo/components/'));
+        .pipe(gulp.dest('../dist/components/'));
 });
 
 gulp.task('compile-wxml', () => {
     return gulp.src(['../src/**/*.wxml'])
-        .pipe(gulp.dest('../demo/components/'));
+        .pipe(gulp.dest('../dist/components/'));
+});
+gulp.task('compile-md', () => {
+    return gulp.src(['../src/**/*.MD'])
+        .pipe(gulp.dest('../dist/components/'));
 });
 
-gulp.task('default', ['compile-styl', 'compile-js', 'compile-json', 'compile-wxml']);
+gulp.task('default', ['compile-styl', 'compile-js', 'compile-json', 'compile-wxml', 'compile-md']);
