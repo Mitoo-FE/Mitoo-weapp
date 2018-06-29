@@ -3,84 +3,84 @@
 
 
 .{$prefix}-modal-wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  &&-show {
-    visibility: visible;
-    .{$prefix}-modal {
-      transition: all $transition-time ease-in-out;
-      transform: scale(1) translateY(-50%);
-    }
-  }
-  .{$prefix}-modal-mask {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $background-color-mask;
-    opacity: 0;
-    transition: all $transition-time ease-in-out;
-  }
-  .{$prefix}-modal-mask-show {
-    transition: all $transition-time ease-in-out;
-    opacity: 1;
-  }
-  .{$prefix}-modal {
-    position: absolute;
-    width: 70%;
-    left: 15%;
-    top: 50%;
-    transform: scale(0) translateY(-50%);
-    transition: all $transition-time ease-in-out;
-    transform-origin: top;
-    hairline('all', $border-color-base, $border-radius-sm)
-    background-color: $background-color-base;
-    &-header {
-      text-align: center;
-      padding: $padding-x-large $padding-x-large 0 $padding-x-large;
-      font-size: $font-size-large;
-    }
-    &-body {
-      text-align: center;
-      font-size: $font-size-base;
-      padding: $padding-xx-large;
-    }
-    &-footer-default {
-      position: relative;
-      hairline('top')
-      font-size: $font-size-base;
-      display: flex;
-      &-button {
-        flex: 1;
-        text-align: center;
-        position: relative;
-        padding: $padding-x-large;
-        hairline('left')
-        overflow: hidden;
-        &:first-child {
-          border: none;
+    visibility: hidden;
+    &&-show {
+        visibility: visible;
+        .{$prefix}-modal {
+            transition: all $transition-time ease-in-out;
+            transform: scale(1) translateY(-50%);
         }
-      }
+    }
+    .{$prefix}-modal-mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $background-color-mask;
+        opacity: 0;
+        transition: all $transition-time ease-in-out;
+    }
+    .{$prefix}-modal-mask-show {
+        transition: all $transition-time ease-in-out;
+        opacity: 1;
+    }
+    .{$prefix}-modal {
+        position: absolute;
+        width: 70%;
+        left: 15%;
+        top: 50%;
+        transform: scale(0) translateY(-50%);
+        transition: all $transition-time ease-in-out;
+        transform-origin: top;
+        hairline('all', $border-color-base, $border-radius-sm)
+        background-color: $background-color-base;
+        &-header {
+            text-align: center;
+            padding: $padding-x-large $padding-x-large 0 $padding-x-large;
+            font-size: $font-size-large;
+        }
+        &-body {
+            text-align: center;
+            font-size: $font-size-base;
+            padding: $padding-xx-large;
+        }
+        &-footer-default {
+            position: relative;
+            hairline('top')
+            font-size: $font-size-base;
+            display: flex;
+            &-button {
+                flex: 1;
+                text-align: center;
+                position: relative;
+                padding: $padding-x-large;
+                hairline('left')
+                overflow: hidden;
+                &:first-child {
+                    border: none;
+                }
+            }
 
+        }
+        &-footer-vertical {
+            font-size: $font-size-base;
+            position: relative;
+            text-align: center;
+            &-button {
+                overflow: hidden;
+                padding: $padding-x-large;
+                position: relative;
+                hairline('top');
+            }
+        }
+        .{$prefix}-modal-footer-button-hover {
+            background-color: $background-color-tap;
+        }
     }
-    &-footer-vertical {
-      font-size: $font-size-base;
-      position: relative;
-      text-align: center;
-      &-button {
-        overflow: hidden;
-        padding: $padding-x-large;
-        position: relative;
-        hairline('top');
-      }
-    }
-    .{$prefix}-modal-footer-button-hover {
-      background-color: $background-color-tap;
-    }
-  }
 }

@@ -1,120 +1,119 @@
 @import "../styles/index";
 
 .{$prefix}-button-wrap-small {
-  display: inline-block;
+    display: inline-block;
 }
 .{$prefix}-button-wrap-default-size {
-  display: inline-block;
-  width: 50%;
+    display: inline-block;
+    width: 50%;
 }
 .{$prefix}-button-wrap {
-
-  .{$prefix}-button {
-    margin: $padding-base;
-    font-size: $font-size-heading;
-    line-height: $line-height-paragraph;
-    padding: $padding-base + $padding-small;
-    border-radius: $border-radius-sm;
-    &-primary {
-      background-color: $brand-color-primary;
-      color: $color-text-base-inverse;
-      &.{$prefix}-button-hover {
-        background-color: $brand-color-primary * $hover-percent;
-      }
-    }
-    &-default {
-      background-color: $color-text-base-inverse;
-      color: $color-text-base;
-      &.{$prefix}-button-hover {
-        background-color: $color-text-base-inverse * $hover-percent;
-      }
-    }
-    &-info {
-      background-color: $brand-color-info;
-      color: $color-text-base-inverse;
-      &.{$prefix}-button-hover {
-        background-color: $brand-color-info * $hover-percent;
-      }
-    }
-    &-error {
-      background-color: $brand-color-error;
-      color: $color-text-base-inverse;
-      &.{$prefix}-button-hover {
-        background-color: $brand-color-error * $hover-percent;
-      }
-    }
-    &-brand {
-      background-color: $brand-color-primary;
-      color: $color-text-base-inverse;
-      &.{$prefix}-button-hover {
-        background-color: $brand-color-primary* $hover-percent;
-      }
-    }
-    &-brand-yellow {
-      background-color: $brand-color-yellow;
-      color: $color-text-base-inverse;
-      &.{$prefix}-button-hover {
-        background-color: $brand-color-yellow * $hover-percent;
-      }
-    }
-    &-brand-red {
-      background-color: $brand-color-red;
-      color: $color-text-base-inverse;
-      &.{$prefix}-button-hover {
-        background-color: $brand-color-red * $hover-percent;
-      }
-    }
-    &-brand-green {
-      background-color: $brand-color-green;
-      color: $color-text-base-inverse;
-      &.{$prefix}-button-hover {
-        background-color: $brand-color-green * $hover-percent;
-      }
-    }
-    &-brand-blue {
-      background-color: $brand-color-blue;
-      color: $color-text-base-inverse;
-      &.{$prefix}-button-hover {
-        background-color: $brand-color-blue * $hover-percent;
-      }
-    }
-    &-brand-dark-blue {
-      background-color: $brand-color-dark-blue;
-      color: $color-text-base-inverse;
-      &.{$prefix}-button-hover {
-        background-color: $brand-color-dark-blue * $hover-percent;
-      }
-    }
-    &-small {
-      display: inline-block;
-      padding: $padding-base ($padding-base*2);
-    }
-    &-circle {
-      border-radius: 100rpx;
-    }
-    &-disabled {
-      opacity: 0.3;
-    }
-  }
-  &-full {
     .{$prefix}-button {
-      margin: 0;
-      border-radius: 0;
-      border: 0;
+        margin: $padding-base;
+        font-size: $font-size-heading;
+        line-height: $line-height-paragraph;
+        padding: $padding-base + $padding-small;
+        border-radius: $border-radius-sm;
+        &-primary {
+            background-color: $brand-color-primary;
+            color: $color-text-base-inverse;
+            &.{$prefix}-button-hover {
+                background-color: $brand-color-primary * $hover-percent;
+            }
+        }
+        &-default {
+            background-color: $color-text-base-inverse;
+            color: $color-text-base;
+            &.{$prefix}-button-hover {
+                background-color: $color-text-base-inverse * $hover-percent;
+            }
+        }
+        &-info {
+            background-color: $brand-color-info;
+            color: $color-text-base-inverse;
+            &.{$prefix}-button-hover {
+                background-color: $brand-color-info * $hover-percent;
+            }
+        }
+        &-error {
+            background-color: $brand-color-error;
+            color: $color-text-base-inverse;
+            &.{$prefix}-button-hover {
+                background-color: $brand-color-error * $hover-percent;
+            }
+        }
+        &-brand {
+            background-color: $brand-color-primary;
+            color: $color-text-base-inverse;
+            &.{$prefix}-button-hover {
+                background-color: $brand-color-primary* $hover-percent;
+            }
+        }
+        &-brand-yellow {
+            background-color: $brand-color-yellow;
+            color: $color-text-base-inverse;
+            &.{$prefix}-button-hover {
+                background-color: $brand-color-yellow * $hover-percent;
+            }
+        }
+        &-brand-red {
+            background-color: $brand-color-red;
+            color: $color-text-base-inverse;
+            &.{$prefix}-button-hover {
+                background-color: $brand-color-red * $hover-percent;
+            }
+        }
+        &-brand-green {
+            background-color: $brand-color-green;
+            color: $color-text-base-inverse;
+            &.{$prefix}-button-hover {
+                background-color: $brand-color-green * $hover-percent;
+            }
+        }
+        &-brand-blue {
+            background-color: $brand-color-blue;
+            color: $color-text-base-inverse;
+            &.{$prefix}-button-hover {
+                background-color: $brand-color-blue * $hover-percent;
+            }
+        }
+        &-brand-dark-blue {
+            background-color: $brand-color-dark-blue;
+            color: $color-text-base-inverse;
+            &.{$prefix}-button-hover {
+                background-color: $brand-color-dark-blue * $hover-percent;
+            }
+        }
+        &-small {
+            display: inline-block;
+            padding: $padding-base ($padding-base*2);
+        }
+        &-circle {
+            border-radius: 100rpx;
+        }
+        &-disabled {
+            opacity: 0.3;
+        }
     }
-  }
-  &-bottom {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: $background-color-base;
-    box-shadow: 1rpx 0rpx 3rpx $shadow-color;
-    hairline('top');
-    .{$prefix}-botton {
-      margin: $padding-base;
-      border-radius: 0;
-      border: 0;
+    &-full {
+        .{$prefix}-button {
+            margin: 0;
+            border-radius: 0;
+            border: 0;
+        }
     }
-  }
+    &-bottom {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: $background-color-base;
+        box-shadow: 1rpx 0rpx 3rpx $shadow-color;
+        hairline('top');
+        .{$prefix}-botton {
+            margin: $padding-base;
+            border-radius: 0;
+            border: 0;
+        }
+    }
 }

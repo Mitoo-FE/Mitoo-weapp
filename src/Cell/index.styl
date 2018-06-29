@@ -2,48 +2,48 @@
 @import "../styles/mixins/hairline.styl";
 
 .{$prefix}-cell {
-  display: flex;
-
-  &-container, &-container-slot{
-    flex: 1;
-    font-size: $font-size-heading;
-    padding: $padding-x-large 0;
-    margin: 0 $margin-x-large;
-    position: relative;
-    hairline('bottom');
-    // line-height: $line-height-paragraph;
-  }
-  &-no-border {
-    .{$prefix}-cell-container, .{$prefix}-cell-container-slot {
-      hairline-remove('bottom');
-    }
-  }
-  &-container{
     display: flex;
-    box-pack: justify
-    justify-content: space-between;
-  }
-  &&-with-link {
-    display: block;
-  }
-  &-label {
-    margin-top: $padding-base;
-    font-size: $font-size-sm;
-  }
-  &-right-container {
-    display: flex;
-    align-items: center;
-    .{$prefix}-cell-link {
-      color: $color-text-secondary;
-    }
-  }
-  &-last {
-    .{$prefix}-cell-container, .{$prefix}-cell-container-slot {
-      hairline-remove('bottom');
-    }
-  }
 
-  &:active{
-      background-color: $background-color-tap;
-  }
+    &-container, &-container-slot{
+        flex: 1;
+        font-size: $font-size-heading;
+        padding: $padding-x-large 0;
+        margin: 0 $margin-x-large;
+        position: relative;
+        hairline('bottom');
+        // line-height: $line-height-paragraph;
+    }
+    &-no-border {
+        .{$prefix}-cell-container, .{$prefix}-cell-container-slot {
+            hairline-remove('bottom');
+        }
+    }
+    &-container{
+        display: flex;
+        box-pack: justify
+        justify-content: space-between;
+    }
+    &&-with-link {
+        display: block;
+    }
+    &-label {
+        margin-top: $padding-base;
+        font-size: $font-size-sm;
+    }
+    &-right-container {
+        display: flex;
+        align-items: center;
+        .{$prefix}-cell-link {
+            color: $color-text-secondary;
+        }
+    }
+    &-last {
+        .{$prefix}-cell-container, .{$prefix}-cell-container-slot {
+            hairline-remove('bottom');
+        }
+    }
+
+    &:active{
+        background-color: $background-color-tap;
+    }
 }

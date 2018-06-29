@@ -3,67 +3,67 @@
 
 
 .{$prefix}-drawer-wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  .{$prefix}-drawer-mask {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $background-color-mask;
-  }
-  .{$prefix}-drawer-content {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background-color: $background-color-body;
-    &-left {
-      left: 0;
-    }
-    &-right {
-      right: 0;
-    }
-  }
-  &.{$prefix}-drawer-show {
-    transition: all $transition-time ease-in-out;
-    visibility: visible;
-
     .{$prefix}-drawer-mask {
-      opacity: 1;
-      transition: all $transition-time ease-in-out;
-      background-color: $background-color-mask;
-
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $background-color-mask;
     }
     .{$prefix}-drawer-content {
-      &-left {
-        animation_keyframes(transition_pull_left, $transition-time);
-      }
-      &-right {
-        animation_keyframes(transition_pull_right, $transition-time);
-      }
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: $background-color-body;
+        &-left {
+            left: 0;
+        }
+        &-right {
+            right: 0;
+        }
     }
-  }
-  &.{$prefix}-drawer-hidden {
+    &.{$prefix}-drawer-show {
+        transition: all $transition-time ease-in-out;
+        visibility: visible;
 
-    visibility: hidden;
-    transition: all $transition-time ease-in-out;
-    .{$prefix}-drawer-mask {
-      opacity: 0;
-      background-color: $background-color-mask;
-      transition: all $transition-time ease-in-out;
+        .{$prefix}-drawer-mask {
+            opacity: 1;
+            transition: all $transition-time ease-in-out;
+            background-color: $background-color-mask;
+
+        }
+        .{$prefix}-drawer-content {
+            &-left {
+                animation_keyframes(transition_pull_left, $transition-time);
+            }
+            &-right {
+                animation_keyframes(transition_pull_right, $transition-time);
+            }
+        }
     }
-    .{$prefix}-drawer-content {
-      &-left {
-        animation_keyframes(transition_push_left, $transition-time);
-      }
-      &-right {
-        animation_keyframes(transition_push_right, $transition-time);
-      }
+    &.{$prefix}-drawer-hidden {
+
+        visibility: hidden;
+        transition: all $transition-time ease-in-out;
+        .{$prefix}-drawer-mask {
+            opacity: 0;
+            background-color: $background-color-mask;
+            transition: all $transition-time ease-in-out;
+        }
+        .{$prefix}-drawer-content {
+            &-left {
+                animation_keyframes(transition_push_left, $transition-time);
+            }
+            &-right {
+                animation_keyframes(transition_push_right, $transition-time);
+            }
+        }
     }
-  }
 }
