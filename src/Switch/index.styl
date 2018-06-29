@@ -3,61 +3,61 @@
 
 
 .{$prefix}-switch {
-  &-circle {
-    border-radius: $switch-size-base;
-    .{$prefix}-switch-inner {
-      border-radius: 100%;
+    &-circle {
+        border-radius: $switch-size-base;
+        .{$prefix}-switch-inner {
+            border-radius: 100%;
+        }
     }
-  }
-  border-radius: $border-radius-sm;
-  position: relative;
-  width: $switch-size-base * 2.5;
-  height: $switch-size-base;
-  background-color: $background-color-tap;
-  transition: all $transition-time ease-in-out;
-  &-hidden {
-    visibility: hidden;
-  }
-  &-disabled {
-    .{$prefix}-switch-inner {
-      background-color: $background-color-body;
-    }
-  }
-  &-large {
-    width: $switch-size-large * 2.5;
-    height: $switch-size-large;
-    margin: 2rpx;
-    .{$prefix}-switch-inner {
-      width: $switch-size-large - 4rpx;
-      height: $switch-size-large - 4rpx;
-    }
-    &.{$prefix}-switch-on {
-      .{$prefix}-switch-inner {
-        transform: translateX($switch-size-large*1.5);
-      }
-    }
-  }
-  &-inner {
-    position: absolute;
-    width: $switch-size-base - 4rpx;
-    height: $switch-size-base - 4rpx;
-    margin: 2rpx;
-    background-color: $background-color-base;
     border-radius: $border-radius-sm;
-    box-shadow: 1rpx 1rpx 3rpx $shadow-color;
-  }
-  &-off {
-    .{$prefix}-switch-inner {
-      transition: all $transition-time ease-in-out;
-      left: 0rpx;
-    }
-  }
-  &-on {
-    background-color: $brand-color-primary;
+    position: relative;
+    width: $switch-size-base * 2.5;
+    height: $switch-size-base;
+    background-color: $background-color-tap;
     transition: all $transition-time ease-in-out;
-    .{$prefix}-switch-inner {
-      transition: all $transition-time ease-in-out;
-      transform: translateX($switch-size-base*1.5);
+    &-hidden {
+        visibility: hidden;
     }
-  }
+    &-disabled {
+        .{$prefix}-switch-inner {
+            background-color: $background-color-body;
+        }
+    }
+    &-large {
+        width: $switch-size-large * 2.5;
+        height: $switch-size-large;
+        margin: 2rpx;
+        .{$prefix}-switch-inner {
+            width: $switch-size-large - 4rpx;
+            height: $switch-size-large - 4rpx;
+        }
+        &.{$prefix}-switch-on {
+            .{$prefix}-switch-inner {
+                transform: translateX($switch-size-large*1.5);
+            }
+        }
+    }
+    &-inner {
+        position: absolute;
+        width: $switch-size-base - 4rpx;
+        height: $switch-size-base - 4rpx;
+        margin: 2rpx;
+        background-color: $background-color-base;
+        border-radius: $border-radius-sm;
+        box-shadow: 1rpx 1rpx 3rpx $shadow-color;
+    }
+    &-off {
+        .{$prefix}-switch-inner {
+            transition: all $transition-time ease-in-out;
+            left: 0rpx;
+        }
+    }
+    &-on {
+        background-color: $brand-color-primary;
+        transition: all $transition-time ease-in-out;
+        .{$prefix}-switch-inner {
+            transition: all $transition-time ease-in-out;
+            transform: translateX($switch-size-base*1.5);
+        }
+    }
 }

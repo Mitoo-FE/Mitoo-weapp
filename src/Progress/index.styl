@@ -2,42 +2,42 @@
 
 
 .{$prefix}-progress {
-  display: flex;
-  justify-content: flex-start;
-  font-size: $size-font-small;
-  margin: $padding-base;
-  align-items: center;
-  &-wrap {
-    position: relative;
-    flex: 9;
-    height: $progress-height;
-    border-radius: $progress-height;
-    background-color: $background-color-icon;
-    overflow: hidden;
-  }
-
-  &-inner {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    width: 100%;
-    background-color: $brand-color-primary;
-    border-radius: $progress-height;
-    transition: width $transition-time ease;
-    overflow: hidden;
-    &-flow {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255,255,255,0.4);
-      border-radius: $progress-height;
-      animation_keyframes(flow, 3s, 0s, infinite, both, ease)
+    display: flex;
+    justify-content: flex-start;
+    font-size: $size-font-small;
+    margin: $padding-base;
+    align-items: center;
+    &-wrap {
+        position: relative;
+        flex: 9;
+        height: $progress-height;
+        border-radius: $progress-height;
+        background-color: $background-color-icon;
+        overflow: hidden;
     }
-  }
-  &-progress {
-    flex: 1;
-    font-size: $font-size-base;
-    line-height: $font-size-base;
-    padding-left: $padding-base;
-  }
+
+    &-inner {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $brand-color-primary;
+        border-radius: $progress-height;
+        transition: width $transition-time ease;
+        overflow: hidden;
+        &-flow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,255,255,0.4);
+            border-radius: $progress-height;
+            animation_keyframes(flow, 3s, 0s, infinite, both, ease)
+        }
+    }
+    &-progress {
+        flex: 1;
+        font-size: $font-size-base;
+        line-height: $font-size-base;
+        padding-left: $padding-base;
+    }
 }
