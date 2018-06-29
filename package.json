@@ -16,7 +16,6 @@
   "scripts": {
     "dev": "gulp --gulpfile build/build-dev.js",
     "prod": "gulp --gulpfile build/build-prod.js"
-
   },
   "repository": {
     "type": "git",

@@ -6,7 +6,7 @@
 ### 介绍
 
 
-[Mitoo-weapp]是一款基于小程序的ui组件库，旨在解决ios和android上展示的差异化，提升开发者的开发效率，把更多的精力放到业务上。
+[Mitoo-weapp]是一款基于微信小程序的ui组件库，旨在解决ios和android上展示的差异化，提升开发者的开发效率，把更多的精力放到业务上。
 
 
 <p align="center" style="margin: 40px 0;">
