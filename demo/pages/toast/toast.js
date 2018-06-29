@@ -12,24 +12,24 @@ Page({
 	},
 	showBase() {
 		Toast({
-			content: 'this is a toast tip!!'
+			content: '普通的tosat提示！'
 		})
 	},
 	showSuccess() {
 		Toast({
-			content: 'loading success!!',
+			content: '支付成功!',
 			type: 'success'
 		})
 	},
 	showFail() {
 		Toast({
-			content: 'Some error occurred',
+			content: '请求错误!',
 			type: 'fail'
 		})
 	},
 	showNetwork() {
 		Toast({
-			content: 'network connection fail!',
+			content: '网络连接失败!',
 			type: 'network'
 		})
 	},
