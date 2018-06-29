@@ -1,3 +1,46 @@
+<p align="center">
+    <img alt="项目logo" width="50%" src="http://ozcvsuh4t.bkt.clouddn.com/mitoo-weapp-logo.png">
+</p>
+<p align="center">小程序 UI 组件库</p>
+
+### 介绍
+
+
+[Mitoo-weapp]是一款基于小程序的ui组件库，旨在解决ios和android上展示的差异化，提升开发者的开发效率，把更多的精力放到业务上。
+
+
+<p align="center" style="margin: 40px 0;">
+    <img alt="qrCode" width="30%" src="http://ozcvsuh4t.bkt.clouddn.com/mitoo-weapp-qrcode.jpg">
+</p>
+
+
+### 开始使用
+
+###### 在开始使用Mitoo-weapp 之前，你需要先阅读 [微信小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)的相关文档
+
+### 下载项目到工程
+
+	npm install --save mitoo-weapp
+
+
+## 预览
+
+* 在 Mitoo-weapp 根目录下运行
+
+``` bash
+# 下载工程到本地
+git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
+```
+
+* 打开[微信web开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)，'本地小程序项目 - 添加项目'，把 mitoo-weapp/demo 目录添加进去就可以预览示例demo了。
+
+
+
+
+## 具体组件
+
+
+
 ## ActtionSheet
 
 ## 使用指南
@@ -446,6 +489,92 @@
 |:-----------: |:---------------:| :-------------:| :-------- | :--------|
 | icon | icon | slot | | false |
 | title | title | slot | | false |
+## Grid
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-grid": "/components/Grid/index",
+		"mit-grid-item": "/components/Grid-Item/index"
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-grid columnNum="3">
+	<mit-grid-item>
+		<view slot="icon"><mit-icon type="category" size="40" /></view>
+		<view slot="title">我是一个分类</view>
+	</mit-grid-item>
+	<mit-grid-item>
+		<view slot="icon"><mit-icon type="category" size="40" /></view>
+		<view slot="title">我是一个分类</view>
+	</mit-grid-item>
+	<mit-grid-item>
+		<view slot="icon"><mit-icon type="category" size="40" /></view>
+		<view slot="title">我是一个分类</view>
+	</mit-grid-item>
+</mit-grid>
+```
+
+## API
+
+### Grid
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| columnNum | 标题 | String | | true |
+
+### Grid-Item
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| icon | icon | slot | | false |
+| title | title | slot | | false |
+## Icon
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-icon": "/components/Icon/index"
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-icon type="category" size="30" color="red" mit-class="fontClass"></mit-icon>
+```
+
+## API
+
+### Grid
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| type | 名字 | String | | true |
+| size | 字体大小，单位rpx | Number | | false |
+| color | 字体颜色 | String | | false |
+| mit-class | 字体样式类 | String | | false |
+
+##### <font color="#660000">注：如果给了size和color属性，mit-class不会覆盖size和color样式。</font>
 ## Input 
 
 ## 使用指南
@@ -639,6 +768,140 @@
 |:-----------:|:---------------:|:-------------:|:----------:|:---------:|:---:|
 | title  | 标题   |  Boolean  | false  |  true |  |
 | withoutBorder | 不带边框 | Boolean | false | false | true, false|
+## Radio
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-radio": "/components/Radio/index",
+		"mit-radio-group": "/components/Radio-Group/index"
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-radio-group bind:change="onradioChange">
+	<mit-radio title="西瓜" value="watermelon"></mit-radio>
+	<mit-radio title="香蕉" value="banana"></mit-radio>
+	<mit-radio title="苹果" value="apple"></mit-radio>
+	<mit-radio title="梨" value="pear"></mit-radio>
+</mit-radio-group>
+```
+
+## API
+
+### radio
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| title | 标题 | String | | true |
+| value | radio的value值，当value为空时，取title值 | String | | false |
+| checked | 默认选中 | Boolean | | false |
+| disabled | 不取选 | Boolean | | false |
+
+### radio-Group
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| change | 点击的时候触发的时间 | Function | | false |
+## Radio
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-radio": "/components/Radio/index",
+		"mit-radio-group": "/components/Radio-Group/index"
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-radio-group bind:change="onradioChange">
+	<mit-radio title="西瓜" value="watermelon"></mit-radio>
+	<mit-radio title="香蕉" value="banana"></mit-radio>
+	<mit-radio title="苹果" value="apple"></mit-radio>
+	<mit-radio title="梨" value="pear"></mit-radio>
+</mit-radio-group>
+```
+
+## API
+
+### radio
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| title | 标题 | String | | true |
+| value | radio的value值，当value为空时，取title值 | String | | false |
+| checked | 默认选中 | Boolean | | false |
+| disabled | 不取选 | Boolean | | false |
+
+### radio-Group
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| change | 点击的时候触发的时间 | Function | | false |
+## Row, Col
+
+## 使用指南
+我们采用了24格栅格系统，将一个设计区域分割成24份，使用时需要row和col一起使用，具体示例如下。
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-row": "/components/Row/index",
+		"mit-col": "/components/Col/index"
+	}
+}
+
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-row mit-class="row">
+	<mit-col mit-class="col" span="24">
+		<view class="grid-content">span 24</view>
+	</mit-col>
+</mit-row>
+```
+
+## API
+
+### row
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| gutter | 栅格间隔,单位rpx |  | | false |
+| mit-class | 额外样式 | String |  | false |
+
+### col
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| span | 栅格占位格数, | Number | | true |
+| offset | 栅格左侧的间隔格数 | Number |  | false |
 ## Switch
 
 ## 使用指南
@@ -778,3 +1041,111 @@
 |:-----------:|:---------------:|:-------------:|:----------:|:---------:|:---:|
 | title  | 标题   |  Boolean  | false  |  true |  |
 | withoutBorder | 不带边框 | Boolean | false | false | true, false|
+## Toast
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-toast": "/components/Toast/index",
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-button size="large" type="default" bindtap="showBase">基础样式</mit-button>
+<mit-button size="large" type="default" bindtap="showSuccess">成功！</mit-button>
+<mit-button size="large" type="default" bindtap="showFail">失败！</mit-button>
+<mit-button size="large" type="default" bindtap="showNetwork">网络连接失败！</mit-button>
+<mit-button size="large" type="default" bindtap="showLoading">加载中</mit-button>
+<mit-toast id="toast"></mit-toast>
+```
+
+### Step 3
+
+在js文件中使用
+
+```js
+const { Toast } = require('../../components/Mixins/Toast');
+
+# 详细代码使用请查看demo
+Page({
+	showBase() {
+		Toast({
+			content: '普通的tosat提示！'
+		})
+	}
+})
+```
+
+## API
+
+### Toast
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| content | toast显示内容 | String | | true |
+| type | toast类型 可选值为 success / fail / network / loading | String |  | false |
+## toptips
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-toptips": "/components/Toptips/index"
+	}
+}
+
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-button size="large" type="default" bindtap="showToptips">通用样式</mit-button>
+<mit-button size="large" type="default" bindtap="showSuccess">success</mit-button>
+<mit-button size="large" type="default" bindtap="showWarn">warn</mit-button>
+<mit-button size="large" type="default" bindtap="showError">error</mit-button>
+<mit-button size="large" type="default" bindtap="showTimes">自定义事件时间</mit-button>
+<mit-toptips id="toptips"></mit-toptips>
+```
+
+### Step 3
+
+在js文件中使用
+
+```js
+const { Toptips } = require('../../components/Mixins/Toptips');
+
+# 详细代码使用请查看demo
+Page({
+	showBase() {
+		Toptips({
+			content: '这是一个通用样式'
+		})
+	}
+})
+```
+
+## API
+
+### toptips
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| content | toptips显示内容 | String | | true |
+| type | toptips类型 可选值为 success / warn / error | String |  | false |
+| duration | 延迟时间，单位秒 | Number | 1.5（秒） | false |

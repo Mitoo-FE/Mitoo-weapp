@@ -1,12 +1,1 @@
-Component({
-    options: {
-        multipleSlots: true
-    },
-    properties: {
-        full: {
-            type: Boolean,
-            value: false
-        },
-
-    },
-})
+Component({options:{multipleSlots:!0},properties:{full:{type:Boolean,value:!1}}});
