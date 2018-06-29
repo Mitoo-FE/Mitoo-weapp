@@ -1,0 +1,1 @@
+Component({externalClasses:["mit-class"],options:{multipleSlots:!0},properties:{position:{type:String,value:""},visible:{type:Boolean,value:!1}},methods:{drawer_mask_tap:function(e){this.setData({visible:!1})}}});

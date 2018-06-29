@@ -1,0 +1,1 @@
+Component({options:{multipleSlots:!0},properties:{full:{type:Boolean,value:!1}}});

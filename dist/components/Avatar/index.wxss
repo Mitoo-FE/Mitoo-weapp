@@ -1,0 +1,1 @@
+.mit-avatar{display:inline-block}.mit-avatar image{border-radius:100%;width:90rpx;height:90rpx}.mit-avatar-bordered image{border:solid #dddeee}.mit-avatar-no-circle image{border-radius:12rpx}.mit-avatar-large image{width:108rpx;height:108rpx}.mit-avatar-small image{width:72rpx;height:72rpx}

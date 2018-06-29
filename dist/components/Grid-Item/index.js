@@ -1,0 +1,1 @@
+Component({externalClasses:["mit-class"],options:{multipleSlots:!0},relations:{"../Grid/index":{type:"parent"}},data:{rowWidth:"25%",columnNum:4},ready(){const t=`${100/this.getRelationNodes("../Grid/index")[0].data.columnNum}%`;this.setData({rowWidth:t})}});

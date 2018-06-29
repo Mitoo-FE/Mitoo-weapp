@@ -1,0 +1,6 @@
+<view class="mit-badge">
+    <view class="mit-badge-dot {{flag? 'mit-badge-dot-slot' : ''}}" wx:if="{{!number}}"/>
+    <view class="mit-badge-number {{flag? 'mit-badge-number-slot' : ''}}" style="background-color:{{color ? color:''}}" wx:if="{{number}}">{{number>100 ? '100+' : number}}</view>
+    <slot/>
+</view>
+

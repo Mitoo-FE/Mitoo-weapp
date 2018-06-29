@@ -1,0 +1,1 @@
+let timer=null;Component({data:{visible:!1,content:""},methods:{show(t){clearTimeout(timer);const{duration:e=1.5,content:i,type:s="default"}=t;this.setData({visible:!0,content:i,type:s}),timer=setTimeout(()=>{this.hide()},1e3*e)},hide(){this.setData({visible:!1})}}});

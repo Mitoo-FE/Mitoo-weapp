@@ -1,0 +1,1 @@
+Component({externalClasses:["mit-class"],options:{multipleSlots:!0},properties:{border:{type:Boolean,value:!1},size:{type:[String,Number],value:"default"},src:{type:String,value:""},noCircle:{type:Boolean,value:!1}},data:{},methods:{}});

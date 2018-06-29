@@ -1,0 +1,14 @@
+<view class="mit-modal-wrap {{visible?'mit-modal-wrap-show':''}}">
+    <view class="mit-modal-mask {{visible?'mit-modal-mask-show':''}}"/>
+    <view class="mit-modal">
+        <view wx:if="{{title}}" class="mit-modal-header">{{title}}</view>
+        <view class="mit-modal-body">
+            <slot></slot>
+        </view>
+        <view class="{{vertical?'mit-modal-footer-vertical':'mit-modal-footer-default'}}">
+            <view hover-class="mit-modal-footer-button-hover" wx:for="{{footer}}" wx:key="item" class="{{vertical?'mit-modal-footer-vertical-button':'mit-modal-footer-default-button'}}" data-item="{{item}}" data-index="{{index}}" style="color: {{item.color}}" bind:tap="handleClickEvent">
+                {{item.text}}
+            </view>
+        </view>
+    </view>
+</view>

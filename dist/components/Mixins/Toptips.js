@@ -1,0 +1,1 @@
+const getInstance=function(t){const e=getCurrentPages();return e[e.length-1].selectComponent(t)},Toptips=function(t){const{selector:e="#toptips"}=t;getInstance(e).show(t)};module.exports={Toptips:Toptips};

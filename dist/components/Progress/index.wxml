@@ -1,0 +1,23 @@
+<view class="mit-progress">
+    <view class="mit-progress-wrap {{hiddenProgressNumber? 'mit-progress-wrap-hidden-number':''}}">
+        <view class="mit-progress-inner" style="{{parser.getProgress(color, progress)}}">
+            <view wx:if="{{flow}}" class="mit-progress-inner-flow"/>
+        </view>
+    </view>
+    <view wx-if="{{!hiddenProgressNumber}}" class="mit-progress-progress">{{progress}}%</view>
+</view>
+
+<wxs module="parser">
+module.exports = {
+    getProgress : function(color, progress) {
+        var style = '';
+        if (progress >= 0) {
+            style += 'width: ' + progress + '%;';
+        }
+        if (color) {
+            style += 'background-color: '+ color;
+        }
+        return style;
+    }
+}
+</wxs>

@@ -1,0 +1,1 @@
+Component({properties:{progress:{type:Number,value:0},percent:{type:Number,value:0},color:{type:String,value:""},flow:{type:Boolean,value:!1},hiddenProgressNumber:{type:Boolean,value:!1}},data:{},methods:{}});

@@ -1,0 +1,1 @@
+Component({externalClasses:["mit-class"],properties:{title:{type:String,value:""},noCheckBorder:{type:Boolean,value:!1}},options:{multipleSlots:!0},relations:{"../Cell/index":{type:"child",linked:function(e){let t=this.getRelationNodes("../Cell/index");t.forEach(function(e){e.setData({lastItem:!1})}),t[t.length-1].setData({lastItem:!0})}}}});

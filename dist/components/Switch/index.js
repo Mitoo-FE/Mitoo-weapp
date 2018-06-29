@@ -1,0 +1,1 @@
+Component({externalClasses:["mit-class"],properties:{color:{type:String,value:""},on:{type:Boolean,value:!1},large:{type:Boolean,value:!1},name:{type:String,value:""},disabled:{type:Boolean,value:!1},circle:{type:Boolean,value:!1}},methods:{switch(e){this.properties.disabled||this.setData({on:!this.properties.on}),this.triggerEvent("change",{on:this.properties.on})}}});

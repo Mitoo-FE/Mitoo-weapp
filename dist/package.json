@@ -1,0 +1,14 @@
+{
+  "name": "mitoo-weapp",
+  "version": "0.0.2",
+  "description": "mitoo-weapp",
+  "keywords": [
+    "mitoo",
+    "mitoo-weapp",
+    "weapp",
+    "mitoo-ui",
+    "components"
+  ],
+  "author": "mitoo-fe",
+  "license": "MIT"
+}

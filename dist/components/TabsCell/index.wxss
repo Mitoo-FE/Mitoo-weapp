@@ -1,0 +1,1 @@
+.mit-tabs-cell{position:relative;padding:18rpx 0;margin:0 18rpx;text-align:center;font-size:24rpx;line-height:1.3;color:#666}.mit-tabs-cell .mit-tabs-cell-bottom{width:0}.mit-tabs-cell-active{color:#333}.mit-tabs-cell-active .mit-tabs-cell-bottom{border-bottom:6rpx solid #333;position:absolute;bottom:0;width:30rpx;transition:transform .2s 0s linear;left:50%;margin-left:-15rpx}

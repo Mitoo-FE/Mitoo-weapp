@@ -1,0 +1,1 @@
+Component({options:{multipleSlots:!0},properties:{number:{type:Number,value:0},flag:{type:Boolean,value:!1},color:{type:String,value:""}}});

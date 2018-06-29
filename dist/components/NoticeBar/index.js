@@ -1,0 +1,1 @@
+Component({externalClasses:["mit-class"],options:{multipleSlots:!0},properties:{closeable:{type:Boolean,value:!1},transform:{type:Boolean,value:!1},text:{type:String,value:""},icon:{type:Boolean,value:!1}},data:{visible:!0},methods:{close(){this.setData({visible:!1})}}});

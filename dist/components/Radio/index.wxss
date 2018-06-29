@@ -1,0 +1,1 @@
+.mit-radio-item{display:flex;flex-direction:row;justify-content:space-between;flex:1;padding-right:10rpx}.mit-radio-item-title{line-height:1.5;width:auto}.mit-radio-item-extra{font-size:30rpx}.mit-radio-item .default{color:#ff6b22;font-size:30rpx}.mit-radio-item .disabled{color:#bbb;font-size:30rpx}

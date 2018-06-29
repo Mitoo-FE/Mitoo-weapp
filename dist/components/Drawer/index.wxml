@@ -1,0 +1,8 @@
+<view class="mit-drawer-wrap {{visible?'mit-drawer-show':'mit-drawer-hidden'}}">
+    <view class="mit-drawer-mask" bind:tap="drawer_mask_tap"></view>
+    <view class="mit-drawer">
+        <view class="mit-drawer-content mit-drawer-content-{{position}}">
+            <slot></slot>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,1 @@
+.mit-alert{position:relative;margin:30rpx;border-radius:4rpx;font-size:30rpx;color:#fff;background-color:#ff6b22;padding:30rpx}.mit-alert-warning{background-color:#f90}.mit-alert-error{background-color:#ed3f14}.mit-alert-success{background-color:#10bc66}.mit-alert-close{position:absolute;line-height:28rpx;right:18rpx;top:50%;margin-top:-14rpx}

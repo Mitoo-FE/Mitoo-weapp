@@ -1,0 +1,1 @@
+Component({externalClasses:["mit-class"],relations:{"../Row/index":{type:"parent"}},properties:{span:{value:0,type:Number},offset:{value:0,type:Number}},data:{gutter:0},ready(){const t=this.getRelationNodes("../Row/index")[0];t.data.gutter&&t.data.gutter>0&&this.setData({gutter:Math.floor(t.data.gutter/2)})}});

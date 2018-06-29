@@ -1,0 +1,12 @@
+<view class="mit-card {{full?'mit-card-full':''}}">
+    <view class="mit-card-header">
+        <slot name="header"/>
+    </view>
+    <view class="mit-card-body">
+        <slot name="body"/>
+        <view class="mit-card-footer" >
+            <slot name="footer"/>
+        </view>
+    </view>
+</view>
+

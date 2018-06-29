@@ -1,0 +1,8 @@
+<view class="mit-grid-item " style="width: {{ rowWidth }}">
+	<view class="mit-grid-item-content">
+		<view class="mit-grid-item-inner-content column-num-{{ columnNum }}">
+			<view class="mit-grid-icon"><slot name="icon"></slot></view>
+			<view class="mit-grid-text"><slot name="title"></slot></view>
+		</view>
+	</view>
+</view>

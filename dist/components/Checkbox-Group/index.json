@@ -1,0 +1,6 @@
+{
+  	"component": true,
+	"usingComponents": {
+		"mit-cell-group": "../CellGroup/index"
+	}
+}

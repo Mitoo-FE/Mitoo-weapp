@@ -1,0 +1,1 @@
+<text class="mit-font mit-{{type}} mit-class" style="color: {{ color }}; font-size: {{ size ? size : '' }}rpx"></text>

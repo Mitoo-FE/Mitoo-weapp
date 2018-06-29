@@ -1,0 +1,3 @@
+<view class="mit-grid">
+	<slot></slot>
+</view>

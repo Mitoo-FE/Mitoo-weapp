@@ -1,0 +1,3 @@
+<view class="mit-avatar {{ noCircle ? 'mit-avatar-no-circle' : ''}} {{ border ? 'mit-avatar-bordered' : '' }} {{ size == 'large' ? 'mit-avatar-large' : size == 'small' ? 'mit-avatar-small' : 'mit-avatar-default' }}">
+    <image style="{{size && typeof(size) === number ? 'width:' + size + 'rpx; height: ' + size + 'rpx;':''}}" src="{{ src }}"/>
+</view>

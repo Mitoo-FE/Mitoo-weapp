@@ -1,0 +1,14 @@
+<view class="mit-switch {{ circle ? 'mit-switch-circle' : '' }} {{disabled ? 'mit-switch-disabled' : ''}} {{on ? 'mit-switch-on': 'mit-switch-off'}} {{parser.getColor(color)}} {{large ? 'mit-switch-large' : ''}}" style="{{'background-color:' + parser.getColor(on, color) + ';'}}" bind:tap="switch">
+    <view class="mit-switch-inner" />
+    <input class="mit-switch-hidden" wx:value="{{on}}" :name="name"/>
+</view>
+
+<wxs module="parser">
+module.exports = {
+    getColor : function(on, color) {
+        if (on && color) {
+            return color;
+        }
+    }
+}
+</wxs>

@@ -1,0 +1,29 @@
+<view class="mit-action-sheet-mask {{ visible ? 'mask-show' : '' }}" data-role="mask" bindtap="tapMask"></view>
+<view class="mit-action-sheet-wrap {{ visible ? 'action-sheet-up' : '' }}">
+    <view class="mit-action-sheet mit-action-sheet-noraml" >
+        <view class="mit-action-sheet-content">
+            <button size="default" class="mit-action-sheet-close" type="default" plain="false" disabled="false" loading="false" form-type="" hover-class=""></button>
+            <view class="mit-action-sheet-body">
+                <view class="">
+                    <view wx:if="{{ title }}" class="mit-action-sheet-message">
+                        {{ title }}
+                    </view>
+                    <view class="mit-action-sheet-button-list">
+                        <view wx:for="{{ options }}" wx:key="unique" class="mit-action-sheet-button-list-item" data-index="{{ index }}" bindtap="tapItem">
+                            {{ item.title }}
+                        </view>
+                        <!--
+                        <view class="mit-action-sheet-button-list-item mit-action-sheet-destructive-button">
+                            Delete
+                        </view>
+                        -->
+                        <view bindtap="cancelButton" class="mit-action-sheet-button-list-item mit-action-sheet-cancel-button">
+                            {{ cancelButtonText }}
+                            <view class="mit-action-sheet-cancel-button-mask"></view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
