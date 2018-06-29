@@ -1,50 +1,54 @@
 <view>
+    <view class="logo-wrap">
+        <image class="logo" src="/assets/image/logo.png"/>
+        <view class="main-view">Mitoo-weapp</view>
+    </view>
     <mit-panel title="布局">
         <mit-cell-group>
-            <mit-cell title="Layout 布局" isLink url="/pages/layout/layout"></mit-cell>
-            <mit-cell title="Grid 宫格" isLink url="/pages/grid/grid"></mit-cell>
-            <mit-cell title="Card 卡片" isLink url="/pages/card/card"></mit-cell>
-            <mit-cell title="List 列表" isLink url="/pages/list/list"></mit-cell>
-            <mit-cell title="Panel 面板" isLink url="/pages/panel/panel"></mit-cell>
+            <mit-cell title="Layout 布局" isLink url="/pages/layout/layout"/>
+            <mit-cell title="Grid 宫格" isLink url="/pages/grid/grid"/>
+            <mit-cell title="Card 卡片" isLink url="/pages/card/card"/>
+            <mit-cell title="List 列表" isLink url="/pages/list/list"/>
+            <mit-cell title="Panel 面板" isLink url="/pages/panel/panel"/>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="导航">
         <mit-cell-group>
-            <mit-cell title="Tabs 标签" isLink url="/pages/tabs/tabs"></mit-cell>
-            <mit-cell title="Drawer 抽屉" isLink url="/pages/drawer/drawer"></mit-cell>
-            <mit-cell title="NoticeBar 通知条" isLink url="/pages/noticeBar/noticeBar"></mit-cell>
+            <mit-cell title="Tabs 标签" isLink url="/pages/tabs/tabs"/>
+            <mit-cell title="Drawer 抽屉" isLink url="/pages/drawer/drawer"/>
+            <mit-cell title="NoticeBar 通知条" isLink url="/pages/noticeBar/noticeBar"/>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="基础组件">
         <mit-cell-group>
-            <mit-cell title="Color 颜色" isLink url="/pages/color/color"></mit-cell>
-            <mit-cell title="Button 按钮" isLink url="/pages/button/button"></mit-cell>
-            <mit-cell title="Icon 图标" isLink url="/pages/icon/icon"></mit-cell>
+            <mit-cell title="Color 颜色" isLink url="/pages/color/color"/>
+            <mit-cell title="Button 按钮" isLink url="/pages/button/button"/>
+            <mit-cell title="Icon 图标" isLink url="/pages/icon/icon"/>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="操作反馈">
         <mit-cell-group>
-            <mit-cell title="ActionSheet 动作面板" isLink url="/pages/actionSheet/actionSheet"></mit-cell>
-            <mit-cell title="Toast 轻提示" isLink url="/pages/toast/toast"></mit-cell>
-            <mit-cell title="Modal 对话框" isLink url="/pages/modal/modal"></mit-cell>
-            <mit-cell title="Toptips 顶部提示" isLink url="/pages/toptips/toptips"></mit-cell>
+            <mit-cell title="ActionSheet 动作面板" isLink url="/pages/actionSheet/actionSheet"/>
+            <mit-cell title="Toast 轻提示" isLink url="/pages/toast/toast"/>
+            <mit-cell title="Modal 对话框" isLink url="/pages/modal/modal"/>
+            <mit-cell title="Toptips 顶部提示" isLink url="/pages/toptips/toptips"/>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="表单">
         <mit-cell-group>
-            <mit-cell title="Input 输入框" isLink url="/pages/input/input"></mit-cell>
-            <mit-cell title="Switch 开关" isLink url="/pages/switch/switch"></mit-cell>
-            <mit-cell title="Radio 单选" isLink url="/pages/radio/radio"></mit-cell>
-            <mit-cell title="Checkbox 复选" isLink url="/pages/checkbox/checkbox"></mit-cell>
+            <mit-cell title="Input 输入框" isLink url="/pages/input/input"/>
+            <mit-cell title="Switch 开关" isLink url="/pages/switch/switch"/>
+            <mit-cell title="Radio 单选" isLink url="/pages/radio/radio"/>
+            <mit-cell title="Checkbox 复选" isLink url="/pages/checkbox/checkbox"/>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="视图">
         <mit-cell-group>
-            <mit-cell title="Badge 徽章" isLink url="/pages/badge/badge"></mit-cell>
-            <mit-cell title="Tag 标签" isLink url="/pages/tag/tag"></mit-cell>
-            <mit-cell title="Alert 警告提示" isLink url="/pages/alert/alert"></mit-cell>
-            <mit-cell title="Progress 进度条" isLink url="/pages/progress/progress"></mit-cell>
-            <mit-cell title="Avatar 头像" isLink url="/pages/avatar/avatar"></mit-cell>
+            <mit-cell title="Badge 徽章" isLink url="/pages/badge/badge"/>
+            <mit-cell title="Tag 标签" isLink url="/pages/tag/tag"/>
+            <mit-cell title="Alert 警告提示" isLink url="/pages/alert/alert"/>
+            <mit-cell title="Progress 进度条" isLink url="/pages/progress/progress"/>
+            <mit-cell title="Avatar 头像" isLink url="/pages/avatar/avatar"/>
         </mit-cell-group>
     </mit-panel>
 </view>
