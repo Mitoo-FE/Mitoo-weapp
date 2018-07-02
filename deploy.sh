@@ -1,4 +1,4 @@
 #!/bin/sh
 sh merge_readme.sh
 npm run prod
-cp init.md ./dist/README.md
+cp README.MD ./dist/README.md
