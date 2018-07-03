@@ -1,0 +1,11 @@
+<view class="mit-accordion-item" bindtap="itemTap">
+	<view class="mit-accordion-header {{ expanded ? 'expanded' : '' }}">
+		<mit-icon type="sp-right-arrows" mit-class="icon"></mit-icon>
+		<view><slot name="title"></slot></view>
+	</view>
+	<view class="mit-accordion-content {{ expanded ? '' : 'mit-accordion-content-inactive' }}" >
+		<view class="mit-accordion-content-box">
+			<slot name="content"></slot>
+		</view>
+	</view>
+</view>

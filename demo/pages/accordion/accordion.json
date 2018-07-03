@@ -1,6 +1,7 @@
 {
 	"usingComponents": {
 		"mit-accordion": "/components/Accordion/index",
+		"mit-accordion-panel": "/components/Accordion-Panel/index",
 		"mit-panel": "/components/Panel/index"
 	}
 }

@@ -1,33 +1,49 @@
 Component({
 	externalClasses: ['mit-class'],
 	properties: {
-        items: {
-            type: Array
-        }
+		isAccordion: {
+			type: Boolean
+		}
     },
+	relations: {
+		'../Accordion-Panel/index': {
+			type: 'child'
+		}
+	},
 	data: {
 		expanded : false
 	},
 	methods: {
-		itemTap(evt) {
+		onItemTap(that) {
 
-			console.log('evt', evt);
+			if (this.data.isAccordion) {
 
-			let currentData = evt.currentTarget.dataset,
-	            index = currentData.index,
-	            isExpanded = currentData.expanded;
+				const items = this.getRelationNodes('../Accordion-Panel/index');
 
-			this.data.items[index].expanded = !!!isExpanded
+				if (that.data.expanded) {
+					that.setData({
+						expanded: !!!that.data.expanded
+					})
+				}else {
+					items.forEach((item, index) => {
+						item.setData({
+							expanded: false
+						})
+					})
+					that.setData({
+						expanded: !!!that.data.expanded
+					})
+				}
 
-			console.log(this.data.items);
-
-			this.setData({
-				items: this.data.items
-			})
+			}else {
+				that.setData({
+					expanded: !!!that.data.expanded
+				})
+			}
 		}
 	},
 	ready() {
-		console.log(this.data);
+
 	}
 
 })

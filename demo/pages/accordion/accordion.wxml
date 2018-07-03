@@ -1,5 +1,27 @@
 <view class="">
-	<mit-panel withoutBorder title="基本形式">
-		<mit-accordion items="{{ itemList }}"></mit-accordion>
+	<mit-panel withoutBorder title="基本折叠板">
+		<mit-accordion>
+			<mit-accordion-panel>
+				<view slot="title">Title 1</view>
+				<view slot="content" class="content">Content 1</view>
+			</mit-accordion-panel>
+			<mit-accordion-panel>
+				<view slot="title"><text>Title 2</text></view>
+				<view slot="content" class="content">Content 1</view>
+			</mit-accordion-panel>
+		</mit-accordion>
+	</mit-panel>
+
+	<mit-panel withoutBorder title="手风琴模式">
+		<mit-accordion isAccordion>
+			<mit-accordion-panel>
+				<view slot="title">Title 1</view>
+				<view slot="content" class="content">Content 1</view>
+			</mit-accordion-panel>
+			<mit-accordion-panel>
+				<view slot="title"><text>Title 2</text></view>
+				<view slot="content" class="content">Content 1</view>
+			</mit-accordion-panel>
+		</mit-accordion>
 	</mit-panel>
 </view>
