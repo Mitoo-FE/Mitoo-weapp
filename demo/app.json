@@ -24,7 +24,8 @@
     "pages/progress/progress",
     "pages/grid/grid",
     "pages/color/color",
-    "pages/avatar/avatar"
+    "pages/avatar/avatar",
+    "pages/accordion/accordion"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -10,6 +10,7 @@
             <mit-cell title="Card 卡片" isLink url="/pages/card/card"/>
             <mit-cell title="List 列表" isLink url="/pages/list/list"/>
             <mit-cell title="Panel 面板" isLink url="/pages/panel/panel"/>
+            <mit-cell title="Accordion 手风琴" isLink url="/pages/accordion/accordion"/>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="导航">

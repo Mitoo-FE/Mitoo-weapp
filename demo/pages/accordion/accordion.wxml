@@ -1,0 +1,5 @@
+<view class="">
+	<mit-panel withoutBorder title="基本形式">
+		<mit-accordion items="{{ itemList }}"></mit-accordion>
+	</mit-panel>
+</view>
