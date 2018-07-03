@@ -9,6 +9,10 @@
 				<view slot="title"><text>Title 2</text></view>
 				<view slot="content" class="content">Content 1</view>
 			</mit-accordion-panel>
+			<mit-accordion-panel>
+				<view slot="title"><text>Title 3</text></view>
+				<view slot="content" class="content">Content 3</view>
+			</mit-accordion-panel>
 		</mit-accordion>
 	</mit-panel>
 
@@ -20,7 +24,11 @@
 			</mit-accordion-panel>
 			<mit-accordion-panel>
 				<view slot="title"><text>Title 2</text></view>
-				<view slot="content" class="content">Content 1</view>
+				<view slot="content" class="content">Content 2</view>
+			</mit-accordion-panel>
+			<mit-accordion-panel>
+				<view slot="title"><text>Title 3</text></view>
+				<view slot="content" class="content">Content 3</view>
 			</mit-accordion-panel>
 		</mit-accordion>
 	</mit-panel>
