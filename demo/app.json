@@ -25,7 +25,8 @@
     "pages/grid/grid",
     "pages/color/color",
     "pages/avatar/avatar",
-    "pages/accordion/accordion"
+    "pages/accordion/accordion",
+    "pages/timeline/timeline"
   ],
   "window":{
     "backgroundTextStyle":"light",

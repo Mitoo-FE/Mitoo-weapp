@@ -1,0 +1,15 @@
+.time{
+	margin: 10rpx 2rpx;
+    background: #f2f4f5;
+    padding: 4rpx;
+    border-radius: 3px;
+    font-size: 18rpx;
+    border: 1px solid #eee;
+	display: inline-block;
+}
+.title{
+	font-size: 28rpx;
+}
+.content{
+	font-size: 24rpx;
+}

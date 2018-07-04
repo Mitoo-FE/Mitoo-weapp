@@ -1,0 +1,64 @@
+@import "../styles/index";
+
+$prefixCls = $prefix + '-timeline'
+
+.{$prefixCls} {
+
+	&-panel{
+		position: relative;
+
+		&-checked {
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 40rpx;
+			height: 40rpx;
+			z-index: $timeline-checked-zindex;
+			color: $timeline-panel-bg-color;
+		}
+
+		&-tail {
+			position:absolute;
+		    content: '';
+		    height: 100%;
+		    width: 4rpx;
+		    left: 14rpx;
+		    top: 24rpx;
+		    background-color: $timeline-panel-bg-color;
+			z-index: $timeline-tail-zindex;
+		}
+	}
+
+	&-panel-content {
+		padding: 0 0 $padding-base * 1 $padding-base * 3;
+		color: #999;
+	}
+
+	&-panel-head, &-panel-head-first {
+		position: absolute;
+		content: '';
+		z-index: 99;
+		border-radius: 100rpx;
+	}
+
+	&-panel-head {
+		width: 20rpx;
+		height: 20rpx;
+		left: 6rpx;
+		top: 8rpx;
+	}
+
+	&-panel-head-first {
+		width: 20rpx;
+		height: 20rpx;
+		left: 0rpx;
+		top: 10rpx;
+	}
+
+	&-panel-color {
+		background-color: $timeline-panel-bg-color;
+	}
+
+
+}

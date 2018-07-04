@@ -52,4 +52,9 @@
             <mit-cell title="Avatar 头像" isLink url="/pages/avatar/avatar"/>
         </mit-cell-group>
     </mit-panel>
+    <mit-panel title="页面">
+        <mit-ceel-group>
+            <mit-cell title="Timeline 时间线" isLink url="/pages/timeline/timeline" />
+        </mit-ceel-group>
+    </mit-panel>
 </view>

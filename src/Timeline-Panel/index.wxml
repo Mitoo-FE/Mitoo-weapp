@@ -1,0 +1,14 @@
+<view class="mit-timeline-panel">
+	<view class="mit-timeline-panel-color {{ (showIcon || icon) ? '' : 'mit-timeline-panel-head'}}">
+		<block wx:if="{{ icon }}">
+			<mit-icon type="{{ icon }}" mit-class="mit-timeline-panel-checked"></mit-icon>
+		</block>
+		<block wx:else>
+			<mit-icon wx:if="{{ showIcon }}" type="circle-success" mit-class="mit-timeline-panel-checked"></mit-icon>
+		</block>
+	</view>
+	<view wx:if="{{ !isLast }}" class="mit-timeline-panel-tail" style="tailStyle"></view>
+	<view class="mit-timeline-panel-content">
+		<slot name="content"></slot>
+	</view>
+</view>

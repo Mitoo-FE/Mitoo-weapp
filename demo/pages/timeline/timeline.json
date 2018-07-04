@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"mit-panel": "/components/Panel/index",
+		"mit-timeline": "/components/Timeline/index",
+		"mit-timeline-panel": "/components/Timeline-Panel/index"
+	}
+}
