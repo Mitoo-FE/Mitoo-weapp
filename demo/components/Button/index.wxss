@@ -133,13 +133,11 @@
     transform: scaleY(0.5);
   }
 }
-.mit-button-wrap-bottom .mit-botton {
-  margin: 18rpx;
-  border-radius: 0;
-  border: 0;
-}
 @media (min-resolution: 2dppx) and (min-resolution: 3dppx) {
   .mit-button-wrap-bottom::before {
     transform: scaleY(0.33);
   }
+}
+.mit-button-bottom-block {
+  height: 72rpx;
 }
