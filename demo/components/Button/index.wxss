@@ -19,6 +19,13 @@
 .mit-button-wrap .mit-button-primary.mit-button-hover {
   background-color: #f26620;
 }
+.mit-button-wrap .mit-button-warning {
+  background-color: #f90;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-warning.mit-button-hover {
+  background-color: #f29100;
+}
 .mit-button-wrap .mit-button-default {
   background-color: #fff;
   color: #333;
