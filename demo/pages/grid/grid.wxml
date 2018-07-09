@@ -1,5 +1,5 @@
 <view class="">
-	<mit-panel withoutBorder title="3列">
+	<mit-panel noBorder title="3列">
 		<view>
 			<mit-grid columnNum="3">
 				<mit-grid-item>
@@ -17,7 +17,7 @@
 			</mit-grid>
 		</view>
 	</mit-panel>
-	<mit-panel withoutBorder title="4列">
+	<mit-panel noBorder title="4列">
 		<mit-grid columnNum="4">
 			<mit-grid-item>
 				<view slot="icon"><mit-icon type="category" size="40" /></view>
@@ -37,7 +37,7 @@
 			</mit-grid-item>
 		</mit-grid>
 	</mit-panel>
-	<mit-panel withoutBorder title="5列">
+	<mit-panel noBorder title="5列">
 		<mit-grid columnNum="5">
 			<mit-grid-item>
 				<view slot="icon"><mit-icon type="category" size="40" /></view>

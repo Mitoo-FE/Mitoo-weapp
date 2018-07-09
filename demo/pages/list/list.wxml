@@ -13,7 +13,7 @@
         <mit-cell title="回到首页" label="附加文本在此处" isLink url="/pages/index/index">
         </mit-cell>
     </mit-panel>
-    <mit-panel withoutBorder title="Cell 组">
+    <mit-panel noBorder title="Cell 组">
         <mit-cell-group title="Cell 组">
             <mit-cell noBorder title="单行列表" isLink/>
             <mit-cell noBorder title="单行列表" isLink/>

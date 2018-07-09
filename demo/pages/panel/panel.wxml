@@ -4,7 +4,7 @@
             Panel 内容
         </view>
     </mit-panel>
-    <mit-panel withoutBorder title="无边框的Panel">
+    <mit-panel noBorder title="无边框的Panel">
         <view style="padding: 30rpx;">
             Panel 内容
         </view>
