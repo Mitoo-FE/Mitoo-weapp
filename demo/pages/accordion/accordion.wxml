@@ -1,17 +1,29 @@
-<view class="">
+<view>
 	<mit-panel withoutBorder title="基本">
 		<mit-accordion>
 			<mit-accordion-panel>
-				<view slot="title">Title 1</view>
-				<view slot="content" class="content">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</view>
+				<view slot="title">
+					Title 1
+				</view>
+				<view slot="content" class="content">
+					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+				</view>
 			</mit-accordion-panel>
 			<mit-accordion-panel>
-				<view slot="title"><text>Title 2</text></view>
-				<view slot="content" class="content">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</view>
+				<view slot="title">
+					Title 2
+				</view>
+				<view slot="content" class="content">
+					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+				</view>
 			</mit-accordion-panel>
 			<mit-accordion-panel>
-				<view slot="title"><text>Title 3</text></view>
-				<view slot="content" class="content">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</view>
+				<view slot="title">
+					Title 3
+				</view>
+				<view slot="content" class="content">
+					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+				</view>
 			</mit-accordion-panel>
 		</mit-accordion>
 	</mit-panel>
@@ -19,16 +31,28 @@
 	<mit-panel withoutBorder title="手风琴模式">
 		<mit-accordion isAccordion>
 			<mit-accordion-panel>
-				<view slot="title">Title 1</view>
-				<view slot="content" class="content">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</view>
+				<view slot="title">
+					Title 1
+				</view>
+				<view slot="content" class="content">
+					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+				</view>
 			</mit-accordion-panel>
 			<mit-accordion-panel>
-				<view slot="title"><text>Title 2</text></view>
-				<view slot="content" class="content">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</view>
+				<view slot="title">
+					Title 2
+				</view>
+				<view slot="content" class="content">
+					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+				</view>
 			</mit-accordion-panel>
 			<mit-accordion-panel>
-				<view slot="title"><text>Title 3</text></view>
-				<view slot="content" class="content">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</view>
+				<view slot="title">
+					Title 3
+				</view>
+				<view slot="content" class="content">
+					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+				</view>
 			</mit-accordion-panel>
 		</mit-accordion>
 	</mit-panel>
