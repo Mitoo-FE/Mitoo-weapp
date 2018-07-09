@@ -19,6 +19,13 @@
 .mit-button-wrap .mit-button-primary.mit-button-hover {
   background-color: #f26620;
 }
+.mit-button-wrap .mit-button-warning {
+  background-color: #f90;
+  color: #fff;
+}
+.mit-button-wrap .mit-button-warning.mit-button-hover {
+  background-color: #f29100;
+}
 .mit-button-wrap .mit-button-default {
   background-color: #fff;
   color: #333;
@@ -126,13 +133,11 @@
     transform: scaleY(0.5);
   }
 }
-.mit-button-wrap-bottom .mit-botton {
-  margin: 18rpx;
-  border-radius: 0;
-  border: 0;
-}
 @media (min-resolution: 2dppx) and (min-resolution: 3dppx) {
   .mit-button-wrap-bottom::before {
     transform: scaleY(0.33);
   }
+}
+.mit-button-bottom-block {
+  height: 72rpx;
 }

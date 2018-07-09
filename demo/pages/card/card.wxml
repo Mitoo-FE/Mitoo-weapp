@@ -3,7 +3,7 @@
         <mit-card>
             <view class="header-custom" slot="header">
                 <view class="left">
-                    <image class="image" src="/assets/image/news.jpg" />
+                    <image class="image" src="/assets/image/news.jpg"/>
                 </view>
                 <view class="right">
                     <view class="title">卡片标题文字一行</view>
@@ -19,7 +19,7 @@
         <mit-card full>
             <view class="header-custom" slot="header">
                 <view class="left">
-                    <image class="image" src="/assets/image/news.jpg" />
+                    <image class="image" src="/assets/image/news.jpg"/>
                 </view>
                 <view class="right">
                     <view class="title">卡片标题文字最多显示两行的情况</view>
@@ -37,7 +37,7 @@
         <mit-card full>
             <view class="header-custom" slot="header">
                 <view class="left">
-                    <image class="image" src="/assets/image/news.jpg" />
+                    <image class="image" src="/assets/image/news.jpg"/>
                 </view>
                 <view class="right">
                     <view class="title">卡片标题文字一行</view>
@@ -52,7 +52,7 @@
     <mit-panel noBackground title="带大图">
         <mit-card>
             <view class="header-bigimg" slot="header">
-                <mit-avatar src="/assets/image/avatar.png"></mit-avatar>
+                <mit-avatar src="/assets/image/avatar.png"/>
                 <view class="right">
                     <view class="title">卡片标题文字最多显示一行</view>
                     <view class="info">
@@ -68,7 +68,7 @@
     <mit-panel noBackground title="带大图 通栏">
         <mit-card full>
             <view class="header-bigimg" slot="header">
-                <mit-avatar src="/assets/image/avatar.png"></mit-avatar>
+                <mit-avatar src="/assets/image/avatar.png"/>
                 <view class="right">
                     <view class="title">卡片标题文字最多显示一行</view>
                     <view class="info">
@@ -77,7 +77,7 @@
                 </view>
             </view>
             <view class="body-bigimg" slot="body">
-                <image class="desc-img" src="/assets/image/desc.jpg"  />
+                <image class="desc-img" src="/assets/image/desc.jpg"/>
             </view>
         </mit-card>
     </mit-panel>

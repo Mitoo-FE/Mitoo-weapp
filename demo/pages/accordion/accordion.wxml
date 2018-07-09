@@ -1,5 +1,5 @@
-<view>
-	<mit-panel withoutBorder title="基本">
+<view class="">
+	<mit-panel noBorder title="基本">
 		<mit-accordion>
 			<mit-accordion-panel>
 				<view slot="title">
@@ -28,7 +28,7 @@
 		</mit-accordion>
 	</mit-panel>
 
-	<mit-panel withoutBorder title="手风琴模式">
+	<mit-panel noBorder title="手风琴模式">
 		<mit-accordion isAccordion>
 			<mit-accordion-panel>
 				<view slot="title">

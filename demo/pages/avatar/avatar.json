@@ -1,6 +1,6 @@
 {
 	"usingComponents": {
 		"mit-avatar": "/components/Avatar/index",
-        "mit-panel": "/components/Panel/index"
+		"mit-panel": "/components/Panel/index"
 	}
 }

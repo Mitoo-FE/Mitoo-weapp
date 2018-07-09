@@ -1,12 +1,12 @@
 <view>
-	<mit-panel withoutBorder noBackground title="span 24" mit-class="fonts">
+	<mit-panel noBorder noBackground title="span 24" mit-class="fonts">
 		<mit-row mit-class="row">
 			<mit-col mit-class="col" span="24">
 				<view class="grid-content">span 24</view>
 			</mit-col>
 		</mit-row>
 	</mit-panel>
-	<mit-panel withoutBorder noBackground title="span 12" mit-class="fonts">
+	<mit-panel noBorder noBackground title="span 12" mit-class="fonts">
 		<mit-row mit-class="row">
 			<mit-col mit-class="col" span="12">
 				<view class="grid-content bg-grey">span 12</view>
@@ -16,7 +16,7 @@
 			</mit-col>
 		</mit-row>
 	</mit-panel>
-	<mit-panel withoutBorder noBackground title="span 8" mit-class="fonts">
+	<mit-panel noBorder noBackground title="span 8" mit-class="fonts">
 		<mit-row mit-class="row">
 			<mit-col mit-class="col" span="8">
 				<view class="grid-content bg-grey">span 8</view>
@@ -30,7 +30,7 @@
 		</mit-row>
 	</mit-panel>
 
-	<mit-panel withoutBorder noBackground title="span 6 offset 6" mit-class="fonts">
+	<mit-panel noBorder noBackground title="span 6 offset 6" mit-class="fonts">
 		<mit-row mit-class="row">
 			<mit-col mit-class="col" span="6">
 				<view class="grid-content bg-grey">span 6</view>
@@ -40,7 +40,7 @@
 			</mit-col>
 		</mit-row>
 	</mit-panel>
-	<mit-panel withoutBorder noBackground title="span 6 offset 6" mit-class="fonts">
+	<mit-panel noBorder noBackground title="span 6 offset 6" mit-class="fonts">
 		<mit-row mit-class="row">
 			<mit-col mit-class="col" span="6" offset="6">
 				<view class="grid-content bg-grey">span 6 offset 6</view>
@@ -50,7 +50,7 @@
 			</mit-col>
 		</mit-row>
 	</mit-panel>
-	<mit-panel withoutBorder noBackground title="gutter 20" mit-class="fonts">
+	<mit-panel noBorder noBackground title="gutter 20" mit-class="fonts">
 		<mit-row mit-class="row" gutter="20">
 			<mit-col mit-class="col" span="8">
 				<view class="grid-content bg-grey">span 8</view>

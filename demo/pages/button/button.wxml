@@ -1,33 +1,29 @@
-<view style="padding-bottom: 200rpx;">
+<view>
     <mit-panel noBackground title="长按钮">
-        <mit-button openType="getUserInfo" bindgetuserinfo="onGotUserInfo" size="large" type="primary">主按钮</mit-button>
-        <mit-button size="large" type="default">次要按钮</mit-button>
+        <mit-button type="primary" size="large" openType="getUserInfo" bindgetuserinfo="onGotUserInfo">主按钮</mit-button>
+        <mit-button type="default" size="large">次要按钮</mit-button>
     </mit-panel>
     <mit-panel noBackground title="禁用的按钮">
-        <mit-button size="large" type="primary" disabled>主按钮</mit-button>
-        <mit-button size="large" type="default" disabled>次要按钮</mit-button>
+        <mit-button type="primary" size="large" disabled>主按钮</mit-button>
+        <mit-button type="default" size="large" disabled>次要按钮</mit-button>
     </mit-panel>
     <mit-panel noBackground title="不同类型的按钮">
-        <mit-button type="info" size="large">按钮</mit-button>
-        <mit-button type="error" size="large">按钮</mit-button>
-        <mit-button type="warning" size="large">按钮</mit-button>
-        <mit-button type="brand" size="large">按钮</mit-button>
-        <mit-button type="brand-yellow" size="large">按钮</mit-button>
-        <mit-button type="brand-red" size="large">按钮</mit-button>
-        <mit-button type="brand-green" size="large">按钮</mit-button>
-        <mit-button type="brand-blue" size="large">按钮</mit-button>
-        <mit-button type="brand-dark-blue" size="large">按钮</mit-button>
+        <mit-button type="primary" size="large">基础按钮</mit-button>
+        <mit-button type="default" size="large">默认按钮</mit-button>
+        <mit-button type="info" size="large">信息按钮</mit-button>
+        <mit-button type="warning" size="large">警告按钮</mit-button>
+        <mit-button type="error" size="large">错误按钮</mit-button>
     </mit-panel>
     <mit-panel noBackground title="短按钮">
-        <mit-button size="default" type="primary">主按钮</mit-button>
-        <mit-button size="default" type="default">次要按钮</mit-button>
+        <mit-button type="primary" size="default">主按钮</mit-button>
+        <mit-button type="default" size="default">次要按钮</mit-button>
     </mit-panel>
     <mit-panel noBackground title="小按钮">
-        <mit-button size="small" type="primary">按钮</mit-button>
-        <mit-button size="small" type="default">按钮</mit-button>
+        <mit-button type="primary" size="small">基础</mit-button>
+        <mit-button type="default" size="small">默认</mit-button>
     </mit-panel>
     <mit-panel noBackground title="通栏按钮">
-        <mit-button size="large" full type="primary">通栏按钮</mit-button>
+        <mit-button type="primary" size="large" full>通栏按钮</mit-button>
     </mit-panel>
-    <mit-button size="large" bottom type="primary">底部固定按钮</mit-button>
+    <mit-button type="primary" size="large" bottom>底部固定按钮</mit-button>
 </view>

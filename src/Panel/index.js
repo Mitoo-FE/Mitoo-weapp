@@ -8,7 +8,7 @@ Component({
             type: String,
             value: ''
         },
-        withoutBorder: {
+        noBorder: {
             type: Boolean,
             value: false
         },
