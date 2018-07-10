@@ -1,18 +1,18 @@
 <view>
     <mit-panel title="通告栏" noBorder>
-        <mit-notice-bar text="股市迎来新一轮大熊，股民避险情绪浓重。">
+        <mit-notice-bar text="我是一条通告。">
         </mit-notice-bar>
     </mit-panel>
     <mit-panel title="可关闭通告栏" noBorder>
-        <mit-notice-bar icon text="股市迎来新一轮大熊，股民避险情绪浓重。" closeable>
+        <mit-notice-bar icon text="我是一条可以被关闭的通告。" closeable>
         </mit-notice-bar>
     </mit-panel>
     <mit-panel title="多行通告栏" noBorder>
-        <mit-notice-bar icon text="股市迎来新一轮大熊，股民避险情绪浓重。经过了连续一年的下跌行情，沪指已经跌破1000点，全国各大省份超过10米建筑已经挤满了准备跳楼的市民。" closeable>
+        <mit-notice-bar icon text="我是一条多行通告，我有很多行。您可以在文本很长的时候使用多行通告，通告栏可以自动折行。" closeable>
         </mit-notice-bar>
     </mit-panel>
     <mit-panel title="滚动 通告栏" noBorder>
-        <mit-notice-bar icon text="股市迎来新一轮大熊，股民避险情绪浓重。经过了连续一年的下跌行情，沪指已经跌破1000点，全国各大省份超过10米建筑已经挤满了准备跳楼的市民。" closeable transform>
+        <mit-notice-bar icon text="我是一条可滚动通告，我有很多文字，多余的文字被隐藏在后面，会逐渐循环播放出来。" closeable transform>
         </mit-notice-bar>
     </mit-panel>
 </view>
