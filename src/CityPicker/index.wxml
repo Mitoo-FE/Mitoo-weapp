@@ -22,11 +22,11 @@
     </view>
     <view class="mit-char-sorted" wx:if="{{ searchFlag===false }}">
         <view bind:tap="goTop">
-            <view>
+            <view class="mit-tap-area">
                 <mit-icon size="{{24}}" type="Star"/>
             </view>
         </view>
-        <view wx:key="{{item}}" data-item="{{item}}" bind:tap="goChar" wx:for="{{ firstChar }}">
+        <view class="mit-tap-area" wx:key="{{item}}" data-item="{{item}}" bind:tap="goChar" wx:for="{{ firstChar }}">
             <view>{{ item }}</view>
         </view>
     </view>

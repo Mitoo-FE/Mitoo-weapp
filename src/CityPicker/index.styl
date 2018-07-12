@@ -53,11 +53,13 @@
     .{$prefix}-char-sorted {
         position: fixed;
         z-index: $zindex-message * 10;
-        right: $padding-base * 2;
+        right: $padding-base;
         top: 50%;
         transform: translateY(-50%);
         font-size: $font-size-sm;
         text-align: center;
     }
-    
+    .{$prefix}-tap-area {
+        width: $padding-base * 2;
+    }
 }
