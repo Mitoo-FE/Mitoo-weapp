@@ -40,6 +40,11 @@ Component({
                 }).exec();
             })
         },
+        goTop: function($evt) {
+            wx.pageScrollTo({
+                scrollTop: 0
+            });
+        },
         search: function($evt) {
             let value = $evt.detail.value;
             if (value.length) {
@@ -78,7 +83,7 @@ Component({
             this.triggerEvent('cancel', $evt)
         }
     },
-    ready() {
+    attached() {
         let pinyin = {};
         for (let i of this.properties.cities.data.cityList) {
             if (i.pinyin[0].toUpperCase() in pinyin === false) {

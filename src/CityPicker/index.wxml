@@ -21,8 +21,13 @@
         </view>
     </view>
     <view class="mit-char-sorted" wx:if="{{ searchFlag===false }}">
+        <view bind:tap="goTop">
+            <view>
+                <mit-icon size="{{24}}" type="Star"/>
+            </view>
+        </view>
         <view wx:key="{{item}}" data-item="{{item}}" bind:tap="goChar" wx:for="{{ firstChar }}">
-            {{ item }}
+            <view>{{ item }}</view>
         </view>
     </view>
     <view class="mit-city-picker-panel" wx:if="{{ searchFlag===true }}">
