@@ -23,15 +23,22 @@ Component({
         goChar: function($evt) {
             let char = $evt.currentTarget.dataset.item;
             let view = `#view_${char}`;
-            let query = wx.createSelectorQuery().in(this);
-            query.select(view).boundingClientRect((res) => {
-                this.setData({
-                    scrollTop: this.data.scrollTop + res.top
-                })
-                wx.pageScrollTo({
-                    scrollTop: this.data.scrollTop
-                });
-            }).exec();
+            let promise = new Promise((resolve, reject) => {
+                wx.createSelectorQuery().selectViewport().scrollOffset((res) => {
+                    resolve(res);
+                }).exec()
+            });
+            promise.then((scroll) => {
+                let query = wx.createSelectorQuery().in(this);
+                query.select(view).boundingClientRect((res) => {
+                    this.setData({
+                        scrollTop: scroll.scrollTop + res.top
+                    })
+                    wx.pageScrollTo({
+                        scrollTop: this.data.scrollTop
+                    });
+                }).exec();
+            })
         },
         search: function($evt) {
             let value = $evt.detail.value;

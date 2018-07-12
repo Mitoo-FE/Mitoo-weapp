@@ -1,4 +1,4 @@
-<view class="mit-city-picker">
+<scroll-view id="scroll-view" class="mit-city-picker">
     <view class="mit-city-picker-search-wrap">
         <view class="mit-city-picker-search">
             <input bindinput="search" placeholder="{{placeholder}}"/>
@@ -27,8 +27,10 @@
     </view>
     <view class="mit-city-picker-panel" wx:if="{{ searchFlag===true }}">
         <view class="mit-city-group">
-            <view class="mit-city-group-cell" data-index="{{item.id}}" bindtap="selectItem" hover-class="mit-city-group-cell-hover" wx:key="{{item.id}}" wx:for="{{ searchCityList }}">{{item.name}}</view>
+            <view class="mit-city-group-cell" data-index="{{item.id}}" bindtap="selectItem" hover-class="mit-city-group-cell-hover" wx:key="{{item.id}}" wx:for="{{ searchCityList }}">
+                <view>{{item.name}}</view>
+            </view>
         </view>
     </view>
-</view>
+</scroll-view>
 
