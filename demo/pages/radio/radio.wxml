@@ -1,4 +1,4 @@
-<view class="">
+<view>
 	<mit-panel title="基本用法">
 		<mit-radio-group bind:change="onRadioChange">
 			<mit-radio title="西瓜" value="watermelon"></mit-radio>

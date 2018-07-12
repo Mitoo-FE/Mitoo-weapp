@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mit-panel": "/components/Panel/index",
+    "mit-city-picker": "/components/CityPicker/index"
+  }
+}

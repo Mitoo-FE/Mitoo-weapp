@@ -1,0 +1,3 @@
+<view>
+    <mit-city-picker cities="{{cities}}" placeholder="请输入城市"/>
+</view>
