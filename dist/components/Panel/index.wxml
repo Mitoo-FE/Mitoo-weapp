@@ -1,6 +1,6 @@
 <view class="mit-panel mit-class">
     <view wx:if="{{ title }}" class="mit-panel-title">{{title}}</view>
-    <view wx:if="{{ !noBackground }}" class="mit-panel-info {{ withoutBorder ? 'mit-panel-info-without-border' : '' }}">
+    <view wx:if="{{ !noBackground }}" class="mit-panel-info {{ noBorder ? 'mit-panel-info-without-border' : '' }}">
         <slot/>
     </view>
     <slot wx:if="{{ noBackground }}"/>

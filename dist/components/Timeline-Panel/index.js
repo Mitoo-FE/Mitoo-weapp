@@ -1,0 +1,1 @@
+Component({externalClasses:["mit-class"],options:{multipleSlots:!0},properties:{showIcon:{type:Boolean},icon:{type:String}},relations:{"../Timeline/index":{type:"parent"}},data:{isFirst:!1,isLast:!1},methods:{},ready(){const e=this.getRelationNodes("../Timeline/index")[0];console.log("parent",e),e.setIndex()}});

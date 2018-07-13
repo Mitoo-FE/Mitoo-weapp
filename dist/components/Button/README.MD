@@ -30,7 +30,7 @@
 | size | 大小 | String | default | false | 'small', 'large', 'default'|
 | circle | 是否圆按钮 | Boolean | default | false | true, false |
 | text   | 按钮文字  | String  |  |  false  |   | 
-| type  | 按钮类型 | String | false | 'primary' | 'primary', 'info', 'default', 'error', 'brand', 'brand-yellow', 'brand-red', 'brand-green', 'brand-blue', 'brand-dark-blue' |
+| type  | 按钮类型 | String | false | 'primary' | 'primary', 'info', 'default', 'error', 'warning' |
 | disabled   | 是否禁用  | Boolean  | false |  false  | true, false  |
 | full   | 是否通栏  | Boolean  | false |  false  | true, false  |
 | bottom   | 是否为底部通栏按钮  | Boolean  | false |  false  | true, false  |

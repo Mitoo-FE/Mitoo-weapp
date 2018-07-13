@@ -1,22 +1,22 @@
-<mit-cell bindtap="onTap">
-	<view class="mit-checkbox-item" >
-		<view class="mit-checkbox-item-left">
-			<view class="mit-checkbox-item-left-extra">
-				<block wx:if="{{ checked }}">
-					<mit-icon type="checkbox-checked" mit-class="{{ disabled ? 'disabled' : 'checked'}}" size="40"></mit-icon>
-				</block>
-				<block wx:else>
-					<block wx:if="{{ disabled }}">
-						<mit-icon type="checkbox-uncheck-disabled" color="{{ colors.uncheck }}" size="48"></mit-icon>
-					</block>
-					<block wx:else>
-						<mit-icon type="checkbox-uncheck" mit-class="uncheck" size="40"></mit-icon>
-					</block>
-				</block>
-			</view>
-			<view class="mit-checkbox-item-left-title">
-				{{ title }}
-			</view>
-		</view>
-	</view>
-</mit-cell>
+<view class="mit-checkbox-cell {{ isLast ? 'mit-checkbox-cell-last' : '' }}" bindtap="onTap">
+    <view class="mit-checkbox-item">
+        <view class="mit-checkbox-item-left">
+            <view class="mit-checkbox-item-left-extra">
+                <block wx:if="{{ checked }}">
+                    <mit-icon type="checkbox-checked" mit-class="{{ disabled ? 'disabled' : 'checked'}}" size="40"></mit-icon>
+                </block>
+                <block wx:else>
+                    <block wx:if="{{ disabled }}">
+                        <mit-icon type="checkbox-uncheck-disabled" color="{{ colors.uncheck }}" size="48"></mit-icon>
+                    </block>
+                    <block wx:else>
+                        <mit-icon type="checkbox-uncheck" mit-class="uncheck" size="40"></mit-icon>
+                    </block>
+                </block>
+            </view>
+            <view class="mit-checkbox-item-left-title">
+                {{ title }}
+            </view>
+        </view>
+    </view>
+</view>

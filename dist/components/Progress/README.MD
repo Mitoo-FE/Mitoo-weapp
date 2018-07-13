@@ -30,4 +30,4 @@
 |参数	    |说明  			   |类型            |默认值     |必须  | 可选参数 |
 |:-----------:|:---------------:|:-------------:|:----------:|:---------:|:---:|
 | title  | 标题   |  Boolean  | false  |  true |  |
-| withoutBorder | 不带边框 | Boolean | false | false | true, false|
+| noBorder | 不带边框 | Boolean | false | false | true, false|
