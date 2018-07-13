@@ -1,9 +1,5 @@
 Component({
     properties: {
-        text: {
-            type: String,
-            value: 0
-        },
         borderColor: {
             type: String,
             value: ''

@@ -27,5 +27,17 @@ Component({
 			})
 			this.triggerEvent('change', this.data.currentValue, { bubbles: true, composed: true })
 		}
+	},
+	ready() {
+		const items = this.getRelationNodes('../Checkbox/index')
+		items.forEach((item, index) => {
+			console.log(index);
+			if (index == items.length -1) {
+				item.setData({
+					isLast: true
+				})
+			}
+		})
+
 	}
 })

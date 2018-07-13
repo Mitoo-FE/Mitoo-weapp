@@ -21,18 +21,6 @@ Component({
 
 			parent.onItemTap(this);
 
-			//
-			// let currentData = evt.currentTarget.dataset,
-	        //     index = currentData.index,
-	        //     isExpanded = currentData.expanded;
-			//
-			// this.data.items[index].expanded = !!!isExpanded
-			//
-			// console.log(this.data.items);
-
-			// this.setData({
-			// 	items: this.data.items
-			// })
 		}
 	},
 	ready() {
