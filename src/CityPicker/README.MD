@@ -9,7 +9,7 @@
 ```json
 {
 	"usingComponents": {
-		"mit-badge": "/components/Badge/index",
+		"mit-badge": "/components/CityPicker/index",
 	}
 }
 ```
@@ -18,16 +18,25 @@
 在wxml文件里添加组件代码
 
 ```html
-<mit-badge>
+<mit-city-picker>
     ...
-</mit-badge>
+</mit-city-picker>
 ```
 
 ## API
 
-|参数	    |说明  			   |类型            |默认值     |必须  | 可选参数 |
-|:-----------:|:---------------:|:-------------:|:----------:|:---------:|:---:|
-| number  | 徽章上的数字   |  Number  |   |   |  |
-| flag | 是否加到其他组件上面 | Boolean | false | false | true, false |
-| color | 自定义徽章颜色 | String | | | |
+|参数	    |说明  			   |类型            |默认值     |必须  |
+|:-----------:|:---------------:|:-------------:|:----------:|:---------:|
+| visible  | 城市选择器的展示状态   |  Boolean | false   | true  |
+| cities | 城市列表数据 | Object |  | true |
+| cancel | 取消选择回调 | Function | | |
+| select | 选择城市回调 | Function | | |
+
+##
+
+    cities 数据下载地址 https://www.mitooui.com/download/cities.json
+    
+    cancel 为右上角点击按钮事件回调
+    
+    select 为点选城市的回调，选择城市的id在detail中
 

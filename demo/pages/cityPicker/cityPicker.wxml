@@ -1,3 +1,4 @@
 <view>
-    <mit-city-picker cities="{{cities}}" placeholder="请输入城市"/>
+    <mit-button size="large" type="default" bind:buttonTap="showCityPicker">选择城市</mit-button>
+    <mit-city-picker visible="{{visible}}" cities="{{cities}}" bind:cancel="cancel" bind:select="select" placeholder="请输入城市"/>
 </view>

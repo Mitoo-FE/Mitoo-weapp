@@ -1,26 +1,36 @@
-<scroll-view id="scroll-view" class="mit-city-picker">
-    <view class="mit-city-picker-search-wrap">
-        <view class="mit-city-picker-search">
-            <input bindinput="search" placeholder="{{placeholder}}"/>
+<view>
+    <scroll-view id="scroll-view" class="mit-city-picker {{visible ? 'mit-city-picker-visible' : ''}}">
+        <view class="mit-city-picker-search-wrap">
+            <view class="mit-city-picker-search">
+                <input bindinput="search" placeholder="{{placeholder}}"/>
+            </view>
+            <view bindtap="cancel" class="mit-city-picker-search-cancel">取消</view>
         </view>
-        <view class="mit-city-picker-search-cancel">取消</view>
-    </view>
-    <view class="mit-city-picker-panel" wx:if="{{ searchFlag===false }}">
-        <view class="mit-city">当前定位城市：{{city}}</view>
-        <view class="mit-city-title">热门城市</view>
-        <view class="mit-city-group">
-            <view class="mit-city-group-cell" data-index="{{item.id}}" bindtap="selectItem" hover-class="mit-city-group-cell-hover" wx:key="{{item.id}}" wx:for="{{ cities.data.hotCityList }}">{{item.name}}</view>
-        </view>
-        <view id="{{ 'view_' + item.charCode }}" wx:key="index" wx:for="{{ pinyin }}">
-            <view class="mit-city-title">{{item.charCode}}</view>
+        <view class="mit-city-picker-panel" wx:if="{{ searchFlag===false }}">
+            <view class="mit-city" bindtap="selectCurrentCity">当前定位城市：{{city}}</view>
+            <view class="mit-city-title">热门城市</view>
             <view class="mit-city-group">
-                <view wx:key="{{item.name}}" data-index="{{item.id}}" bindtap="selectItem" hover-class="mit-city-group-cell-hover" class="mit-city-group-cell" wx:for="{{ item.array }}">
-                    {{item.name}}
+                <view class="mit-city-group-cell" data-index="{{item.id}}" bindtap="selectItem" hover-class="mit-city-group-cell-hover" wx:key="{{item.id}}" wx:for="{{ cities.data.hotCityList }}">{{item.name}}</view>
+            </view>
+            <view id="{{ 'view_' + item.charCode }}" wx:key="index" wx:for="{{ pinyin }}">
+                <view class="mit-city-title">{{item.charCode}}</view>
+                <view class="mit-city-group">
+                    <view wx:key="{{item.name}}" data-index="{{item.id}}" bindtap="selectItem" hover-class="mit-city-group-cell-hover" class="mit-city-group-cell" wx:for="{{ item.array }}">
+                        {{item.name}}
+                    </view>
                 </view>
             </view>
         </view>
-    </view>
-    <view class="mit-char-sorted" wx:if="{{ searchFlag===false }}">
+
+        <view class="mit-city-picker-panel" wx:if="{{ searchFlag===true }}">
+            <view class="mit-city-group">
+                <view class="mit-city-group-cell" data-index="{{item.id}}" bindtap="selectItem" hover-class="mit-city-group-cell-hover" wx:key="{{item.id}}" wx:for="{{ searchCityList }}">
+                    <view>{{item.name}}</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="mit-char-sorted {{visible ? 'mit-char-sorted-visible' : ''}}" wx:if="{{ searchFlag===false }}">
         <view bind:tap="goTop">
             <view class="mit-tap-area">
                 <mit-icon size="{{24}}" type="Star"/>
@@ -30,12 +40,6 @@
             <view>{{ item }}</view>
         </view>
     </view>
-    <view class="mit-city-picker-panel" wx:if="{{ searchFlag===true }}">
-        <view class="mit-city-group">
-            <view class="mit-city-group-cell" data-index="{{item.id}}" bindtap="selectItem" hover-class="mit-city-group-cell-hover" wx:key="{{item.id}}" wx:for="{{ searchCityList }}">
-                <view>{{item.name}}</view>
-            </view>
-        </view>
-    </view>
-</scroll-view>
+</view>
+
 

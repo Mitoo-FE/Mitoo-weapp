@@ -10,6 +10,10 @@ Component({
         cities: {
             type: Object,
             value: {}
+        },
+        visible: {
+            type: Boolean,
+            value: false
         }
     },
     data: {
@@ -81,6 +85,16 @@ Component({
         },
         cancel ($evt) {
             this.triggerEvent('cancel', $evt)
+        },
+        selectCurrentCity () {
+            let cities = this.properties.cities.data.cityList;
+            for (let i of cities) {
+                console.log(i.name, this.data.city)
+                if (i.name === this.data.city.substring(0, i.name.length)) {
+                    this.triggerEvent('select', i.id)
+                    break
+                }
+            }
         }
     },
     attached() {
