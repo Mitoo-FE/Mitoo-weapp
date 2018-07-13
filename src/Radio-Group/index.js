@@ -28,5 +28,16 @@ Component({
 
 			this.triggerEvent('change', options)
 		}
-	}
+	},
+    ready() {
+        const items = this.getRelationNodes('../Radio/index')
+		items.forEach((item, index) => {
+            if (index == items.length -1) {
+                item.setData({
+                    isLast: true
+                })
+            }
+        })
+
+    }
 })

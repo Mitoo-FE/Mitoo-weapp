@@ -3,26 +3,26 @@
 		<mit-accordion>
 			<mit-accordion-panel>
 				<view slot="title">
-					Title 1
+					web design
 				</view>
 				<view slot="content" class="content">
-					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+					网页设计（web design，又称为Web UI design，WUI design，WUI），是根据企业希望向浏览者传递的信息（包括产品、服务、理念、文化），进行网站功能策划，然后进行的页面设计美化工作
 				</view>
 			</mit-accordion-panel>
 			<mit-accordion-panel>
 				<view slot="title">
-					Title 2
+					Industrial Design
 				</view>
 				<view slot="content" class="content">
-					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+					工业设计（Industrial Design），简称ID。指以工学、美学、经济学为基础对工业产品进行设计。
 				</view>
 			</mit-accordion-panel>
 			<mit-accordion-panel>
 				<view slot="title">
-					Title 3
+					web design
 				</view>
 				<view slot="content" class="content">
-					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+					网页设计（web design，又称为Web UI design，WUI design，WUI），是根据企业希望向浏览者传递的信息（包括产品、服务、理念、文化），进行网站功能策划，然后进行的页面设计美化工作
 				</view>
 			</mit-accordion-panel>
 		</mit-accordion>
@@ -32,26 +32,26 @@
 		<mit-accordion isAccordion>
 			<mit-accordion-panel>
 				<view slot="title">
-					Title 1
+					web design
 				</view>
 				<view slot="content" class="content">
-					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+					网页设计（web design，又称为Web UI design，WUI design，WUI），是根据企业希望向浏览者传递的信息（包括产品、服务、理念、文化），进行网站功能策划，然后进行的页面设计美化工作
 				</view>
 			</mit-accordion-panel>
 			<mit-accordion-panel>
 				<view slot="title">
-					Title 2
+					Industrial Design
 				</view>
 				<view slot="content" class="content">
-					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+					工业设计（Industrial Design），简称ID。指以工学、美学、经济学为基础对工业产品进行设计。
 				</view>
 			</mit-accordion-panel>
 			<mit-accordion-panel>
 				<view slot="title">
-					Title 3
+					web design
 				</view>
 				<view slot="content" class="content">
-					A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+					网页设计（web design，又称为Web UI design，WUI design，WUI），是根据企业希望向浏览者传递的信息（包括产品、服务、理念、文化），进行网站功能策划，然后进行的页面设计美化工作
 				</view>
 			</mit-accordion-panel>
 		</mit-accordion>

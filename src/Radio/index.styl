@@ -3,6 +3,20 @@
 
 $prefixCls = $prefix + '-radio'
 
+.{$prefixCls}-cell{
+    display: flex;
+    padding: $padding-x-large;
+    position: relative;
+    hairline('bottom');
+
+    &:active{
+        background-color: $background-color-tap;
+    }
+    &-last{
+        hairline-remove('bottom');
+    }
+}
+
 .{$prefixCls}-item{
 
 	display: flex;

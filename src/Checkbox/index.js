@@ -27,9 +27,11 @@ Component({
 		colors : {
 			checked: '#108ee9',
 			uncheck: '#e3e3e3',
-			disabled: '#e3e3e3'
+			disabled: '#e3e3e3',
+
 		},
-		checked: false
+		checked: false,
+		isLast: false
 	},
 	methods: {
 		onTap() {

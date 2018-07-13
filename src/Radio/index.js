@@ -28,7 +28,8 @@ Component({
 			default: '#108ee9',
 			disabled: '#c3c3c3'
 		},
-		checked: false
+		checked: false,
+		isLast: false
 	},
 	ready() {
 		if (!this.data.value) {
