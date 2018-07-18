@@ -1,7 +1,6 @@
 {
   	"component": true,
 	"usingComponents": {
-		"mit-cell": "../Cell/index",
 		"mit-icon": "../Icon/index"
 	}
 }

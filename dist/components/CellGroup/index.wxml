@@ -2,4 +2,3 @@
     <view class="mit-cell-group-title" wx:if="{{ title }}">{{title}}</view>
     <slot/>
 </view>
-

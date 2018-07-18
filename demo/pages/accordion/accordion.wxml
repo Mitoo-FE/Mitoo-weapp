@@ -1,4 +1,4 @@
-<view class="">
+<view>
 	<mit-panel noBorder title="基本">
 		<mit-accordion>
 			<mit-accordion-panel>

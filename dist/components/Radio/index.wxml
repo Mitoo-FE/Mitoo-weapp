@@ -1,10 +1,10 @@
-<mit-cell>
-	<view class="mit-radio-item" bindtap="onTap">
-		<view class="mit-radio-title">
-			{{ title }}
-		</view>
-		<view class="mit-radio-extra" wx:if="{{ checked }}">
-			<mit-icon mit-class="{{ disabled ? 'disabled': 'default'}}" type="check"></mit-icon>
-		</view>
-	</view>
-</mit-cell>
+<view class="mit-radio-cell {{ isLast ? 'mit-radio-cell-last' : '' }}" bindtap="onTap">
+    <view class="mit-radio-item">
+        <view class="mit-radio-title">
+            {{ title }}
+        </view>
+        <view class="mit-radio-extra" wx:if="{{ checked }}">
+            <mit-icon mit-class="{{ disabled ? 'disabled': 'default'}}" type="check"></mit-icon>
+        </view>
+    </view>
+</view>

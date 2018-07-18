@@ -1,1 +1,1 @@
-Component({externalClasses:["mit-class"],options:{multipleSlots:!0},properties:{title:{type:String,value:""},withoutBorder:{type:Boolean,value:!1},noBackground:{type:Boolean,value:!1}}});
+Component({externalClasses:["mit-class"],options:{multipleSlots:!0},properties:{title:{type:String,value:""},noBorder:{type:Boolean,value:!1},noBackground:{type:Boolean,value:!1}}});

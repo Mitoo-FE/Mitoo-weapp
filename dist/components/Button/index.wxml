@@ -18,3 +18,4 @@
         <slot/>
     </button>
 </view>
+<view wx:if="{{ bottom }}" class="mit-button-bottom-block"></view>

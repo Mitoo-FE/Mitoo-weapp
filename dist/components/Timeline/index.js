@@ -1,0 +1,1 @@
+Component({relations:{"../Timeline-Panel/index":{type:"child"}},methods:{setIndex(){const e=this.getRelationNodes("../Timeline-Panel/index"),t=e.length;for(let n=0;n<e.length;n++)0===n?e[n].setData({isFirst:!0}):n===t-1&&e[n].setData({isLast:!0})}}});

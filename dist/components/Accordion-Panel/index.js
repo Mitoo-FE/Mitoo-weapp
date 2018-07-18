@@ -1,0 +1,1 @@
+Component({externalClasses:["mit-class"],options:{multipleSlots:!0},properties:{},relations:{"../Accordion/index":{type:"parent"}},data:{expanded:!1},methods:{itemTap(e){this.getRelationNodes("../Accordion/index")[0].onItemTap(this)}},ready(){}});
