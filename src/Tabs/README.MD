@@ -31,4 +31,4 @@
 |:-----------: |:---------------:| :-------------:| :-------- | :--------: | :-----:|
 | brandColor | 自定义品牌色 | String |  | false  | |
 | scroll | 是否可滑动 | Boolean | false | false | |
-
+| onChangeTab | 绑定tab切换方法回调 | Function | false | false |
