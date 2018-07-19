@@ -53,9 +53,9 @@
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="页面">
-        <mit-ceel-group>
+        <mit-cell-group>
             <mit-cell title="Timeline 时间线" isLink url="/pages/timeline/timeline"/>
             <mit-cell title="CityPicker 城市选择器" isLink url="/pages/cityPicker/cityPicker"/>
-        </mit-ceel-group>
+        </mit-cell-group>
     </mit-panel>
 </view>
