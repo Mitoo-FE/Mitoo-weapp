@@ -31,7 +31,7 @@
   padding: 0 30rpx;
   height: 80rpx;
   line-height: 80rpx;
-  background-color: #f7f7f7;
-  color: #999;
+  background-color: #e6e6e6;
+  color: #333;
   z-index: 9999;
 }

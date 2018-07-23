@@ -60,6 +60,7 @@ Component({
       const heights = this.heights
       const checkTop = true
       const len = positions.length
+      console.log(positions);
       for (let i = len - 1; i >= 0; i--) {
         const isLast = i === len - 1
         const nextTop = isLast ? scrollY : positions[i + 1]
@@ -89,7 +90,6 @@ Component({
           return
         }
       }
-
       this.currentIndex = -1
       this.currentDiff = 0
       this.handleFixedShow(this.currentIndex)
@@ -104,7 +104,7 @@ Component({
       }
       this._fixedTop = diff
       this.setData({
-        AnimationStyle: `translate3d(0, ${diff}px, 0)`
+        AnimationStyle: `translate3d(0, ${this._fixedTop}px, 0)`
       })
     },
     handleFixedShow(index) {

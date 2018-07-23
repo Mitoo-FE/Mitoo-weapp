@@ -5,14 +5,7 @@ Component({
   },
   relations: {
     '../Sticky/index': {
-      type: 'parent',
-      linked(target) {
-    		// console.log('target', target);
-    		// this.changeCurrent();
-    	},
-    	linkChanged(target) {
-        // console.log('target', target);
-      },
+      type: 'parent'
     }
 	},
   properties: {
