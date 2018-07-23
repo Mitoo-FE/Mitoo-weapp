@@ -27,7 +27,8 @@
     "pages/avatar/avatar",
     "pages/accordion/accordion",
     "pages/timeline/timeline",
-    "pages/cityPicker/cityPicker"
+    "pages/cityPicker/cityPicker",
+    "pages/imageCliper/imageCliper"
   ],
   "window":{
     "backgroundTextStyle":"light",
