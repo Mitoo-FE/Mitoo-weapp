@@ -1,0 +1,108 @@
+<view>
+  <view class="logo-wrap">
+    <image class="logo" src="/assets/image/logo.png"/>
+    <view class="main-view">Mitoo-weapp</view>
+  </view>
+  <view class="sticky-view-container">
+    <mit-sticky pos="{{ scrollY }}" bind:change="changeTitle">
+      <scroll-view scroll-y style="height: 100%;" slot="content" bindscroll="scroll">
+        <mit-sticky-item index="布局">
+          <view class="sticky-header">
+            布局
+          </view>
+        </mit-sticky-item>
+        <mit-panel>
+            <mit-cell-group>
+                <mit-cell title="Layout 布局" isLink url="/pages/layout/layout"/>
+                <mit-cell title="Grid 宫格" isLink url="/pages/grid/grid"/>
+                <mit-cell title="Card 卡片" isLink url="/pages/card/card"/>
+                <mit-cell title="List 列表" isLink url="/pages/list/list"/>
+                <mit-cell title="Panel 面板" isLink url="/pages/panel/panel"/>
+                <mit-cell title="Accordion 手风琴" isLink url="/pages/accordion/accordion"/>
+            </mit-cell-group>
+        </mit-panel>
+        <mit-sticky-item index="导航">
+          <view class="sticky-header">
+            导航
+          </view>
+        </mit-sticky-item>
+        <mit-panel>
+            <mit-cell-group>
+                <mit-cell title="Tabs 标签" isLink url="/pages/tabs/tabs"/>
+                <mit-cell title="Drawer 抽屉" isLink url="/pages/drawer/drawer"/>
+                <mit-cell title="NoticeBar 通知条" isLink url="/pages/noticeBar/noticeBar"/>
+            </mit-cell-group>
+        </mit-panel>
+        <mit-sticky-item index="基础组件">
+          <view class="sticky-header">
+            基础组件
+          </view>
+        </mit-sticky-item>
+        <mit-panel>
+            <mit-cell-group>
+                <mit-cell title="Color 颜色" isLink url="/pages/color/color"/>
+                <mit-cell title="Button 按钮" isLink url="/pages/button/button"/>
+                <mit-cell title="Icon 图标" isLink url="/pages/icon/icon"/>
+            </mit-cell-group>
+        </mit-panel>
+        <mit-sticky-item index="操作反馈">
+          <view class="sticky-header">
+            操作反馈
+          </view>
+        </mit-sticky-item>
+        <mit-panel>
+            <mit-cell-group>
+                <mit-cell title="ActionSheet 动作面板" isLink url="/pages/actionSheet/actionSheet"/>
+                <mit-cell title="Toast 轻提示" isLink url="/pages/toast/toast"/>
+                <mit-cell title="Modal 对话框" isLink url="/pages/modal/modal"/>
+                <mit-cell title="Toptips 顶部提示" isLink url="/pages/toptips/toptips"/>
+            </mit-cell-group>
+        </mit-panel>
+        <mit-sticky-item index="表单">
+          <view class="sticky-header">
+            表单
+          </view>
+        </mit-sticky-item>
+        <mit-panel>
+            <mit-cell-group>
+                <mit-cell title="Input 输入框" isLink url="/pages/input/input"/>
+                <mit-cell title="Switch 开关" isLink url="/pages/switch/switch"/>
+                <mit-cell title="Radio 单选" isLink url="/pages/radio/radio"/>
+                <mit-cell title="Checkbox 复选" isLink url="/pages/checkbox/checkbox"/>
+            </mit-cell-group>
+        </mit-panel>
+        <mit-sticky-item index="视图">
+          <view class="sticky-header">
+            视图
+          </view>
+        </mit-sticky-item>
+        <mit-panel>
+            <mit-cell-group>
+                <mit-cell title="Badge 徽章" isLink url="/pages/badge/badge"/>
+                <mit-cell title="Tag 标签" isLink url="/pages/tag/tag"/>
+                <mit-cell title="Alert 警告提示" isLink url="/pages/alert/alert"/>
+                <mit-cell title="Progress 进度条" isLink url="/pages/progress/progress"/>
+                <mit-cell title="Avatar 头像" isLink url="/pages/avatar/avatar"/>
+                <mit-cell title="Sticky 固定" isLink url="/pages/sticky/sticky"/>
+            </mit-cell-group>
+        </mit-panel>
+        <mit-sticky-item index="页面">
+          <view class="sticky-header">
+            页面
+          </view>
+        </mit-sticky-item>
+        <mit-panel>
+            <mit-cell-group>
+                <mit-cell title="Timeline 时间线" isLink url="/pages/timeline/timeline"/>
+                <mit-cell title="CityPicker 城市选择器" isLink url="/pages/cityPicker/cityPicker"/>
+            </mit-cell-group>
+        </mit-panel>
+      </scroll-view>
+      <view slot="fixed">
+        <view class="sticky-header">
+          {{ title }}
+        </view>
+      </view>
+    </mit-sticky>
+  </view>
+</view>

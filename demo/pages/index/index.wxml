@@ -50,6 +50,7 @@
             <mit-cell title="Alert 警告提示" isLink url="/pages/alert/alert"/>
             <mit-cell title="Progress 进度条" isLink url="/pages/progress/progress"/>
             <mit-cell title="Avatar 头像" isLink url="/pages/avatar/avatar"/>
+            <mit-cell title="Sticky 固定" isLink url="/pages/sticky/sticky"/>
         </mit-cell-group>
     </mit-panel>
     <mit-panel title="页面">

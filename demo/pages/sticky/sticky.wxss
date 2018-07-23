@@ -1,0 +1,37 @@
+/**index.wxss**/
+.main-view {
+    font-size: 48rpx;
+    text-align: center;
+    transform: translateY(-60rpx);
+}
+.logo-view {
+    overflow: hidden;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 420rpx;
+    height: 420rpx;
+    margin-top: -60rpx;
+}
+.sticky-view-container{
+  position: absolute;
+  top: 0rpx;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.mit-sticky{
+  /* padding: 0 10px */
+}
+.mit-sticky .mit-scroll-wrapper{
+  background-color: #fff
+}
+.sticky-header{
+  padding: 0 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f7f7f7;
+  color: #999;
+  z-index: 9999;
+}
