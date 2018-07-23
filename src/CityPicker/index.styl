@@ -58,7 +58,7 @@
       background-color: $background-color-body * 0.95;
     }
   }
-  
+
   .{$prefix}-tap-area {
     width: $padding-base * 2;
   }
@@ -68,13 +68,14 @@
   z-index: $zindex-modal + 1;
   right: $padding-base * 2;
   top: 50%;
-  
+  background-color: #f7f7f7;
+  padding: 16rpx 10rpx;
   font-size: $font-size-sm;
   text-align: center;
   visibility: hidden;
   transform: translateY(100vh);
   &-visible {
-    transform: translateY(-30%);
+    transform: translateY(-40%);
     transition: all $transition-time ease-in-out;
     visibility: visible;
   }

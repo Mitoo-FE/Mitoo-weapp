@@ -15,7 +15,6 @@ Page({
     title: ""
   },
   scroll: function(e) {
-    console.log(e);
     const scrollTop = e.detail.scrollTop;
     this.setData({
       scrollY: scrollTop

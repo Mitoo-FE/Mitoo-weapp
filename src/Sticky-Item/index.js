@@ -18,12 +18,6 @@ Component({
     parent: null
   },
   methods: {
-    refresh() {
-      const query = wx.createSelectorQuery().in(this);
-      query.select('.mit-sticky-item').boundingClientRect((res) => {
-        // console.log(res);
-      }).exec()
-    },
     getRect() {
       let promise = new Promise((resolve, reject) => {
         const query = wx.createSelectorQuery().in(this);
@@ -37,9 +31,7 @@ Component({
       return promise
     },
     getItemTitle() {
-
       return this.data.index
-
     }
   },
   ready() {

@@ -34,9 +34,6 @@ Component({
       this.items = items;
     },
     refresh() {
-      this.items.forEach((item, index) => {
-        item.refresh()
-      })
       this._calculateHeight()
       this.computeCurrentSticky()
     },
@@ -60,7 +57,6 @@ Component({
       const heights = this.heights
       const checkTop = true
       const len = positions.length
-      console.log(positions);
       for (let i = len - 1; i >= 0; i--) {
         const isLast = i === len - 1
         const nextTop = isLast ? scrollY : positions[i + 1]
