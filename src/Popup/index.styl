@@ -1,0 +1,89 @@
+@import "../styles/index";
+@import "../styles/mixins/animation";
+
+.{$prefix}-popup{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $background-color-base;
+
+	&-dialog {
+		-webkit-transition: all cubic-bezier(0.36, 0.66, 0.04, 1) 600ms;
+    transition: all cubic-bezier(0.36, 0.66, 0.04, 1) 600ms;
+    position: fixed;
+		box-sizing:border-box;
+    background-color: white;
+    z-index: 2020;
+		visibility: hidden;
+    overflow: auto;
+    max-height: 100%;
+    max-width: 100%;
+	}
+
+  &-top{
+		-webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+		width:100%;
+  }
+
+  &-bottom{
+		-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    bottom: 0;
+    left: 0;
+    right: 0;
+		width:100%;
+  }
+
+  &-left{
+  	-webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    width: auto;
+    height: 100%;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+  }
+
+  &-right{
+  	-webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    width: auto;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+  }
+
+  &-dialog.dialog-show{
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+	&-mask {
+		position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $background-color-mask;
+    height: 100%;
+    z-index: $zindex-action-sheet;
+    transition: all 150ms ease-in-out;
+    width: 100%;
+		visibility: hidden;
+		opacity: 0;
+
+		&.mask-show{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+}
