@@ -34,8 +34,5 @@ Component({
         visible: false
       })
     }
-  },
-  ready() {
-    console.log(this);
   }
 })

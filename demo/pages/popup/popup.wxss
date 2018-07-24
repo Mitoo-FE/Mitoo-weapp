@@ -11,3 +11,6 @@
   flex-direction: column;
   justify-content: center;
 }
+.panel-info{
+  padding: 10rpx 0;
+}
