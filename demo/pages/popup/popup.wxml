@@ -94,4 +94,20 @@
       </mit-popup>
     </view>
   </mit-panel>
+  <mit-panel title="业务">
+    <view class="panel-info">
+      <mit-button type="default" size="large" bind:buttonTap="popupMaskDisabled">点击mask不关闭 </mit-button>
+      <mit-popup visible="{{ popupMaskDisabled }}" maskClosable="{{ false }}">
+        <view class="fulldialog">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+      <mit-button type="default" size="large" bind:buttonTap="popupMaskVisible">无mask</mit-button>
+      <mit-popup visible="{{ popupMaskVisible }}" maskVisible="{{ false }}">
+        <view class="unMask">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+    </view>
+  </mit-panel>
 </view>
