@@ -13,8 +13,8 @@
         visibility: visible;
         .{$prefix}-modal {
             transition: all $transition-time ease-in-out;
-            // transform: scale(0) translateY(-50%);
-            animation: dialog-zoom .4s
+            transform: scale(1) translateY(-50%);
+            // animation: dialog-zoom .4s
         }
     }
     .{$prefix}-modal-mask {
@@ -36,7 +36,7 @@
         width: 70%;
         left: 15%;
         top: 50%;
-        transform: scale(1) translateY(-50%);
+        transform: scale(0) translateY(-50%);
         transition: all $transition-time ease-in-out;
         transform-origin: top;
         hairline('all', $border-color-base, $border-radius-sm)
