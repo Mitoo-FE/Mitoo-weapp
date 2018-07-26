@@ -1,0 +1,113 @@
+<view>
+  <mit-panel title="默认弹出">
+    <view class="panel-info">
+      <mit-button type="default" size="large" bind:buttonTap="popupDefault">默认弹框</mit-button>
+      <mit-popup visible="{{ popupDefault }}" height="300rpx">
+        <view class="dialog">
+          <mit-panel title="点击蒙层，关闭"></mit-panel>
+        </view>
+      </mit-popup>
+    </view>
+  </mit-panel>
+  <mit-panel title="方向" mit-class="mit-panel-info">
+    <view class="panel-info">
+      <mit-button type="default" size="large" bind:buttonTap="popupBottom">从下弹出</mit-button>
+      <mit-popup visible="{{ popupBottom }}" direction="bottom">
+        <view class="dialog-top-bottom">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+      <mit-button type="default" size="large" bind:buttonTap="popupTop">从上弹出</mit-button>
+      <mit-popup visible="{{ popupTop }}" direction="top">
+        <view class="dialog-top-bottom">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+      <mit-button type="default" size="large" bind:buttonTap="popupLeft">从左弹出</mit-button>
+      <mit-popup visible="{{ popupLeft }}" direction="left">
+        <view class="dialog-left-right">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+      <mit-button type="default" size="large" bind:buttonTap="popupRight">从右弹出</mit-button>
+      <mit-popup visible="{{ popupRight }}" direction="right">
+        <view class="dialog-left-right">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+    </view>
+  </mit-panel>
+  <mit-panel title="全屏">
+    <view class="panel-info">
+      <mit-button type="default" size="large" bind:buttonTap="popupBottomFull">全屏底部弹框</mit-button>
+      <mit-popup visible="{{ popupBottomFull }}" height="100%">
+        <view class="fulldialog">
+          <mit-cell-group>
+            <mit-cell wx:for="{{list}}" title="{{item}}" wx:for-item="item" wx:for-index="idx" wx:key="unique"/>
+          </mit-cell-group>
+        </view>
+        <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+      </mit-popup>
+      <mit-button type="default" size="large" bind:buttonTap="popupLeftFull">全屏左侧弹框</mit-button>
+      <mit-popup visible="{{ popupLeftFull }}" width="100%" direction="left">
+        <view class="fulldialog">
+          <mit-cell-group>
+            <mit-cell wx:for="{{list}}" title="{{item}}" wx:for-item="item" wx:for-index="idx" wx:key="unique"/>
+          </mit-cell-group>
+        </view>
+        <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+      </mit-popup>
+    </view>
+  </mit-panel>
+  <mit-panel title="多个popup">
+    <view class="panel-info">
+      <mit-button type="default" size="large" bind:buttonTap="popupMul1">打开第一个弹窗</mit-button>
+      <mit-popup visible="{{ popupMul1 }}">
+        <view class="fulldialog">
+          <mit-button type="default" size="large" bind:buttonTap="popupMul2">打开第二个弹窗</mit-button>
+        </view>
+        <mit-button type="error" size="large" bind:buttonTap="closeMulPopup1">关闭第一个</mit-button>
+      </mit-popup>
+      <mit-popup visible="{{ popupMul2 }}" height="100%">
+        <view class="fulldialog">
+          <mit-cell-group>
+            <mit-cell wx:for="{{list}}" title="{{item}}" wx:for-item="item" wx:for-index="idx" wx:key="unique"/>
+          </mit-cell-group>
+        </view>
+        <mit-button type="error" size="large" bind:buttonTap="closeMulPopup2">关闭第二个</mit-button>
+      </mit-popup>
+    </view>
+  </mit-panel>
+  <mit-panel title="背景层">
+    <view class="panel-info">
+      <mit-button type="default" size="large" bind:buttonTap="popupMaskDisabled">点击mask不关闭 </mit-button>
+      <mit-popup visible="{{ popupMaskDisabled }}" maskClosable="{{ false }}">
+        <view class="fulldialog">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+      <mit-button type="default" size="large" bind:buttonTap="popupMaskVisible">无mask</mit-button>
+      <mit-popup visible="{{ popupMaskVisible }}" maskVisible="{{ false }}">
+        <view class="unMask">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+    </view>
+  </mit-panel>
+  <mit-panel title="业务">
+    <view class="panel-info">
+      <mit-button type="default" size="large" bind:buttonTap="popupMaskDisabled">点击mask不关闭 </mit-button>
+      <mit-popup visible="{{ popupMaskDisabled }}" maskClosable="{{ false }}">
+        <view class="fulldialog">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+      <mit-button type="default" size="large" bind:buttonTap="popupMaskVisible">无mask</mit-button>
+      <mit-popup visible="{{ popupMaskVisible }}" maskVisible="{{ false }}">
+        <view class="unMask">
+          <mit-button type="error" size="large" bind:buttonTap="closePopup">关闭</mit-button>
+        </view>
+      </mit-popup>
+    </view>
+  </mit-panel>
+</view>

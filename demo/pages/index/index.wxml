@@ -33,6 +33,7 @@
       <mit-cell title="Toast 轻提示" isLink url="/pages/toast/toast"/>
       <mit-cell title="Modal 对话框" isLink url="/pages/modal/modal"/>
       <mit-cell title="Toptips 顶部提示" isLink url="/pages/toptips/toptips"/>
+      <mit-cell title="Popup 弹出" isLink url="/pages/popup/popup"/>
     </mit-cell-group>
   </mit-panel>
   <mit-panel title="表单">
@@ -50,13 +51,14 @@
       <mit-cell title="Alert 警告提示" isLink url="/pages/alert/alert"/>
       <mit-cell title="Progress 进度条" isLink url="/pages/progress/progress"/>
       <mit-cell title="Avatar 头像" isLink url="/pages/avatar/avatar"/>
-      <mit-cell title="ImageCliper 图像裁剪工具" isLink url="/pages/imageCliper/imageCliper"/>
+      <mit-cell title="Sticky 固定" isLink url="/pages/sticky/sticky"/>
     </mit-cell-group>
   </mit-panel>
   <mit-panel title="页面">
     <mit-cell-group>
       <mit-cell title="Timeline 时间线" isLink url="/pages/timeline/timeline"/>
       <mit-cell title="CityPicker 城市选择器" isLink url="/pages/cityPicker/cityPicker"/>
+      <mit-cell title="ImageCliper 图像裁剪工具" isLink url="/pages/imageCliper/imageCliper"/>
     </mit-cell-group>
   </mit-panel>
 </view>

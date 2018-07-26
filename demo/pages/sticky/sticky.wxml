@@ -1,0 +1,76 @@
+<view>
+  <view class="sticky-view-container">
+    <mit-sticky pos="{{ scrollY }}" bind:change="changeTitle">
+      <scroll-view scroll-y style="height: 100%;" slot="content" bindscroll="scroll">
+        <view style="padding: 20px 10px;">
+          Mitoo-weapp
+        </view>
+        <mit-sticky-item index="布局">
+          <view class="sticky-header">
+            布局
+          </view>
+        </mit-sticky-item>
+        <mit-cell-group>
+          <view wx:for="{{ items }}" wx:key="unique" wx:for-index="index" wx:for-item="item">
+            <mit-cell>{{ item }}</mit-cell>
+          </view>
+        </mit-cell-group>
+        <mit-sticky-item index="导航">
+          <view class="sticky-header">
+            导航
+          </view>
+        </mit-sticky-item>
+        <mit-cell-group>
+          <view wx:for="{{ items }}" wx:key="unique" wx:for-index="index" wx:for-item="item">
+            <mit-cell>{{ item }}</mit-cell>
+          </view>
+        </mit-cell-group>
+        <mit-sticky-item index="基础组件">
+          <view class="sticky-header">
+            基础组件
+          </view>
+        </mit-sticky-item>
+        <mit-cell-group>
+          <view wx:for="{{ items }}" wx:key="unique" wx:for-index="index" wx:for-item="item">
+            <mit-cell>{{ item }}</mit-cell>
+          </view>
+        </mit-cell-group>
+        <mit-sticky-item index="视图">
+          <view class="sticky-header">
+            视图
+          </view>
+        </mit-sticky-item>
+        <mit-cell-group>
+          <view wx:for="{{ items }}" wx:key="unique" wx:for-index="index" wx:for-item="item">
+            <mit-cell>{{ item }}</mit-cell>
+          </view>
+        </mit-cell-group>
+        <mit-sticky-item index="操作反馈">
+          <view class="sticky-header">
+            操作反馈
+          </view>
+        </mit-sticky-item>
+        <mit-cell-group>
+          <view wx:for="{{ items }}" wx:key="unique" wx:for-index="index" wx:for-item="item">
+            <mit-cell>{{ item }}</mit-cell>
+          </view>
+        </mit-cell-group>
+        <mit-sticky-item index="表单">
+          <view class="sticky-header">
+            表单
+          </view>
+        </mit-sticky-item>
+        <mit-cell-group>
+          <view wx:for="{{ items }}" wx:key="unique" wx:for-index="index" wx:for-item="item">
+            <mit-cell>{{ item }}</mit-cell>
+          </view>
+        </mit-cell-group>
+      </scroll-view>
+      <view slot="fixed">
+        <view class="sticky-header">
+          {{ title }}
+        </view>
+      </view>
+    </mit-sticky>
+  </view>
+</view>

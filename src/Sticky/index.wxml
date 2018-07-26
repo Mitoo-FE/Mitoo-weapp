@@ -1,0 +1,6 @@
+<view class="mit-sticky">
+  <slot name="content"></slot>
+  <view hidden="{{ !fixedShow }}" style="transform: {{ AnimationStyle }};" class="mit-sticky-fixed">
+    <slot name="fixed"></slot>
+  </view>
+</view>
