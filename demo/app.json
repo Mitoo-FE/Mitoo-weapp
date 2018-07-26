@@ -28,7 +28,7 @@
     "pages/accordion/accordion",
     "pages/timeline/timeline",
     "pages/cityPicker/cityPicker",
-    "pages/imageCliper/imageCliper",
+    "pages/imageClipper/imageClipper",
     "pages/sticky/sticky",
     "pages/popup/popup"
   ],

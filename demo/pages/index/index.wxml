@@ -58,7 +58,7 @@
     <mit-cell-group>
       <mit-cell title="Timeline 时间线" isLink url="/pages/timeline/timeline"/>
       <mit-cell title="CityPicker 城市选择器" isLink url="/pages/cityPicker/cityPicker"/>
-      <mit-cell title="ImageCliper 图像裁剪工具" isLink url="/pages/imageCliper/imageCliper"/>
+      <mit-cell title="ImageClipper 图像裁剪工具" isLink url="/pages/imageClipper/imageClipper"/>
     </mit-cell-group>
   </mit-panel>
 </view>
