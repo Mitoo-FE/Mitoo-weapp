@@ -1,0 +1,17 @@
+<view class="mit-avatar-area {{visible ? 'mit-avatar-area-visible': ''}}">
+
+  <!--<image style="{{'top:' + backImgTop + '; left:' + backImgLeft + '; transform: translateY(-50%) scale(' + scale + ')' }}" class="mit-avatar" mode="widthFix" src="{{image}}"/>-->
+  <view class="mit-avatar-mask"/>
+  <view class="mit-cut-area" style="{{ cutAreaStyl }}">
+    <image id="image" bind:load="bindCutAreaLoad" class="mit-cut-area-avatar" style="{{'top:' + cutImageTop + '; left: ' + cutImageLeft + '; transform-origin: ' + transformOrigin + '; transform: scale(' + scale + ')' }}" mode="widthFix" src="{{image}}"/>
+    <view catch:touchstart="toolsTouchStart" catch:touchmove="toolsTouchMove" catch:touchend="toolsTouchEnd" class="mit-cut-tools"/>
+
+  </view>
+  <view class="mit-canvas">
+    <canvas wx:if="{{visible}}" style="{{ 'width: '+ windowWidth + 'px; height: '+ windowWidth + 'px'}}" canvas-id="imageCanvas"/>
+  </view>
+  <view class="mit-operation-tools">
+    <view bind:tap="cancel" class="mit-operation-tools-left">取消</view>
+    <view bind:tap="complete" class="mit-operation-tools-right">完成</view>
+  </view>
+</view>

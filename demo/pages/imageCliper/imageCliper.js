@@ -3,6 +3,13 @@ Page({
     image: '',
     visible: false
   },
+  handleCut ($evt) {
+    console.log($evt)
+    wx.previewImage({
+      current: 0,
+      urls: [$evt.detail]
+    })
+  },
   uploadImage () {
     let _this = this;
     wx.chooseImage({

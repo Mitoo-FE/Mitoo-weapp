@@ -1,4 +1,4 @@
 <view>
   <mit-button size="large" type="default" bind:buttonTap="uploadImage">点击上传图片</mit-button>
-  <mit-image-cliper limit visible="{{visible}}" image="{{image}}"/>
+  <mit-image-cliper limit bind:handleCut="handleCut" visible="{{visible}}" image="{{image}}"/>
 </view>
