@@ -9,7 +9,7 @@
 ```json
 {
 	"usingComponents": {
-		"mit-image-clipper": "/components/ImageClipper/index",
+		"mit-image-clipper": "/components/ImageClipper/index"
 	}
 }
 ```
