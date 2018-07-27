@@ -25,7 +25,6 @@ Component({
 	},
 	ready() {
 		const parent = this.getRelationNodes('../Timeline/index')[0]
-		console.log('parent', parent);
 		parent.setIndex();
 	}
 
