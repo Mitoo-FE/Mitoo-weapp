@@ -20,7 +20,7 @@ $accordionPrefixCls = $prefix + '-accordion';
 			.icon {
 				display: block;
 				position: absolute;
-				top: 0;
+				top: -4rpx;
 				right: $h-spacing-lg;
 				background-size: contain;
 		        background-repeat: no-repeat;
@@ -31,6 +31,7 @@ $accordionPrefixCls = $prefix + '-accordion';
 			&.expanded {
 				.icon {
 					transform: rotate(-90deg);
+          top:2rpx;
 				}
 			}
 		}
