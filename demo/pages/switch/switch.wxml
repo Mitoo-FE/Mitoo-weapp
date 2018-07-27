@@ -1,23 +1,23 @@
 <view>
-    <mit-panel noBackground title="普通用法">
-        <view style="padding: 18rpx">
-            <mit-switch name="sw1"/>
+    <mit-panel noBackground title="圆形普通用法">
+        <view style="padding: 24rpx">
+            <mit-switch circle name="sw1"/>
         </view>
     </mit-panel>
     <mit-panel noBackground title="自定义大小、颜色">
-        <view style="padding: 18rpx">
-            <mit-switch name="sw2" bind:change="change" large color="red"/>
+        <view style="padding: 24rpx">
+            <mit-switch circle name="sw2" bind:change="change" large color="red"/>
         </view>
 
     </mit-panel>
     <mit-panel noBackground title="禁用样式">
-        <view style="padding: 18rpx">
-            <mit-switch name="sw3" disabled/>
+        <view style="padding: 24rpx">
+            <mit-switch circle name="sw3" disabled/>
         </view>
     </mit-panel>
-    <mit-panel noBackground title="圆形样式">
-        <view style="padding: 18rpx">
-            <mit-switch name="sw3" circle/>
+    <mit-panel noBackground title="方形样式">
+        <view style="padding: 24rpx">
+            <mit-switch name="sw3"/>
         </view>
     </mit-panel>
 </view>

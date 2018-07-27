@@ -92,6 +92,27 @@ animation_keyframes(name, during, delay=0s, iteration_count=initial, fill_mode=b
                 transform: translateX(0)
             }
         }
+        else if (name == modal_show) {
+            0% {
+                transform: scale(0.5) translateY(-50%)
+            }
+            80% {
+                transform: scale(1.08) translateY(-50%)
+            }
+            100% {
+                transform: scale(1) translateY(-50%)
+            }
+        }
+        else if (name == modal_hidden) {
+            0% {
+                transform: scale(1) translateY(-50%)
+                opacity: 1
+            }
+            100% {
+                transform: scale(0.5) translateY(-50%)
+                opacity: 0
+            }
+        }
     }
 
     set_animation(name, during, delay, iteration_count, fill_mode,transition_timing_function);

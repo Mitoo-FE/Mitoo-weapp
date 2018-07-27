@@ -763,7 +763,7 @@ select 为点选城市的回调，选择城市的id在detail中
 ```json
 {
 	"usingComponents": {
-		"mit-image-clipper": "/components/ImageClipper/index",
+		"mit-image-clipper": "/components/ImageClipper/index"
 	}
 }
 ```
@@ -1228,7 +1228,7 @@ select 为点选城市的回调，选择城市的id在detail中
 ```json
 {
 	"usingComponents": {
-		"mit-panel": "/components/Panel/index",
+		"mit-tag": "/components/Tag/index",
 	}
 }
 ```
@@ -1237,17 +1237,18 @@ select 为点选城市的回调，选择城市的id在detail中
 在wxml文件里添加组件代码
 
 ```html
-<mit-panel>
-    ...
-</mit-panel>
+<mit-tag borderColor="#EC0D33">标签一</mit-tag>
 ```
 
 ## API
 
 |参数	    |说明  			   |类型            |默认值     |必须  | 可选参数 |
 |:-----------:|:---------------:|:-------------:|:----------:|:---------:|:---:|
-| title  | 标题   |  Boolean  | false  |  true |  |
-| noBorder | 不带边框 | Boolean | false | false | true, false|
+| borderColor  | tag边框颜色   |  String  | false  |  true |  |
+| backgroundColor | tag背景颜色 | String | false | false | true, false|
+| size | 大小 | Number | false | false | |
+| selectable | 可选择性 | Boolean | false | false | |
+| select | 选中回调 | Function | false | false | |
 ## Timeline
 
 ## 使用指南
