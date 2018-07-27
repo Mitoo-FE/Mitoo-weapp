@@ -1,10 +1,11 @@
 @import "../styles/index";
 
 .{$prefix}-tag {
-    font-size: $tag-font-size;
-    padding: $tag-padding;
-    background-color: $background-color-base;
-    color: $color-text-base;
-    display: inline-block;
-    hairline('all', $background-color-icon, $tag-border-radius);
+  font-size: $tag-font-size;
+  padding: $tag-padding;
+  background-color: $background-color-base;
+  color: $color-text-base;
+  display: inline-block;
+  hairline('all', $background-color-icon, $tag-border-radius);
+  transition: background-color $transition-time ease-in-out, color $transition-time ease-in-out;
 }
