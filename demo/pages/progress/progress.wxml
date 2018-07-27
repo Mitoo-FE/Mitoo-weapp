@@ -1,8 +1,16 @@
 <view>
+  <view class="progress-wrapper">
     <mit-progress progress="{{80}}"/>
-    <mit-progress color="red" progress="{{60}}"/>
+  </view>
+  <view class="progress-wrapper">
+    <mit-progress color="#1B9CFF" progress="{{60}}"/>
+  </view>
+  <view class="progress-wrapper">
     <mit-progress flow progress="{{100}}"/>
+  </view>
+  <view class="progress-wrapper">
     <mit-progress percent="{{percent}}" progress="{{progress}}"/>
-    <mit-button bind:buttonTap="increase">增加</mit-button>
-    <mit-button bind:buttonTap="decrease">减少</mit-button>
+  </view>
+  <mit-button type="default" bind:buttonTap="increase">增加</mit-button>
+  <mit-button type="default" bind:buttonTap="decrease">减少</mit-button>
 </view>
