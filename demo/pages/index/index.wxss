@@ -12,6 +12,6 @@
     margin: 0 auto;
     width: 420rpx;
     height: 420rpx;
-    margin-top: -60rpx;
+    margin-top: -20rpx;
 }
 
