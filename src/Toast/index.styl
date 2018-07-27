@@ -39,7 +39,7 @@ $toastPrefixCls = $prefix + '-toast'
 	}
 
 	&-text{
-		min-width: 60rpx;
+		min-width: 200rpx;
 		border-radius: $border-radius-sm;
 		color: $color-text-base-inverse;
 		background-color: $toast-background;
@@ -68,45 +68,16 @@ $toastPrefixCls = $prefix + '-toast'
 	&-loading{
 		margin: 18rpx 0;
 		display: inline-block;
-        vertical-align: middle;
-        width: 46rpx;
-        height: 46rpx;
-        background: transparent;
-        border-radius: 50%;
-        border: 2px solid #fff;
+    vertical-align: middle;
+    width: 46rpx;
+    height: 46rpx;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #fff;
 		border-color: #fff #fff #fff $brand-color-primary;
 		animation: loading 0.8s linear;
 		animation-iteration-count: infinite;
 	}
-
-	// &-loading{
-	//     width: 80rpx;
-	//     height: 40rpx;
-	//     margin: 20rpx auto;
-	//     margin-top:20rpx;
-	// 	&-view{
-	// 	    display: inline-block;
-	// 	    width: 12rpx;
-	// 	    height: 100%;
-	// 	    border-radius: 8rpx;
-	// 	    background: #fff;
-	// 	    -webkit-animation: load 1s ease infinite;
-	// 	}
-	// 	&-view:nth-child(2){
-	// 	    -webkit-animation-delay:0.2s;
-	// 	}
-	// 	&-view:nth-child(3){
-	// 	    -webkit-animation-delay:0.4s;
-	// 	}
-	// 	&-view:nth-child(4){
-	// 	    -webkit-animation-delay:0.6s;
-	// 	}
-	// 	&-view:nth-child(5){
-	// 	    -webkit-animation-delay:0.8s;
-	// 	}
-	// }
-
-
 }
 
 @keyframes loading {
@@ -119,15 +90,3 @@ $toastPrefixCls = $prefix + '-toast'
 		transform-origin: center center;
     }
 }
-//
-// @keyframes load{
-//     0%,100%{
-//         height: 40rpx;
-//         background: #fff;
-//     }
-//     50%{
-//         height: 70rpx;
-//         margin: -15rpx 0;
-//         background: #fff;
-//     }
-// }

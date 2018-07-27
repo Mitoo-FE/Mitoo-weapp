@@ -1,10 +1,10 @@
 <view>
-    <view>
-        <mit-button type="default" size="default" bind:buttonTap="open_left">左边抽屉</mit-button>
-        <mit-button type="default" size="default" bind:buttonTap="open_right">右边抽屉</mit-button>
-    </view>
-    <view>
-        <mit-drawer position="left" visible="{{ visible1 }}"></mit-drawer>
-        <mit-drawer position="right" visible="{{ visible2 }}"></mit-drawer>
-    </view>
+  <view>
+    <mit-button type="default" size="default" bind:buttonTap="open_left">左边抽屉</mit-button>
+    <mit-button type="default" size="default" bind:buttonTap="open_right">右边抽屉</mit-button>
+  </view>
+  <view>
+    <mit-drawer bind:drawerHidden="handleHidden" position="left" visible="{{ visible1 }}"/>
+    <mit-drawer bind:drawerHidden="handleHidden" position="right" visible="{{ visible2 }}"/>
+  </view>
 </view>

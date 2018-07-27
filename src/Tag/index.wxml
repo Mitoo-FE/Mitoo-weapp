@@ -1,3 +1,3 @@
-<view bind:tap="select" style="color: {{borderColor? borderColor: ''}};border-color:{{borderColor ? borderColor : ''}}; background-color:{{backgroundColor ? backgroundColor : ''}}" class="mit-tag">
+<view bind:tap="select" style="{{size ? 'font-size:' + size + 'rpx;': ''}} color: {{borderColor? borderColor: ''}};border-color:{{borderColor ? borderColor : ''}}; background-color:{{backgroundColor ? backgroundColor : ''}}" class="mit-tag">
     <slot></slot>
 </view>

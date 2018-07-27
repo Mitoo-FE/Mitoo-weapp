@@ -27,7 +27,10 @@
     "pages/avatar/avatar",
     "pages/accordion/accordion",
     "pages/timeline/timeline",
-    "pages/cityPicker/cityPicker"
+    "pages/cityPicker/cityPicker",
+    "pages/imageClipper/imageClipper",
+    "pages/sticky/sticky",
+    "pages/popup/popup"
   ],
   "window":{
     "backgroundTextStyle":"light",

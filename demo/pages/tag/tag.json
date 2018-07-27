@@ -1,6 +1,7 @@
 {
 	"usingComponents": {
 		"mit-tag": "/components/Tag/index",
+    "mit-toast": "/components/Toast/index",
 		"mit-panel": "/components/Panel/index"
 	}
 }

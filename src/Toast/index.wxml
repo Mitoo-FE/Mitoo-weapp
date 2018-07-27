@@ -1,6 +1,6 @@
 <block wx:if="{{ type }}">
 	<view class="mit-toast mit-toast-mask {{ visible ? 'mit-toast-show' : ''}}">
-		<view class="mit-toast-text {{ visible ? 'mit-toast-text-show' : ''}}">
+		<view wx:if="{{ visible }}" class="mit-toast-text {{ visible ? 'mit-toast-text-show' : ''}}">
 			<view class="mit-toast-text-icon">
 				<block wx:if="{{ type !== 'loading' }}">
 					<mit-icon type="{{ type }}" size="{{ size }}"></mit-icon>

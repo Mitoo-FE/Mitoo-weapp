@@ -1,0 +1,4 @@
+<view wx:if="{{ maskVisible }}" class="mit-popup-mask {{ visible ? 'mask-show' : '' }}" data-role="mask" bindtap="{{ !maskClosable ? '' : 'tapMask' }}"></view>
+<view class="mit-popup-dialog {{ visible ? 'dialog-show' : '' }} mit-popup-{{ direction ? direction : 'bottom'}}" style="height: {{ height }};width: {{ width }};">
+  <slot></slot>
+</view>

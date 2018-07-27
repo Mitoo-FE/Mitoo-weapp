@@ -8,11 +8,15 @@
         </mit-notice-bar>
     </mit-panel>
     <mit-panel title="多行通告栏" noBorder>
-        <mit-notice-bar icon text="我是一条多行通告，我有很多行。您可以在文本很长的时候使用多行通告，通告栏可以自动折行。" closeable>
+        <mit-notice-bar icon multiple text="我是一条多行通告，我有很多行。您可以在文本很长的时候使用多行通告，通告栏可以自动折行。" closeable>
         </mit-notice-bar>
     </mit-panel>
     <mit-panel title="滚动 通告栏" noBorder>
-        <mit-notice-bar icon text="我是一条可滚动通告，我有很多文字，多余的文字被隐藏在后面，会逐渐循环播放出来。" closeable transform>
+        <mit-notice-bar icon text="我是一条可滚动通告，我有很多文字，多余的文字被隐藏在后面，会逐渐循环播放出来。" closeable scrollable>
+        </mit-notice-bar>
+    </mit-panel>
+    <mit-panel title="延迟1秒滚动滚动 通告栏" noBorder>
+        <mit-notice-bar delay="1000" text="我是一条可滚动通告，我有很多文字，多余的文字被隐藏在后面，会逐渐循环播放出来。" closeable scrollable>
         </mit-notice-bar>
     </mit-panel>
 </view>

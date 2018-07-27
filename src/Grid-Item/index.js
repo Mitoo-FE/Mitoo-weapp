@@ -1,5 +1,5 @@
 Component({
-    externalClasses : ['mit-class'],
+  externalClasses : ['mit-class'],
 	options: {
 		multipleSlots: true
 	},

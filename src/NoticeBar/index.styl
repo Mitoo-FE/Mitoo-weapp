@@ -6,40 +6,50 @@
     position: relative;
     color: $notice-bar-text-color;
     background-color: $notice-bar-background-color;
-    font-size: $size-font-base;
+    font-size: $size-font-small;
     padding: $padding-base;
     overflow: hidden;
+    height: 36rpx;
+    line-height: 36rpx;
+    display: flex;
     .{$prefix}-notice-bar-icon {
-        position: absolute;
-        padding: $padding-base;
-        left: 0;
-        top: 0;
+        min-width: 20px;
+        height: 18px;
+        box-sizing:border-box;
     }
-    &-inner {
+    &-wrap {
         display: inline-block;
-        margin-left: $padding-base + $font-size-base;
+        position: relative;
         overflow: hidden;
-        margin-right: $padding-base * 2;
+        padding-right: $padding-small;
+        flex: 1;
         .{$prefix}-notice-bar-text {
-            display: inline-block;
+            position: absolute;
+            white-space:nowrap;
+        }
+        .{$prefix}-notice-bar-text-multiple {
+            position: inherit;
+            white-space:normal;
         }
         &-noicon {
             margin-left: 0;
         }
     }
+    &-closable{
+        padding-right: 60rpx;
+    }
     &-close {
         color: $notice-bar-text-color;
         position: absolute;
-        right: 0;
-        top: 0;
-        padding: $padding-base;
+        top:10px;
+        right:10px;
         background-color: $notice-bar-background-color;
     }
     &-closeable {
         padding-right: $size-font-base;
     }
-    .{$prefix}-notice-bar-text-scroll {
-        white-space: nowrap;
-        animation_keyframes(transition_push_around, 0s, 0s, infinite, both, linear)
+    &-multiple{
+        height: auto;
+        line-height: 40rpx;
     }
 }

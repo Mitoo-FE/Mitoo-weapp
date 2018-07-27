@@ -41,6 +41,138 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 
 
 
+## Accordion
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-accordion": "/components/Accordion/index",
+		"mit-accordion-panel": "/components/Accordion-Panel/index",
+		"mit-panel": "/components/Panel/index"
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-panel noBorder title="基本">
+	<mit-accordion>
+		<mit-accordion-panel>
+			<view slot="title">
+				Title 1
+			</view>
+			<view slot="content" class="content">
+				A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+			</view>
+		</mit-accordion-panel>
+		<mit-accordion-panel>
+			<view slot="title">
+				Title 2
+			</view>
+			<view slot="content" class="content">
+				A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+			</view>
+		</mit-accordion-panel>
+		<mit-accordion-panel>
+			<view slot="title">
+				Title 3
+			</view>
+			<view slot="content" class="content">
+				A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+			</view>
+		</mit-accordion-panel>
+	</mit-accordion>
+</mit-panel>
+```
+
+## API
+
+### Accordion
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| isAccordion | 手风琴模式 | Boolean | | false |
+
+### Accordion-Panel
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| title | 标题 | slot | | false |
+| content | 内容 | slot | | false |
+## Accordion
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-accordion": "/components/Accordion/index",
+		"mit-accordion-panel": "/components/Accordion-Panel/index",
+		"mit-panel": "/components/Panel/index"
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-panel noBorder title="基本">
+	<mit-accordion>
+		<mit-accordion-panel>
+			<view slot="title">
+				Title 1
+			</view>
+			<view slot="content" class="content">
+				A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+			</view>
+		</mit-accordion-panel>
+		<mit-accordion-panel>
+			<view slot="title">
+				Title 2
+			</view>
+			<view slot="content" class="content">
+				A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+			</view>
+		</mit-accordion-panel>
+		<mit-accordion-panel>
+			<view slot="title">
+				Title 3
+			</view>
+			<view slot="content" class="content">
+				A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+			</view>
+		</mit-accordion-panel>
+	</mit-accordion>
+</mit-panel>
+```
+
+## API
+
+### Accordion
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| isAccordion | 手风琴模式 | Boolean | | false |
+
+### Accordion-Panel
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| title | 标题 | slot | | false |
+| content | 内容 | slot | | false |
 ## ActtionSheet
 
 ## 使用指南
@@ -209,7 +341,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | size | 大小 | String | default | false | 'small', 'large', 'default'|
 | circle | 是否圆按钮 | Boolean | default | false | true, false |
 | text   | 按钮文字  | String  |  |  false  |   | 
-| type  | 按钮类型 | String | false | 'primary' | 'primary', 'info', 'default', 'error', 'brand', 'brand-yellow', 'brand-red', 'brand-green', 'brand-blue', 'brand-dark-blue' |
+| type  | 按钮类型 | String | false | 'primary' | 'primary', 'info', 'default', 'error', 'warning' |
 | disabled   | 是否禁用  | Boolean  | false |  false  | true, false  |
 | full   | 是否通栏  | Boolean  | false |  false  | true, false  |
 | bottom   | 是否为底部通栏按钮  | Boolean  | false |  false  | true, false  |
@@ -407,6 +539,50 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 |参数	    	  |说明  			   |类型            |默认值     |必须  |
 |:-----------: |:---------------:| :-------------:| :-------- | :--------|
 | change | 点击的时候触发的时间 | Function | | false |
+## Badge 
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-badge": "/components/CityPicker/index",
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-city-picker>
+    ...
+</mit-city-picker>
+```
+
+## API
+
+|参数	    |说明  			   |类型            |默认值     |必须  |
+|:-----------:|:---------------:|:-------------:|:----------:|:---------:|
+| visible  | 城市选择器的展示状态   |  Boolean | false   | true  |
+| cities | 城市列表数据 | Object |  | true |
+| cancel | 取消选择回调 | Function | | |
+| select | 选择城市回调 | Function | | |
+
+##
+
+cities 数据下载地址 [https://www.mitooui.com/download/address.js][1]
+
+ [1]: https://www.mitooui.com/download/address.js
+
+cancel 为右上角点击按钮事件回调
+    
+select 为点选城市的回调，选择城市的id在detail中
+
 ## Drawer
 
 ## 使用指南
@@ -438,6 +614,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | position  | 出现的位置    | String |   | true  | 'left','right'  |
 | visible   | 可见性   | Boolean  | false  | true  | true, false   |
+| drawerHidden | 抽屉消失回调 | Function | false | false | |
 ## Grid
 
 ## 使用指南
@@ -575,6 +752,36 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 | mit-class | 字体样式类 | String | | false |
 
 ##### <font color="#660000">注：如果给了size和color属性，mit-class不会覆盖size和color样式。</font>
+## ImageClipper 
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-image-clipper": "/components/ImageClipper/index"
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+  <mit-image-clipper bind:handleCut="handleCut" visible="{{visible}}" image="{{image}}"/>
+```
+
+## API
+
+|参数 |说明 |类型 |默认值 |必须 |
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| visible| 可见性   | Boolean  | false  | true  |
+| image | 要裁剪图片地址，可以是微信提供的临时图片地址，或者base64 | String | false | false | 
+| handleCut | 裁剪后的回调，可以获取回调中裁剪后图片的地址 | Function | false | false |
 ## Input 
 
 ## 使用指南
@@ -974,7 +1181,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 |:-----------: |:---------------:| :-------------:| :-------- | :--------: | :-----:|
 | brandColor | 自定义品牌色 | String |  | false  | |
 | scroll | 是否可滑动 | Boolean | false | false | |
-
+| onChangeTab | 绑定tab切换方法回调 | Function | false | false |
 ## Tabs-Cell 
 
 与Tabs配合使用 
@@ -1021,7 +1228,7 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 ```json
 {
 	"usingComponents": {
-		"mit-panel": "/components/Panel/index",
+		"mit-tag": "/components/Tag/index",
 	}
 }
 ```
@@ -1030,17 +1237,81 @@ git clone https://github.com/Mitoo-FE/Mitoo-weapp.git
 在wxml文件里添加组件代码
 
 ```html
-<mit-panel>
-    ...
-</mit-panel>
+<mit-tag borderColor="#EC0D33">标签一</mit-tag>
 ```
 
 ## API
 
 |参数	    |说明  			   |类型            |默认值     |必须  | 可选参数 |
 |:-----------:|:---------------:|:-------------:|:----------:|:---------:|:---:|
-| title  | 标题   |  Boolean  | false  |  true |  |
-| noBorder | 不带边框 | Boolean | false | false | true, false|
+| borderColor  | tag边框颜色   |  String  | false  |  true |  |
+| backgroundColor | tag背景颜色 | String | false | false | true, false|
+| size | 大小 | Number | false | false | |
+| selectable | 可选择性 | Boolean | false | false | |
+| select | 选中回调 | Function | false | false | |
+## Timeline
+
+## 使用指南
+
+### Step 1
+
+在页面对应的json文件中引入组件
+
+```json
+{
+	"usingComponents": {
+		"mit-panel": "/components/Panel/index",
+		"mit-timeline": "/components/Timeline/index",
+		"mit-timeline-panel": "/components/Timeline-Panel/index"
+	}
+}
+```
+### Step 2
+
+在wxml文件里添加组件代码
+
+```html
+<mit-timeline>
+	<mit-timeline-panel showIcon>
+		<view slot="content" class="content">
+			<view class="title">v0.1.2</view>
+			<view class="time">2016-04-17 12:00:00</view>
+		</view>
+	</mit-timeline-panel>
+	<mit-timeline-panel icon="twitter">
+		<view slot="content" class="content">
+			<view class="title">v0.1.1</view>
+			<view class="time">2018-07-03</view>
+			<view class="">🐞 修复官网上的"展开全部"按钮不工作的问题</view>
+			<view>🐞 修复 Transfer 组件的文本 "Not Found" 在 IE 或 Edge 浏览器上显示异常</view>
+			<view>🐞 修复 Chrome 在缩放模式下，Card 组件的边框被标题的背景色覆盖。</view>
+			<view>🐞 修复 Upload 组件中 uid 为0被误删除问题。</view>
+			<view>改动了第5个组件的bug</view>
+		</view>
+	</mit-timeline-panel>
+	<mit-timeline-panel>
+		<view slot="content" class="content">
+			<view class="title">项目立项</view>
+			<view class="time">2016-04-17 12:00:00</view>
+		</view>
+	</mit-timeline-panel>
+</mit-timeline>
+```
+
+## API
+
+### Accordion
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+
+### Accordion-Panel
+
+|参数	    	  |说明  			   |类型            |默认值     |必须  |
+|:-----------: |:---------------:| :-------------:| :-------- | :--------|
+| showIcon | 是否显示图标，true会显示一个默认图标 | Boolean | | false |
+| icon | 图标 | string | | false |
+| content | 内容 | slot | | true |
 ## Toast
 
 ## 使用指南

@@ -1,81 +1,82 @@
 @import "../styles/index";
 
 .{$prefix}-city-picker {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: $background-color-base;
-    width: 100%;
-    z-index: $zindex-modal;
-    font-size: $font-size-base;
-    visibility: hidden;
-    transform: translateY(100vh);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $background-color-base;
+  width: 100%;
+  z-index: $zindex-modal;
+  font-size: $font-size-base;
+  visibility: hidden;
+  transform: translateY(100vh);
+  transition: all $transition-time ease-in-out;
+  &-visible {
     transition: all $transition-time ease-in-out;
-    &-visible {
-        transition: all $transition-time ease-in-out;
-        visibility: visible;
-        transform: translateY(0);
+    visibility: visible;
+    transform: translateY(0);
+  }
+  &-search-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-color-base;
+    padding: $padding-base;
+    hairline('bottom');
+    box-shadow: 1px 1px 3px $shadow-color;
+    .{$prefix}-city-picker-search {
+      flex: 1;
     }
-    &-search-wrap {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $background-color-base;
-        padding: $padding-base;
-        hairline('bottom');
-        box-shadow: 1px 1px 3px $shadow-color;
-        .{$prefix}-city-picker-search {
-            flex: 1;
-        }
-        .{$prefix}-city-picker-search-cancel {
-            color: $color-text-secondary;
-            padding-left: $padding-base;
-        }
+    .{$prefix}-city-picker-search-cancel {
+      color: $color-text-secondary;
+      padding-left: $padding-base;
     }
-    .{$prefix}-city {
-        padding: $padding-base;
+  }
+  .{$prefix}-city {
+    padding: $padding-base;
+  }
+  .{$prefix}-city-title {
+    padding: $padding-base;
+    background-color: $background-color-body;
+  }
+  .{$prefix}-city-picker-panel {
+    position: relative;
+    border-radius: $border-radius-sm;
+    box-shadow: 1px 1px 3px $shadow-color;
+    margin: $margin-base;
+    background-color: $background-color-base;
+  }
+  .{$prefix}-city-group-cell {
+    padding: $padding-base;
+    position: relative;
+    hairline('bottom');
+    &:last-child {
+      hairline-remove('bottom');
     }
-    .{$prefix}-city-title {
-        padding: $padding-base;
-        background-color: $background-color-body;
+    &-hover {
+      background-color: $background-color-body * 0.95;
     }
-    .{$prefix}-city-picker-panel {
-        position: relative;
-        border-radius: $border-radius-sm;
-        box-shadow: 1px 1px 3px $shadow-color;
-        margin: $margin-base;
-        background-color: $background-color-base;
-    }
-    .{$prefix}-city-group-cell {
-        padding: $padding-base;
-        position: relative;
-        hairline('bottom');
-        &:last-child {
-            hairline-remove('bottom');
-        }
-        &-hover {
-            background-color: $background-color-body * 0.95;
-        }
-    }
-    
-    .{$prefix}-tap-area {
-        width: $padding-base * 2;
-    }
+  }
+
+  .{$prefix}-tap-area {
+    width: $padding-base * 2;
+  }
 }
 .{$prefix}-char-sorted {
-    position: fixed;
-    z-index: $zindex-modal + 1;
-    right: $padding-base * 2;
-    top: 50%;
-    
-    font-size: $font-size-sm;
-    text-align: center;
-    visibility: hidden;
-    transform: translateY(100vh);
-    &-visible {
-        transform: translateY(-30%);
-        transition: all $transition-time ease-in-out;
-        visibility: visible;
-    }
+  position: fixed;
+  z-index: $zindex-modal + 1;
+  right: $padding-base * 2;
+  top: 50%;
+  background-color: #f7f7f7;
+  padding: 16rpx 10rpx;
+  font-size: $font-size-sm;
+  text-align: center;
+  visibility: hidden;
+  transform: translateY(100vh);
+  &-visible {
+    transform: translateY(-40%);
+    transition: all $transition-time ease-in-out;
+    visibility: visible;
+  }
 }

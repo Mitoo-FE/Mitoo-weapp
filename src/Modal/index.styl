@@ -1,6 +1,6 @@
 @import "../styles/index";
 @import "../styles/mixins/hairline.styl";
-
+@import "../styles/mixins/animation.styl";
 
 .{$prefix}-modal-wrap {
     position: fixed;
@@ -12,8 +12,8 @@
     &&-show {
         visibility: visible;
         .{$prefix}-modal {
-            transition: all $transition-time ease-in-out;
-            transform: scale(1) translateY(-50%);
+          visibility: visible;
+          animation_keyframes(modal_show, $transition-time, fill_mode=forward);
         }
     }
     .{$prefix}-modal-mask {
@@ -35,8 +35,9 @@
         width: 70%;
         left: 15%;
         top: 50%;
-        transform: scale(0) translateY(-50%);
-        transition: all $transition-time ease-in-out;
+        visibility: hidden;
+        transition: visibility $transition-time ease-in-out;
+        animation_keyframes(modal_hidden, $transition-time, fill_mode=forward);
         transform-origin: top;
         hairline('all', $border-color-base, $border-radius-sm)
         background-color: $background-color-base;

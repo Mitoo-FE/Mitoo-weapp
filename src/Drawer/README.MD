@@ -29,3 +29,4 @@
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | position  | 出现的位置    | String |   | true  | 'left','right'  |
 | visible   | 可见性   | Boolean  | false  | true  | true, false   |
+| drawerHidden | 抽屉消失回调 | Function | false | false | |

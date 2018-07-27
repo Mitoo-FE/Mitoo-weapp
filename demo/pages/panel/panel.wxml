@@ -1,12 +1,38 @@
 <view>
-    <mit-panel title="带标题的Panel">
-        <view style="padding: 30rpx;">
-            Panel 内容
-        </view>
-    </mit-panel>
-    <mit-panel noBorder title="无边框的Panel">
-        <view style="padding: 30rpx;">
-            Panel 内容
-        </view>
-    </mit-panel>
+  <mit-panel title="普通的Panel">
+    <view style="padding: 30rpx;">
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+    </view>
+  </mit-panel>
+  <mit-panel title="带标题的Panel">
+    <view style="padding: 30rpx;">
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+    </view>
+  </mit-panel>
+  <mit-panel noBorder title="无边框的Panel">
+    <view style="padding: 30rpx;">
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+    </view>
+  </mit-panel>
+  <mit-panel noBackground title="无背景的Panel">
+    <view style="padding: 0 30rpx 30rpx 30rpx;">
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+      <view>Panel 内容</view>
+    </view>
+  </mit-panel>
 </view>

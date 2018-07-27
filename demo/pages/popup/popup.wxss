@@ -1,0 +1,16 @@
+.dialog-top-bottom{
+  height: 400rpx;
+}
+.dialog-left-right{
+  width: 375rpx;
+}
+.unMask{
+  background-color: #e3e3e3;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.panel-info{
+  padding: 10rpx 0;
+}

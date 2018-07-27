@@ -1,0 +1,6 @@
+.progress-wrapper {
+  padding-bottom: 36rpx;
+}
+.progress-wrapper:first-child {
+  padding-top: 36rpx;
+}

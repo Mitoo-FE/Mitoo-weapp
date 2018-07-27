@@ -34,9 +34,11 @@
 
 ##
 
-    cities 数据下载地址 https://www.mitooui.com/download/cities.json
+cities 数据下载地址 [https://www.mitooui.com/download/address.js][1]
+
+ [1]: https://www.mitooui.com/download/address.js
+
+cancel 为右上角点击按钮事件回调
     
-    cancel 为右上角点击按钮事件回调
-    
-    select 为点选城市的回调，选择城市的id在detail中
+select 为点选城市的回调，选择城市的id在detail中
 
