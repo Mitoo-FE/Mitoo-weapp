@@ -1,13 +1,12 @@
 Page({
   data: {
     image: '',
-    visible: false
+    visible: false,
+    avatar: '/assets/image/avatar.png'
   },
   handleCut ($evt) {
-    console.log($evt)
-    wx.previewImage({
-      current: 0,
-      urls: [$evt.detail]
+    this.setData({
+      avatar: $evt.detail
     })
   },
   uploadImage () {

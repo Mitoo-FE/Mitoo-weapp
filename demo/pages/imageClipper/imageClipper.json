@@ -1,6 +1,7 @@
 {
-	"usingComponents": {
-		"mit-button": "/components/Button/index",
-    "mit-image-clipper": "/components/ImageClipper/index"
-	}
+  "usingComponents": {
+    "mit-button": "/components/Button/index",
+    "mit-image-clipper": "/components/ImageClipper/index",
+    "mit-avatar": "/components/Avatar/index"
+  }
 }

@@ -1,0 +1,12 @@
+.avatar-container {
+  padding: 60rpx;
+  text-align: center;
+}
+.user-name {
+  margin-top: 36rpx;
+}
+.change-avatar {
+  position: absolute;
+  bottom: 36rpx;
+  width: 100%;
+}

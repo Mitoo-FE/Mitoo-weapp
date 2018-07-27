@@ -1,5 +1,8 @@
 <view>
-  <mit-avatar noCircle src="/assets/image/avatar.png"/>
-  <mit-button size="large" type="default" bind:buttonTap="uploadImage">更换头像</mit-button>
+  <view class="avatar-container">
+    <mit-avatar size="{{200}}" src="{{avatar}}"/>
+    <view class="user-name">米小兔</view>
+  </view>
+  <mit-button class="change-avatar" size="large" type="default" bind:buttonTap="uploadImage">更换头像</mit-button>
   <mit-image-clipper bind:handleCut="handleCut" visible="{{visible}}" image="{{image}}"/>
 </view>
