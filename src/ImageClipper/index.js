@@ -124,24 +124,17 @@ Component({
     },
     getCutAreaStyl () {
       let _this = this;
-      if (this.properties.limit) {
-        wx.getSystemInfo({
-          success: function(data) {
-            _this.setData({
-              windowWidth: data.windowWidth,
-              windowHeight: data.windowHeight,
-              cutAreaStyl: `height: ${data.windowWidth}px; top: ${(data.windowHeight - data.windowWidth)/2}px`,
-              backImgTop: data.windowHeight / 2 + 'px',
-              backImgLeft: 0
-            })
-          }
-        })
-      }
-      else {
-        _this.setData({
-          cutAreaStyl: `height: 100%`
-        })
-      }
+      wx.getSystemInfo({
+        success: function(data) {
+          _this.setData({
+            windowWidth: data.windowWidth,
+            windowHeight: data.windowHeight,
+            cutAreaStyl: `height: ${data.windowWidth}px; top: ${(data.windowHeight - data.windowWidth)/2}px`,
+            backImgTop: data.windowHeight / 2 + 'px',
+            backImgLeft: 0
+          })
+        }
+      })
     },
     toolsTouchStart ($evt) {
       this.toolTouched = true;
