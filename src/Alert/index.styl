@@ -1,27 +1,38 @@
 @import "../styles/index";
 
 .{$prefix}-alert {
-    position: relative;
-    margin: $margin-x-large;
-    border-radius: $alert-border-radius;
-    font-size: $font-size-heading;
-    color: $background-color-base;
-    background-color: $brand-color-primary;
-    padding: $padding-base;
-    &-warning {
-        background-color: $brand-color-warning;
+  position: relative;
+  margin: $margin-x-large;
+  border-radius: $alert-border-radius;
+  font-size: $font-size-heading;
+  color: $background-color-base;
+  background-color: $brand-color-primary;
+  padding: $padding-base;
+  &-warning {
+    background-color: $brand-color-warning;
+  }
+  &-error {
+    background-color: $brand-color-error;
+  }
+  &-success {
+    background-color: $brand-color-success;
+  }
+  &-close {
+    position: absolute;
+    line-height: $font-size-base;
+    right: $padding-base;
+    top: 50%;
+    margin-top: - ($font-size-base/ 2);
+  }
+  &-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility $transition-time ease-in-out, opacity $transition-time ease-in-out;
+    &-hidden {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility $transition-time ease-in-out, opacity $transition-time ease-in-out;
     }
-    &-error {
-        background-color: $brand-color-error;
-    }
-    &-success {
-        background-color: $brand-color-success;
-    }
-    &-close {
-        position: absolute;
-        line-height: $font-size-base;
-        right: $padding-base;
-        top: 50%;
-        margin-top: - ($font-size-base/ 2);
-    }
+  }
+  
 }

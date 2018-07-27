@@ -139,5 +139,5 @@
   }
 }
 .mit-button-bottom-block {
-  height: 72rpx;
+  height: 144rpx;
 }
